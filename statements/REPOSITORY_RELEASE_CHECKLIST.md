@@ -8,9 +8,9 @@
 - [x] Add minimal reproduction scripts.
 - [x] Add software environment notes.
 - [x] Prepare external publication workflow for dedicated repository or archived release.
-- [ ] Verify all links are public.
+- [x] Verify all links are public.
 - [x] Create GitHub release.
-- [ ] Archive release in Zenodo and record DOI.
-- [ ] Update manuscript and release metadata with the final public release URL or Zenodo DOI where applicable.
+- [x] Archive release in Zenodo and record DOI.
+- [x] Update manuscript and release metadata with the final public release URL or Zenodo DOI where applicable.
 
-Note: the current manuscript files are frozen for the present submission package, but the main text still requires the final English version before external release.
+Note: the manuscript availability section now cites the Zenodo DOI, the dedicated GitHub repository, and the public observatory URL, but the main text still requires the final English version before external release.

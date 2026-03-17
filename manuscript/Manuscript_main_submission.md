@@ -353,10 +353,11 @@ El autor declara no tener conflicto de intereses.
 
 ## DISPONIBILIDAD DE DATOS Y CÓDIGO
 
-- **Código fuente BigLoI:** Disponible en GitHub: <https://github.com/zswamtech/BigLoI-PMV>.
+- **Paquete de reproducibilidad del artículo:** Archivado en Zenodo con DOI <https://doi.org/10.5281/zenodo.19074137> y disponible en GitHub: <https://github.com/zswamtech/BigLoI-PLOS-ONE-paper>.
+- **Código fuente ampliado de la plataforma BigLoI:** Disponible en GitHub: <https://github.com/zswamtech/BigLoI-PMV>.
 - **Datos SECOP-II, INVIMA y SISMED:** Disponibles en datos.gov.co.
 - **ORCID del autor principal:** <https://orcid.org/0009-0004-8001-5372>.
-- **Observatorio Nacional de Medicamentos BigLoI:** La URL pública definitiva se incorporará en la versión final del registro editorial.
+- **Observatorio Nacional de Medicamentos BigLoI:** Disponible en <https://www.bigloi.com/observatorio>.
 
 ---
 
