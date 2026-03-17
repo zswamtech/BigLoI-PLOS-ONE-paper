@@ -12,7 +12,7 @@ The manuscript uses exclusively public, non-personal administrative data. No cli
 
 This submission is original, has not been published previously, and is not under consideration elsewhere. I have reviewed the manuscript, approve its submission, and agree to be accountable for the work. I have no competing interests to declare. The study was conducted without external funding.
 
-For reproducibility, the source code repository is available at <https://github.com/zswamtech/BigLoI-PMV>. The public observatory URL will be incorporated into the final editorial record once the production deployment is finalized.
+For reproducibility, the article-specific package is archived at Zenodo under DOI <https://doi.org/10.5281/zenodo.19074137> and is also available in the dedicated public repository at <https://github.com/zswamtech/BigLoI-PLOS-ONE-paper>. The public observatory is available at <https://www.bigloi.com/observatorio>.
 
 Thank you for your consideration.
 
