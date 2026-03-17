@@ -357,7 +357,7 @@ El autor declara no tener conflicto de intereses.
 - **Código fuente ampliado de la plataforma BigLoI:** Disponible en GitHub: <https://github.com/zswamtech/BigLoI-PMV>.
 - **Datos SECOP-II, INVIMA y SISMED:** Disponibles en datos.gov.co.
 - **ORCID del autor principal:** <https://orcid.org/0009-0004-8001-5372>.
-- **Observatorio Nacional de Medicamentos BigLoI:** Disponible en <https://www.bigloi.com/observatorio>.
+- **Observatorio Nacional de Medicamentos BigLoI:** La versión pública del observatorio se encuentra en finalización editorial y su URL se comunicará una vez se restablezca un despliegue productivo estable.
 
 ---
 
