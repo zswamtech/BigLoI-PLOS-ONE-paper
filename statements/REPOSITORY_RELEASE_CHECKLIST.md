@@ -9,7 +9,7 @@
 - [x] Add software environment notes.
 - [x] Prepare external publication workflow for dedicated repository or archived release.
 - [ ] Verify all links are public.
-- [ ] Create GitHub release.
+- [x] Create GitHub release.
 - [ ] Archive release in Zenodo and record DOI.
 - [ ] Update manuscript and release metadata with the final public release URL or Zenodo DOI where applicable.
 
