@@ -1,0 +1,36 @@
+file_name,column_name,description,unit_or_format
+Fig1_source_data.csv,year,Calendar year shown in the annual contracts figure,YYYY
+Fig1_source_data.csv,contracts_indexed_bd,Number of indexed pharmaceutical contracts in PostgreSQL,contracts
+Fig1_source_data.csv,value_thousand_million_cop,Annual contracted value expressed in thousand million COP,thousand_million_cop
+Fig1_source_data.csv,value_billones_cop,Annual contracted value expressed in billones COP,billones_cop
+Fig1_source_data.csv,coverage_note,Coverage qualifier for the reported year,text
+Fig2_source_data.csv,region,Department or combined regional code label,text
+Fig2_source_data.csv,contracts,Number of contracts in the region,contracts
+Fig2_source_data.csv,value_thousand_million_cop,Contracted value for the region,thousand_million_cop
+Fig2_source_data.csv,pct_total_national_value,Regional share of national contracted value,percent
+Fig3_category_source_data.csv,category_label,Therapeutic category label used in the figure,text
+Fig3_category_source_data.csv,contracts_analyzed,Number of contracts analyzed in the category,contracts
+Fig3_category_source_data.csv,pct_with_alert,Share of category contracts with abs(Z) greater than or equal to 1.5 sigma,percent
+Fig3_category_source_data.csv,z_max,Maximum observed Z-score in the category,z_score
+Fig3_category_source_data.csv,ratio_max_to_category_mean,Maximum contract-value ratio against the category mean,times
+Fig3_yearly_source_data.csv,year,Calendar year,YYYY
+Fig3_yearly_source_data.csv,contracts_analyzed,Number of contracts analyzed in the year,contracts
+Fig3_yearly_source_data.csv,contracts_with_alert,Contracts with abs(Z) greater than or equal to 1.5 sigma,contracts
+Fig3_yearly_source_data.csv,alert_rate_pct,Yearly alert rate,percent
+Fig4_top10_source_data.csv,rank,Provider rank by contracted value,integer
+Fig4_top10_source_data.csv,provider_label,Provider label used in the figure,text
+Fig4_top10_source_data.csv,pct_share_total_value,Share of total contracted value held by the provider,percent
+Fig4_top10_source_data.csv,cumulative_pct_share,Cumulative share through that provider rank,percent
+Fig4_lorenz_source_data.csv,provider_share_pct,Share of providers on the Lorenz X axis,percent
+Fig4_lorenz_source_data.csv,cumulative_value_pct,Cumulative share of contracted value on the Lorenz Y axis,percent
+Fig6_components.csv,layer_number,Layer order in the architecture stack,integer
+Fig6_components.csv,layer_name,Layer label,text
+Fig6_components.csv,primary_technology,Main technologies associated with the layer,text
+Fig6_components.csv,function_or_scope,Main function represented in the layer,text
+Table1_source_data.csv,metric,Table 1 metric label,text
+Table1_source_data.csv,reported_value,Literal value reported in the manuscript table,text
+Table1_source_data.csv,numeric_value,Numeric rendering when the value is single-valued,number
+Table1_source_data.csv,unit,Measurement or format descriptor,text
+Table2_source_data.csv,layer,Architecture layer label,text
+Table2_source_data.csv,primary_technology,Primary technology field reported in Table 2,text
+Table2_source_data.csv,main_function,Main function reported in Table 2,text

@@ -1,0 +1,17 @@
+metric,reported_value,numeric_value,unit
+Total SECOP-II contracts (API universe),272814,272814,contracts
+Pharmaceutical contracts indexed in PostgreSQL,162921,162921,contracts
+Total contracts in PostgreSQL (all sectors),339031,339031,contracts
+Total contracted value (pharmaceutical BD),17.16,17.16,billones_cop
+Total contracted value (all sectors BD),238.2,238.2,billones_cop
+Total contracted value (API universe),42.00,42.0,billones_cop
+Average value per pharmaceutical contract,105,105,millones_cop
+Unique pharmaceutical providers (BD),50577,50577,providers
+Regions covered,36-37,,regional_codes
+Period (pharmaceutical BD active years),2020 to 2026-03,,period
+Period (monitored SECOP-II API),2015-01 to 2026-03,,period
+Processed INVIMA records,9838,9838,records
+SISMED reference price records,44038,44038,records
+SISMED unique ATC codes,1759,1759,atc_codes
+SISMED reference period,2017 to 2019,,period
+Indexed vector RAG documents,9336,9336,documents

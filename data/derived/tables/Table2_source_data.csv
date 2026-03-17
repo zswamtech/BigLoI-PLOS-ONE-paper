@@ -1,0 +1,8 @@
+layer,primary_technology,main_function
+Recoleccion,Python / API Socrata,Ingesta incremental de SECOP-II INVIMA y SISMED
+Almacenamiento,PostgreSQL / Pinecone / MongoDB,Datos relacionales vectoriales y no estructurados
+Procesamiento,FastAPI / pandas,Limpieza normalizacion clasificacion ABC y motor Z-score
+IA generativa,Claude 3.5 Sonnet / GPT-4o,RAG con busqueda hibrida semantica y TF-IDF
+Aprendizaje automatico,scikit-learn,Prediccion de demanda k-means y PCA
+Contratos inteligentes,Solidity / Chainlink CRE / Sepolia,Automatizacion de pagos en 5 estados y NFT de facturas
+Visualizacion,React / TypeScript,Observatorio publico con series temporales mapas y alertas

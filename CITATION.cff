@@ -1,0 +1,11 @@
+cff-version: 1.2.0
+title: "Computational surveillance of Colombian public pharmaceutical procurement using public administrative data: a reproducible analysis of 2020-2026 contracts"
+message: "If you use this article-specific package, please cite the manuscript and repository release."
+type: software
+authors:
+  - family-names: Soto
+    given-names: Andres
+    orcid: "https://orcid.org/0009-0004-8001-5372"
+repository-code: "https://github.com/zswamtech/BigLoI-PLOS-ONE-paper"
+license: "CC-BY-4.0"
+abstract: "Article-specific reproducibility package for the BigLoI PLOS ONE manuscript, including submission files, figures, derived data, statements, and minimal reproduction scripts."
