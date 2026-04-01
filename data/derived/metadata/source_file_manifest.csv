@@ -1,5 +1,5 @@
 file_name,object_type,underlies,source_basis,notes
-Fig1_source_data.csv,figure,Fig 1,Submission manuscript annual series plus frontend figure mapping,Includes 2026 partial row through March
+Fig1_source_data.csv,figure,Fig 1,Submission manuscript annual series plus frontend figure mapping,Closed analytical cohort with complete calendar years 2020-2025
 Fig2_source_data.csv,figure,Fig 2,Submission manuscript geographic breakdown plus frontend figure mapping,Bogota D.C. reported as combined SECOP codes
 Fig3_category_source_data.csv,figure,Fig 3 panel A,Submission manuscript category anomaly table plus frontend figure mapping,Ordered in manuscript order
 Fig3_yearly_source_data.csv,figure,Fig 3 panel B,Submission manuscript yearly anomaly table plus frontend figure mapping,Covers 2020 to 2025

@@ -29,7 +29,6 @@ FIG1_ROWS = [
     {"year": 2023, "contracts_indexed_bd": 10705, "value_thousand_million_cop": 1603.1, "value_billones_cop": 1.6031, "coverage_note": "Full year"},
     {"year": 2024, "contracts_indexed_bd": 9380, "value_thousand_million_cop": 1137.5, "value_billones_cop": 1.1375, "coverage_note": "Full year"},
     {"year": 2025, "contracts_indexed_bd": 22033, "value_thousand_million_cop": 5519.3, "value_billones_cop": 5.5193, "coverage_note": "Full year"},
-    {"year": 2026, "contracts_indexed_bd": 650, "value_thousand_million_cop": 90.5, "value_billones_cop": 0.0905, "coverage_note": "Partial through March"},
 ]
 
 FIG2_ROWS = [
@@ -99,16 +98,16 @@ FIG6_ROWS = [
 
 TABLE1_ROWS = [
     {"metric": "Total SECOP-II contracts (API universe)", "reported_value": "272814", "numeric_value": 272814, "unit": "contracts"},
-    {"metric": "Pharmaceutical contracts indexed in PostgreSQL", "reported_value": "162921", "numeric_value": 162921, "unit": "contracts"},
+    {"metric": "Pharmaceutical contracts indexed in PostgreSQL", "reported_value": "162271", "numeric_value": 162271, "unit": "contracts"},
     {"metric": "Total contracts in PostgreSQL (all sectors)", "reported_value": "339031", "numeric_value": 339031, "unit": "contracts"},
-    {"metric": "Total contracted value (pharmaceutical BD)", "reported_value": "17.16", "numeric_value": 17.16, "unit": "billones_cop"},
+    {"metric": "Total contracted value (pharmaceutical BD)", "reported_value": "17.07", "numeric_value": 17.07, "unit": "billones_cop"},
     {"metric": "Total contracted value (all sectors BD)", "reported_value": "238.2", "numeric_value": 238.2, "unit": "billones_cop"},
     {"metric": "Total contracted value (API universe)", "reported_value": "42.00", "numeric_value": 42.00, "unit": "billones_cop"},
     {"metric": "Average value per pharmaceutical contract", "reported_value": "105", "numeric_value": 105, "unit": "millones_cop"},
     {"metric": "Unique pharmaceutical providers (BD)", "reported_value": "50577", "numeric_value": 50577, "unit": "providers"},
     {"metric": "Regions covered", "reported_value": "36-37", "numeric_value": "", "unit": "regional_codes"},
-    {"metric": "Period (pharmaceutical BD active years)", "reported_value": "2020 to 2026-03", "numeric_value": "", "unit": "period"},
-    {"metric": "Period (monitored SECOP-II API)", "reported_value": "2015-01 to 2026-03", "numeric_value": "", "unit": "period"},
+    {"metric": "Period (pharmaceutical BD active years)", "reported_value": "2020 to 2025", "numeric_value": "", "unit": "period"},
+    {"metric": "Period (monitored SECOP-II API)", "reported_value": "January 2015 onward", "numeric_value": "", "unit": "period"},
     {"metric": "Processed INVIMA records", "reported_value": "9838", "numeric_value": 9838, "unit": "records"},
     {"metric": "SISMED reference price records", "reported_value": "44038", "numeric_value": 44038, "unit": "records"},
     {"metric": "SISMED unique ATC codes", "reported_value": "1759", "numeric_value": 1759, "unit": "atc_codes"},
@@ -127,7 +126,7 @@ TABLE2_ROWS = [
 ]
 
 SOURCE_FILE_MANIFEST_ROWS = [
-    {"file_name": "Fig1_source_data.csv", "object_type": "figure", "underlies": "Fig 1", "source_basis": "Submission manuscript annual series plus frontend figure mapping", "notes": "Includes 2026 partial row through March"},
+    {"file_name": "Fig1_source_data.csv", "object_type": "figure", "underlies": "Fig 1", "source_basis": "Submission manuscript annual series plus frontend figure mapping", "notes": "Closed analytical cohort with complete calendar years 2020-2025"},
     {"file_name": "Fig2_source_data.csv", "object_type": "figure", "underlies": "Fig 2", "source_basis": "Submission manuscript geographic breakdown plus frontend figure mapping", "notes": "Bogota D.C. reported as combined SECOP codes"},
     {"file_name": "Fig3_category_source_data.csv", "object_type": "figure", "underlies": "Fig 3 panel A", "source_basis": "Submission manuscript category anomaly table plus frontend figure mapping", "notes": "Ordered in manuscript order"},
     {"file_name": "Fig3_yearly_source_data.csv", "object_type": "figure", "underlies": "Fig 3 panel B", "source_basis": "Submission manuscript yearly anomaly table plus frontend figure mapping", "notes": "Covers 2020 to 2025"},
