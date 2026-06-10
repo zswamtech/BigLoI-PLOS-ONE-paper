@@ -1,6 +1,6 @@
 layer_number,layer_name,primary_technology,function_or_scope
 7,Visualization,React / TypeScript,Public observatory with time series maps and alerts
-6,Smart contracts,Solidity / Chainlink CRE / Sepolia,Payment automation invoice NFTs and escrow release
+6,Smart contracts (proof of concept),Solidity / Chainlink CRE / Sepolia testnet,Simulated payment-state transitions (secondary module)
 5,Machine learning,scikit-learn,Demand prediction clustering and PCA modules
 4,Generative AI (RAG),Claude 3.5 Sonnet / GPT-4o / Pinecone,Hybrid semantic plus TF-IDF retrieval over indexed documents
 3,Processing / API,FastAPI / Python / pandas,Cleaning normalization classification and Z-score engine

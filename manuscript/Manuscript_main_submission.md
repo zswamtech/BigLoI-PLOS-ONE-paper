@@ -72,7 +72,7 @@ The platform was implemented as a monorepo with a seven-layer architecture (Tabl
 | Processing | FastAPI; pandas | Cleaning, normalization, ABC classification, Z-score engine |
 | Generative AI | Claude 3.5 Sonnet; GPT-4o | Hybrid semantic plus TF-IDF retrieval-augmented generation |
 | Machine learning | scikit-learn | Demand prediction ($R^2 > 0.85$), k-means (6 groups), PCA |
-| Smart contracts | Solidity; Chainlink CRE; Sepolia | Payment automation across five states; invoice NFTs |
+| Smart contracts (proof of concept) | Solidity; Chainlink CRE; Sepolia testnet | Simulated payment-state transitions across five digital states; invoice NFTs (secondary module) |
 | Visualization | React/TypeScript | Public observatory with time series, maps, and alerts |
 
 ### 2.4 Anomaly-detection engine based on Z-scores
