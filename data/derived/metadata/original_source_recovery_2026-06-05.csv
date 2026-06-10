@@ -1,0 +1,40 @@
+section,metric,value,notes
+recovery,source_found,local PostgreSQL observatorio_nacional.contratos_secop,Read from apps/rag-api/.env without exposing credentials.
+recovery,year_field_matching_manuscript,vigencia,Using fecha_firma does not reproduce Fig. 1; using vigencia reproduces Fig. 1 exactly.
+recovery,total_rows_in_local_table,956157,Full local observatorio_nacional.contratos_secop table.
+recovery,total_value_all_rows_trillion_cop,294.7252,Full local observatorio_nacional.contratos_secop table; rounded to 294.7 trillion COP in Table 1.
+recovery,total_pharmaceutical_rows_local_snapshot,165549,Includes live 2026 rows.
+recovery,closed_2020_2025_pharmaceutical_rows,162271,Matches manuscript Table 1 and Fig. 1.
+recovery,live_2026_pharmaceutical_rows,3278,Current local snapshot after closed cohort.
+recovery,total_value_closed_2020_2025_trillion_cop,17.0677,Matches manuscript total rounded to 17.07 trillion COP.
+recovery,positive_value_rows_closed_2020_2025,162151,120 rows have non-positive contract value.
+recovery,non_positive_value_rows_closed_2020_2025,120,Excluded from value-share HHI calculation.
+recovery,unique_suppliers_raw_closed_2020_2025,50460,Distinct raw razon_social including non-positive value rows.
+annual,2020_rows,35330,Matches Fig1_source_data.csv.
+annual,2020_value_trillion_cop,3.3026,Matches Fig1_source_data.csv.
+annual,2021_rows,53832,Matches Fig1_source_data.csv.
+annual,2021_value_trillion_cop,2.8567,Matches Fig1_source_data.csv.
+annual,2022_rows,30991,Matches Fig1_source_data.csv.
+annual,2022_value_trillion_cop,2.6484,Matches Fig1_source_data.csv.
+annual,2023_rows,10705,Matches Fig1_source_data.csv.
+annual,2023_value_trillion_cop,1.6031,Matches Fig1_source_data.csv.
+annual,2024_rows,9380,Matches Fig1_source_data.csv.
+annual,2024_value_trillion_cop,1.1375,Matches Fig1_source_data.csv.
+annual,2025_rows,22033,Matches Fig1_source_data.csv.
+annual,2025_value_trillion_cop,5.5193,Matches Fig1_source_data.csv.
+hhi,total_contracts_positive_value,162151,Original recovered snapshot.
+hhi,total_suppliers_positive_value,50355,Normalized by non-empty supplier label.
+hhi,total_value_cop,17067737938471,Positive-value closed 2020-2025 cohort.
+hhi,hhi_0_1,0.0119258059,Stored in plos_one.supplier_concentration_runs.
+hhi,hhi_0_10000,119.2581,Stored in plos_one.supplier_concentration_runs.
+hhi,top_supplier_share,0.0560568832,5.6057 percent.
+hhi,top_10_share,0.2877179536,28.7718 percent.
+hhi,top_3pct_supplier_count,1511,Ceiling of 3 percent of suppliers.
+hhi,top_3pct_share,0.8586947285,85.8695 percent.
+zscore,total_recovered_alert_rows_2020_2025,685,Recovered zscore_alertas_secop contains alert rows only.
+zscore,alerts_abs_z_ge_1_5,685,Aligned revised manuscript and Fig3 source data to recovered source.
+zscore,alerts_abs_z_ge_2_0,528,Recovered source value.
+zscore,alerts_abs_z_ge_3_0,303,Recovered source value.
+neon,preserved_contract_table,plos_one.contratos_secop_original_snapshot,Imported 162271 rows into Neon/Vercel.
+neon,preserved_zscore_table,plos_one.zscore_alertas_secop_original_snapshot,Imported 685 rows into Neon/Vercel.
+neon,hhi_run_id,plos_one_hhi_original_snapshot_2026_06_05,Stored summary and 50355 supplier detail rows.

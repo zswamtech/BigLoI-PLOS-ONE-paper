@@ -1,0 +1,8 @@
+metric,previous_manuscript,previous_fig3_source,recovered_source,final_revised_value,decision
+analyzed_contracts,147670,147020,,147020,Use Fig3 denominator already present in source data and align manuscript to it.
+alerts_abs_z_ge_1_5,690,683,685,685,Use recovered zscore_alertas_secop_original_snapshot.
+alerts_abs_z_ge_2_0,532,,528,528,Use recovered zscore_alertas_secop_original_snapshot.
+alerts_abs_z_ge_3_0,307,,303,303,Use recovered zscore_alertas_secop_original_snapshot.
+moderate_alerts_abs_z_1_5_to_lt_2_0,158,,157,157,Computed as 685 minus 528.
+high_alerts_abs_z_2_0_to_lt_3_0,225,,225,225,Computed as 528 minus 303.
+overall_alert_rate_pct,0.4673,,0.4659,0.4659,Reported rounded as 0.47 percent.

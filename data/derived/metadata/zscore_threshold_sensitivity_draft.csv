@@ -1,0 +1,4 @@
+threshold,alert_strata_included,contracts_flagged,denominator_contracts,proportion_pct,source_note
+abs_z_ge_1_5,Moderate + High + Critical,685,147020,0.4659,Aligned to recovered original zscore_alertas_secop snapshot and Fig3 yearly denominator
+abs_z_ge_2_0,High + Critical,528,147020,0.3591,Aligned to recovered original zscore_alertas_secop snapshot and Fig3 yearly denominator
+abs_z_ge_3_0,Critical,303,147020,0.2061,Aligned to recovered original zscore_alertas_secop snapshot and Fig3 yearly denominator

@@ -1,0 +1,39 @@
+section,metric,value,notes
+cohort,total_rows,139580,Rows loaded into plos_one.contratos_secop from the reconstructed SECOP API cohort.
+cohort,closed_2020_2025_rows,139580,All loaded rows have signing_date between 2020-01-01 and 2025-12-31.
+cohort,null_signing_date_rows,0,No null signing dates detected.
+cohort,min_signing_date,2020-01-01,Minimum signing date in reconstructed cohort.
+cohort,max_signing_date,2025-12-31,Maximum signing date in reconstructed cohort.
+cohort,null_contract_value_rows,0,No null contract values detected.
+cohort,non_positive_contract_value_rows,358,Excluded from plos_one.closed_2020_2025_contracts and HHI.
+annual_count,2020_rows_all,31625,Reconstructed API cohort.
+annual_count,2020_rows_positive_value,31577,Used in value-based concentration calculations.
+annual_value,2020_value_billion_cop,3557.00,Positive contract values only.
+annual_count,2021_rows_all,50829,Reconstructed API cohort.
+annual_count,2021_rows_positive_value,50775,Used in value-based concentration calculations.
+annual_value,2021_value_billion_cop,2670.14,Positive contract values only.
+annual_count,2022_rows_all,29906,Reconstructed API cohort.
+annual_count,2022_rows_positive_value,29854,Used in value-based concentration calculations.
+annual_value,2022_value_billion_cop,3145.81,Positive contract values only.
+annual_count,2023_rows_all,10006,Reconstructed API cohort.
+annual_count,2023_rows_positive_value,9924,Used in value-based concentration calculations.
+annual_value,2023_value_billion_cop,1575.43,Positive contract values only.
+annual_count,2024_rows_all,8818,Reconstructed API cohort.
+annual_count,2024_rows_positive_value,8729,Used in value-based concentration calculations.
+annual_value,2024_value_billion_cop,1037.50,Positive contract values only.
+annual_count,2025_rows_all,8396,Reconstructed API cohort.
+annual_count,2025_rows_positive_value,8363,Used in value-based concentration calculations.
+annual_value,2025_value_billion_cop,2966.17,Positive contract values only.
+hhi,total_contracts_positive_value,139222,Rows in plos_one.closed_2020_2025_contracts.
+hhi,total_suppliers,40808,Suppliers with positive-value contracts in reconstructed cohort.
+hhi,total_value_cop,14952050021119.00,Positive-value closed 2020-2025 reconstructed cohort.
+hhi,hhi_0_1,0.0159774512,Stored in plos_one.supplier_concentration_runs.
+hhi,hhi_0_10000,159.7745,Stored in plos_one.supplier_concentration_runs.
+hhi,top_supplier_share,0.0639888304,6.39888304 percent.
+hhi,top_10_share,0.3436245855,34.36245855 percent.
+hhi,top_3pct_supplier_count,1225,Ceiling of 3 percent of suppliers.
+hhi,top_3pct_share,0.8708039971,87.08039971 percent.
+manuscript_reconciliation,manuscript_closed_cohort_rows,162271,Current manuscript/Table 1/Fig. 1 count.
+manuscript_reconciliation,reconstructed_api_rows,139580,Audit rebuild count from current SECOP API terms.
+manuscript_reconciliation,row_gap_vs_manuscript,22691,Manuscript count minus reconstructed API count.
+manuscript_reconciliation,reconstructed_share_of_manuscript,0.8601598536,Reconstructed rows divided by manuscript closed cohort rows.

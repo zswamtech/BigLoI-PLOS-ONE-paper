@@ -1,7 +1,7 @@
 # Repository release checklist
 
 - [x] Confirm final manuscript version frozen.
-- [ ] Confirm final English manuscript replaces the current Spanish draft.
+- [x] Confirm final English manuscript replaces the current Spanish draft.
 - [x] Add final derived figure CSV files.
 - [x] Add final derived table CSV files.
 - [x] Add data dictionary and provenance notes.
@@ -12,5 +12,3 @@
 - [x] Create GitHub release.
 - [x] Archive release in Zenodo and record DOI.
 - [x] Update manuscript and release metadata with the final public release URL or Zenodo DOI where applicable.
-
-Note: the manuscript availability section now cites the Zenodo DOI, the dedicated GitHub repository, and the public observatory URL, but the main text still requires the final English version before external release.

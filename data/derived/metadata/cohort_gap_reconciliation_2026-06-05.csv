@@ -1,0 +1,8 @@
+year,manuscript_count,reconstructed_api_count,gap,primary_observation
+2020,35330,31625,3705,Moderate gap; likely original PostgreSQL snapshot/filter or row-count basis differs from reconstructed API cohort.
+2021,53832,50829,3003,Moderate gap; likely original PostgreSQL snapshot/filter or row-count basis differs from reconstructed API cohort.
+2022,30991,29906,1085,Small gap; reconstructed API cohort broadly close to manuscript annual count.
+2023,10705,10006,699,Small gap; reconstructed API cohort broadly close to manuscript annual count.
+2024,9380,8818,562,Small gap; reconstructed API cohort broadly close to manuscript annual count.
+2025,22033,8396,13637,Major gap; audit shows searching objeto_del_proceso adds only a few unique records beyond objeto_a_contratar, so field omission does not explain the manuscript count.
+total,162271,139580,22691,Current API reconstruction covers 86.02 percent of the manuscript closed cohort.

@@ -1,0 +1,7 @@
+scope,count_contracts,count_alerts,source_file,status,notes
+SECOP-II monitored API universe,272814,,data/derived/tables/Table1_source_data.csv,context_only,Do not use as closed analytical cohort
+Recovered local PostgreSQL all-sector source,956157,,data/derived/tables/Table1_source_data.csv,context_only,Recovered local observatorio_nacional.contratos_secop snapshot
+Closed pharmaceutical analytical cohort,162271,,data/derived/tables/Table1_source_data.csv; data/derived/figures/Fig1_source_data.csv,consistent,Matches sum of Fig1 annual indexed pharmaceutical contracts
+Z-score analyzed contracts aligned in revised manuscript,147020,685,manuscript/Manuscript_main_submission.md,aligned_to_recovered_source,Manuscript aligned to recovered original zscore_alertas_secop snapshot and Fig3 denominator
+Z-score yearly source-data sum after reconciliation,147020,685,data/derived/figures/Fig3_yearly_source_data.csv,aligned_to_recovered_source,Fig3 yearly alerts updated from recovered original zscore_alertas_secop snapshot
+Z-score previous manuscript/source-data difference,650,5,calculated,resolved,Previous 147670/690 manuscript count and 147020/683 Fig3 count replaced by 147020/685
