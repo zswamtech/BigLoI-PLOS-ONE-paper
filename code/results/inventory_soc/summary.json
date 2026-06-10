@@ -1,0 +1,52 @@
+{
+  "model": "pharmaceutical_inventory_soc",
+  "interpretation": {
+    "objective": "Explore whether concentrated procurement and supply bottlenecks can generate heavy-tailed shortage cascades.",
+    "not_for_causal_claims": true,
+    "use_case": "Scenario laboratory for Colombian pharmaceutical inventory risk."
+  },
+  "parameters": {
+    "seed": 11,
+    "days": 730,
+    "hospitals": 64,
+    "suppliers": 9,
+    "medicines": 10,
+    "supplier_concentration_alpha": 1.35,
+    "national_shock_probability": 0.02
+  },
+  "market_structure": {
+    "supplier_shares": [
+      0.462928,
+      0.181603,
+      0.105051,
+      0.071241,
+      0.052711,
+      0.041211,
+      0.033468,
+      0.027947,
+      0.023839
+    ],
+    "top_supplier_share": 0.462928,
+    "supplier_hhi": 0.270339
+  },
+  "system_outcomes": {
+    "total_avalanches": 20,
+    "mean_daily_stockout_pairs": 0.0507,
+    "mean_daily_shortage_units": 0.8597,
+    "max_daily_stockout_pairs": 4,
+    "largest_avalanche_stockout_pairs": 13,
+    "largest_avalanche_shortage_units": 159.0966,
+    "median_avalanche_size": 1.0,
+    "p95_avalanche_size": 3.5,
+    "p99_avalanche_size": 11.1,
+    "mean_avalanche_duration": 1.35
+  },
+  "tail_diagnostics": {
+    "tail_sample_size": 20,
+    "xmin": 1.0,
+    "alpha": 4.6661,
+    "loglog_slope": -1.0796,
+    "loglog_r2": 0.8934,
+    "heavy_tail_evidence": true
+  }
+}

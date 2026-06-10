@@ -1,12 +1,12 @@
 metric,reported_value,numeric_value,unit
 Total SECOP-II contracts (API universe),272814,272814,contracts
 Pharmaceutical contracts indexed in PostgreSQL,162271,162271,contracts
-Total contracts in PostgreSQL (all sectors),339031,339031,contracts
+Total contracts in recovered local PostgreSQL source,956157,956157,contracts
 Total contracted value (pharmaceutical BD),17.07,17.07,billones_cop
-Total contracted value (all sectors BD),238.2,238.2,billones_cop
+Total contracted value (all sectors recovered local source),294.7,294.7,billones_cop
 Total contracted value (API universe),42.00,42.0,billones_cop
 Average value per pharmaceutical contract,105,105,millones_cop
-Unique pharmaceutical providers (BD),50577,50577,providers
+Unique pharmaceutical providers in closed cohort,50460,50460,providers
 Regions covered,36-37,,regional_codes
 Period (pharmaceutical BD active years),2020 to 2025,,period
 Period (monitored SECOP-II API),January 2015 onward,,period

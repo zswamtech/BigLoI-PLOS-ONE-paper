@@ -1,0 +1,5 @@
+year,field_scope,unique_rows,manuscript_count,gap_vs_manuscript,notes
+2025,objeto_a_contratar,8584,22033,13449,Monthly SECOP API audit using manuscript inclusion terms and composite UID.
+2025,objeto_del_proceso,8292,22033,13741,Monthly SECOP API audit using manuscript inclusion terms and composite UID.
+2025,combined_unique,8598,22033,13435,Searching both fields adds only 14 unique records beyond objeto_a_contratar.
+2025,legacy_uid_unique,8410,22033,13623,Legacy UID strategy would collapse 188 additional records versus composite UID.

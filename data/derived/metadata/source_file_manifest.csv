@@ -3,8 +3,8 @@ Fig1_source_data.csv,figure,Fig 1,Submission manuscript annual series plus front
 Fig2_source_data.csv,figure,Fig 2,Submission manuscript geographic breakdown plus frontend figure mapping,Bogota D.C. reported as combined SECOP codes
 Fig3_category_source_data.csv,figure,Fig 3 panel A,Submission manuscript category anomaly table plus frontend figure mapping,Ordered in manuscript order
 Fig3_yearly_source_data.csv,figure,Fig 3 panel B,Submission manuscript yearly anomaly table plus frontend figure mapping,Covers 2020 to 2025
-Fig4_top10_source_data.csv,figure,Fig 4 provider bar chart,Frontend verified fallback values consistent with manuscript concentration summary,Contains top 10 provider shares and cumulative shares
-Fig4_lorenz_source_data.csv,figure,Fig 4 Lorenz curve,Frontend verified fallback Lorenz control points consistent with manuscript concentration summary,Minimal points used to reproduce the schematic Lorenz display
+Fig4_top10_source_data.csv,figure,Fig 4 provider bar chart,Recovered original PostgreSQL snapshot; positive-value closed 2020-2025 cohort,Contains top 10 provider shares and cumulative shares rounded for display
+Fig4_lorenz_source_data.csv,figure,Fig 4 Lorenz curve,Recovered original PostgreSQL snapshot; positive-value closed 2020-2025 cohort,Control points used to reproduce the schematic Lorenz display
 Fig5_notes.md,figure,Fig 5,Conceptual source note anchored in manuscript sections 2.6 and 3.5 plus local evidence matrix,No single numeric dataset
 Fig6_components.csv,figure,Fig 6,Submission manuscript Table 2 plus frontend architecture diagram,Seven layers represented as machine-readable components
 Table1_source_data.csv,table,Table 1,Submission manuscript Table 1,Machine-readable rendering of numbered table values

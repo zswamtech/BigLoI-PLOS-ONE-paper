@@ -14,4 +14,10 @@ The goal is not to expose the entire monorepo here, but to isolate the minimum r
 Current status:
 
 - source-data regeneration scripts are available in code/scripts/;
+- exploratory simulation scripts are available in code/scripts/ for inventory-criticality analysis;
 - environment notes still need to be finalized in code/environment/ before public release.
+
+Additional exploratory script:
+
+- code/scripts/simulate_inventory_soc.py runs a self-organized-criticality style simulation for pharmaceutical inventories under supplier concentration, stochastic demand, and cascading stockouts;
+- code/scripts/run_inventory_soc_simulation.sh is the recommended entry point from the workspace root because it prefers the project virtual environment when available.

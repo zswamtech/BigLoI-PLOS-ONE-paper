@@ -1,8 +1,8 @@
 layer,primary_technology,main_function
-Recoleccion,Python / API Socrata,Ingesta incremental de SECOP-II INVIMA y SISMED
-Almacenamiento,PostgreSQL / Pinecone / MongoDB,Datos relacionales vectoriales y no estructurados
-Procesamiento,FastAPI / pandas,Limpieza normalizacion clasificacion ABC y motor Z-score
-IA generativa,Claude 3.5 Sonnet / GPT-4o,RAG con busqueda hibrida semantica y TF-IDF
-Aprendizaje automatico,scikit-learn,Prediccion de demanda k-means y PCA
-Contratos inteligentes,Solidity / Chainlink CRE / Sepolia,Automatizacion de pagos en 5 estados y NFT de facturas
-Visualizacion,React / TypeScript,Observatorio publico con series temporales mapas y alertas
+Data collection,Python / Socrata API,"Incremental ingestion of SECOP-II, INVIMA, and SISMED"
+Storage,PostgreSQL / Pinecone / MongoDB,"Relational, vector, and unstructured data"
+Processing,FastAPI / pandas,"Cleaning, normalization, ABC classification, and Z-score engine"
+Generative AI,Claude 3.5 Sonnet / GPT-4o,"RAG with hybrid semantic search and TF-IDF"
+Machine learning,scikit-learn,"Demand prediction, k-means, and PCA"
+Smart contracts,Solidity / Chainlink CRE / Sepolia,"Payment automation in 5 states and invoice NFTs"
+Visualization,React / TypeScript,"Public observatory with time series, maps, and alerts"
