@@ -9,6 +9,6 @@
 - [x] Add minimal reproduction scripts.
 - [x] Add software environment notes.
 - [x] Verify public links (GitHub + Zenodo concept DOI).
-- [ ] Create GitHub release **v0.2.0**.
+- [x] Create GitHub release **v0.2.0**.
 - [ ] Archive/new version on Zenodo (keeps concept DOI 10.5281/zenodo.19074137).
 - [x] Update README / CITATION.cff / RELEASE_METADATA for R2 numbers.
