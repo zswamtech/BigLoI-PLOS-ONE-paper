@@ -23,66 +23,65 @@ METADATA_DIR = DERIVED_DIR / "metadata"
 
 
 FIG1_ROWS = [
-    {"year": 2020, "contracts_indexed_bd": 35330, "value_thousand_million_cop": 3302.6, "value_billones_cop": 3.3026, "coverage_note": "Full year"},
-    {"year": 2021, "contracts_indexed_bd": 53832, "value_thousand_million_cop": 2856.7, "value_billones_cop": 2.8567, "coverage_note": "Full year"},
-    {"year": 2022, "contracts_indexed_bd": 30991, "value_thousand_million_cop": 2648.4, "value_billones_cop": 2.6484, "coverage_note": "Full year"},
-    {"year": 2023, "contracts_indexed_bd": 10705, "value_thousand_million_cop": 1603.1, "value_billones_cop": 1.6031, "coverage_note": "Full year"},
-    {"year": 2024, "contracts_indexed_bd": 9380, "value_thousand_million_cop": 1137.5, "value_billones_cop": 1.1375, "coverage_note": "Full year"},
-    {"year": 2025, "contracts_indexed_bd": 22033, "value_thousand_million_cop": 5519.3, "value_billones_cop": 5.5193, "coverage_note": "Full year"},
+    {"year": 2020, "contracts_indexed_bd": 35242, "value_thousand_million_cop": 3294.5, "value_billones_cop": 3.2945, "coverage_note": "Full year; contract-level veterinary exclusions applied"},
+    {"year": 2021, "contracts_indexed_bd": 53723, "value_thousand_million_cop": 2846.1, "value_billones_cop": 2.8461, "coverage_note": "Full year; contract-level veterinary exclusions applied"},
+    {"year": 2022, "contracts_indexed_bd": 30927, "value_thousand_million_cop": 2639.6, "value_billones_cop": 2.6396, "coverage_note": "Full year; contract-level veterinary exclusions applied"},
+    {"year": 2023, "contracts_indexed_bd": 10648, "value_thousand_million_cop": 1527.9, "value_billones_cop": 1.5279, "coverage_note": "Full year; contract-level veterinary exclusions applied"},
+    {"year": 2024, "contracts_indexed_bd": 9335, "value_thousand_million_cop": 1124.0, "value_billones_cop": 1.1240, "coverage_note": "Full year; contract-level veterinary exclusions applied"},
+    {"year": 2025, "contracts_indexed_bd": 21955, "value_thousand_million_cop": 5496.8, "value_billones_cop": 5.4968, "coverage_note": "Full year; contract-level veterinary exclusions applied"},
 ]
 
 FIG2_ROWS = [
-    {"region": "Bogota D.C. combined", "contracts": 18316, "value_thousand_million_cop": 9665.6, "pct_total_national_value": 56.3},
-    {"region": "Antioquia", "contracts": 48039, "value_thousand_million_cop": 1316.2, "pct_total_national_value": 7.7},
-    {"region": "Valle del Cauca", "contracts": 5888, "value_thousand_million_cop": 706.7, "pct_total_national_value": 4.1},
-    {"region": "Boyaca", "contracts": 9195, "value_thousand_million_cop": 633.0, "pct_total_national_value": 3.7},
-    {"region": "Huila", "contracts": 4212, "value_thousand_million_cop": 472.8, "pct_total_national_value": 2.8},
-    {"region": "Tolima", "contracts": 3816, "value_thousand_million_cop": 431.6, "pct_total_national_value": 2.5},
-    {"region": "Santander", "contracts": 4319, "value_thousand_million_cop": 418.8, "pct_total_national_value": 2.4},
-    {"region": "Cauca", "contracts": 2023, "value_thousand_million_cop": 395.6, "pct_total_national_value": 2.3},
-    {"region": "Atlantico", "contracts": 5087, "value_thousand_million_cop": 351.4, "pct_total_national_value": 2.0},
+    {"region": "Bogota D.C. combined", "contracts": 18020, "value_thousand_million_cop": 9607.0, "pct_total_national_value": 56.7},
+    {"region": "Antioquia", "contracts": 47964, "value_thousand_million_cop": 1312.2, "pct_total_national_value": 7.8},
+    {"region": "Valle del Cauca", "contracts": 5843, "value_thousand_million_cop": 696.5, "pct_total_national_value": 4.1},
+    {"region": "Boyaca", "contracts": 9142, "value_thousand_million_cop": 623.6, "pct_total_national_value": 3.7},
+    {"region": "Tolima", "contracts": 3773, "value_thousand_million_cop": 426.9, "pct_total_national_value": 2.5},
+    {"region": "Santander", "contracts": 4278, "value_thousand_million_cop": 403.8, "pct_total_national_value": 2.4},
+    {"region": "Huila", "contracts": 4177, "value_thousand_million_cop": 403.2, "pct_total_national_value": 2.4},
+    {"region": "Cauca", "contracts": 2015, "value_thousand_million_cop": 389.6, "pct_total_national_value": 2.3},
+    {"region": "Atlantico", "contracts": 5075, "value_thousand_million_cop": 348.8, "pct_total_national_value": 2.1},
 ]
 
 FIG3_CATEGORY_ROWS = [
-    {"category_label": "Analgesico", "contracts_analyzed": 42, "pct_with_alert": 9.5, "z_max": 4.22, "ratio_max_to_category_mean": 9.3},
-    {"category_label": "Diabetes", "contracts_analyzed": 281, "pct_with_alert": 8.2, "z_max": 6.58, "ratio_max_to_category_mean": 15.3},
-    {"category_label": "Antiviral", "contracts_analyzed": 37, "pct_with_alert": 5.4, "z_max": 4.83, "ratio_max_to_category_mean": 14.2},
-    {"category_label": "Antibiotico", "contracts_analyzed": 219, "pct_with_alert": 3.7, "z_max": 8.32, "ratio_max_to_category_mean": 24.1},
-    {"category_label": "Insumo medico", "contracts_analyzed": 2312, "pct_with_alert": 2.6, "z_max": 22.45, "ratio_max_to_category_mean": 86.6},
-    {"category_label": "Oncologico", "contracts_analyzed": 403, "pct_with_alert": 0.7, "z_max": 19.34, "ratio_max_to_category_mean": 139.0},
+    {"category_label": "Analgesico", "contracts_analyzed": 42, "pct_with_alert": 9.52, "z_max": 4.22, "ratio_max_to_category_mean": 9.28},
+    {"category_label": "Diabetes", "contracts_analyzed": 279, "pct_with_alert": 7.89, "z_max": 6.61, "ratio_max_to_category_mean": 15.52},
+    {"category_label": "Antiviral", "contracts_analyzed": 37, "pct_with_alert": 5.41, "z_max": 4.83, "ratio_max_to_category_mean": 14.19},
+    {"category_label": "Antibiotico", "contracts_analyzed": 217, "pct_with_alert": 3.23, "z_max": 8.89, "ratio_max_to_category_mean": 26.41},
+    {"category_label": "Insumo medico", "contracts_analyzed": 2232, "pct_with_alert": 2.46, "z_max": 22.34, "ratio_max_to_category_mean": 88.69},
+    {"category_label": "Oncologico", "contracts_analyzed": 400, "pct_with_alert": 0.75, "z_max": 19.27, "ratio_max_to_category_mean": 138.47},
 ]
 
 FIG3_YEARLY_ROWS = [
-    {"year": 2020, "contracts_analyzed": 35326, "contracts_with_alert": 121, "alert_rate_pct": 0.34},
-    {"year": 2021, "contracts_analyzed": 53827, "contracts_with_alert": 165, "alert_rate_pct": 0.31},
-    {"year": 2022, "contracts_analyzed": 30990, "contracts_with_alert": 130, "alert_rate_pct": 0.42},
-    {"year": 2023, "contracts_analyzed": 10705, "contracts_with_alert": 89, "alert_rate_pct": 0.83},
-    {"year": 2024, "contracts_analyzed": 9380, "contracts_with_alert": 86, "alert_rate_pct": 0.92},
-    {"year": 2025, "contracts_analyzed": 6792, "contracts_with_alert": 94, "alert_rate_pct": 1.38},
+    {"year": 2020, "contracts_analyzed": 35238, "contracts_with_alert": 120, "alert_rate_pct": 0.3405},
+    {"year": 2021, "contracts_analyzed": 53718, "contracts_with_alert": 163, "alert_rate_pct": 0.3034},
+    {"year": 2022, "contracts_analyzed": 30926, "contracts_with_alert": 126, "alert_rate_pct": 0.4074},
+    {"year": 2023, "contracts_analyzed": 10648, "contracts_with_alert": 84, "alert_rate_pct": 0.7889},
+    {"year": 2024, "contracts_analyzed": 9335, "contracts_with_alert": 83, "alert_rate_pct": 0.8891},
+    {"year": 2025, "contracts_analyzed": 6729, "contracts_with_alert": 88, "alert_rate_pct": 1.3078},
 ]
 
 FIG4_TOP10_ROWS = [
-    {"rank": 1, "provider_label": "VECOL SA", "pct_share_total_value": 5.6057, "cumulative_pct_share": 5.6057},
-    {"rank": 2, "provider_label": "HOSMIL", "pct_share_total_value": 5.4234, "cumulative_pct_share": 11.0291},
-    {"rank": 3, "provider_label": "ETICOS U.T. 2020", "pct_share_total_value": 3.4995, "cumulative_pct_share": 14.5286},
-    {"rank": 4, "provider_label": "OPS/OMS Colombia", "pct_share_total_value": 2.6779, "cumulative_pct_share": 17.2064},
-    {"rank": 5, "provider_label": "U. Antioquia", "pct_share_total_value": 2.5869, "cumulative_pct_share": 19.7934},
-    {"rank": 6, "provider_label": "Agencia Atenea", "pct_share_total_value": 2.0880, "cumulative_pct_share": 21.8814},
-    {"rank": 7, "provider_label": "DISCOLMETS SAS", "pct_share_total_value": 1.8983, "cumulative_pct_share": 23.7797},
-    {"rank": 8, "provider_label": "U.T. MEDIPOL 14", "pct_share_total_value": 1.8377, "cumulative_pct_share": 25.6174},
-    {"rank": 9, "provider_label": "POLPHARMA UT", "pct_share_total_value": 1.5887, "cumulative_pct_share": 27.2061},
-    {"rank": 10, "provider_label": "U.T. MEDIPOL 15", "pct_share_total_value": 1.5657, "cumulative_pct_share": 28.7718},
+    {"rank": 1, "provider_label": "VECOL SA*", "pct_share_total_value": 5.6517, "cumulative_pct_share": 5.6517},
+    {"rank": 2, "provider_label": "HOSMIL", "pct_share_total_value": 5.4679, "cumulative_pct_share": 11.1196},
+    {"rank": 3, "provider_label": "ETICOS U.T. 2020", "pct_share_total_value": 3.5282, "cumulative_pct_share": 14.6478},
+    {"rank": 4, "provider_label": "OPS/OMS Colombia", "pct_share_total_value": 2.6999, "cumulative_pct_share": 17.3476},
+    {"rank": 5, "provider_label": "U. Antioquia", "pct_share_total_value": 2.6082, "cumulative_pct_share": 19.9558},
+    {"rank": 6, "provider_label": "Agencia Atenea", "pct_share_total_value": 2.1051, "cumulative_pct_share": 22.0609},
+    {"rank": 7, "provider_label": "DISCOLMETS SAS", "pct_share_total_value": 1.9139, "cumulative_pct_share": 23.9748},
+    {"rank": 8, "provider_label": "U.T. MEDIPOL 14", "pct_share_total_value": 1.8528, "cumulative_pct_share": 25.8276},
+    {"rank": 9, "provider_label": "POLPHARMA UT", "pct_share_total_value": 1.6017, "cumulative_pct_share": 27.4293},
+    {"rank": 10, "provider_label": "U.T. MEDIPOL 15", "pct_share_total_value": 1.5785, "cumulative_pct_share": 29.0079},
 ]
 
 FIG4_LORENZ_ROWS = [
-    {"provider_share_pct": 0.0, "cumulative_value_pct": 0.0},
-    {"provider_share_pct": 0.002, "cumulative_value_pct": 5.6057},
-    {"provider_share_pct": 0.006, "cumulative_value_pct": 14.5286},
-    {"provider_share_pct": 0.02, "cumulative_value_pct": 28.7718},
-    {"provider_share_pct": 3.0, "cumulative_value_pct": 85.8695},
-    {"provider_share_pct": 10.0, "cumulative_value_pct": 93.5},
-    {"provider_share_pct": 30.0, "cumulative_value_pct": 97.8},
-    {"provider_share_pct": 50.0, "cumulative_value_pct": 99.2},
+    {"provider_share_pct": 0.0020, "cumulative_value_pct": 5.6517},
+    {"provider_share_pct": 0.0060, "cumulative_value_pct": 14.6478},
+    {"provider_share_pct": 0.0199, "cumulative_value_pct": 29.0079},
+    {"provider_share_pct": 3.0005, "cumulative_value_pct": 85.8305},
+    {"provider_share_pct": 10.0010, "cumulative_value_pct": 93.7105},
+    {"provider_share_pct": 30.0010, "cumulative_value_pct": 97.7109},
+    {"provider_share_pct": 50.0010, "cumulative_value_pct": 99.0718},
     {"provider_share_pct": 100.0, "cumulative_value_pct": 100.0},
 ]
 
@@ -98,13 +97,13 @@ FIG6_ROWS = [
 
 TABLE1_ROWS = [
     {"metric": "Total SECOP-II contracts (API universe)", "reported_value": "272814", "numeric_value": 272814, "unit": "contracts"},
-    {"metric": "Pharmaceutical contracts indexed in PostgreSQL", "reported_value": "162271", "numeric_value": 162271, "unit": "contracts"},
+    {"metric": "Pharmaceutical contracts after contract-level veterinary exclusions", "reported_value": "161830", "numeric_value": 161830, "unit": "contracts"},
     {"metric": "Total contracts in recovered local PostgreSQL source", "reported_value": "956157", "numeric_value": 956157, "unit": "contracts"},
-    {"metric": "Total contracted value (pharmaceutical BD)", "reported_value": "17.07", "numeric_value": 17.07, "unit": "billones_cop"},
+    {"metric": "Total contracted value (corrected pharmaceutical cohort)", "reported_value": "16.93", "numeric_value": 16.93, "unit": "billones_cop"},
     {"metric": "Total contracted value (all sectors recovered local source)", "reported_value": "294.7", "numeric_value": 294.7, "unit": "billones_cop"},
     {"metric": "Total contracted value (API universe)", "reported_value": "42.00", "numeric_value": 42.00, "unit": "billones_cop"},
-    {"metric": "Average value per pharmaceutical contract", "reported_value": "105", "numeric_value": 105, "unit": "millones_cop"},
-    {"metric": "Unique pharmaceutical providers in closed cohort", "reported_value": "50460", "numeric_value": 50460, "unit": "providers"},
+    {"metric": "Average value per positive-value pharmaceutical contract", "reported_value": "104.69", "numeric_value": 104.69, "unit": "millones_cop"},
+    {"metric": "Unique normalized suppliers in corrected positive-value cohort", "reported_value": "50225", "numeric_value": 50225, "unit": "providers"},
     {"metric": "Regions covered", "reported_value": "36-37", "numeric_value": "", "unit": "regional_codes"},
     {"metric": "Period (pharmaceutical BD active years)", "reported_value": "2020 to 2025", "numeric_value": "", "unit": "period"},
     {"metric": "Period (monitored SECOP-II API)", "reported_value": "January 2015 onward", "numeric_value": "", "unit": "period"},
@@ -186,7 +185,7 @@ Construction basis:
 - Right column: prototype digital states validated in Sepolia testnet as a proof of concept.
 - Current-cycle reference: 60 to 180 days, with a median institutional reference of 90 days.
 - Prototype-cycle reference: approximately 30 hours.
-- Financial scenario shown in the figure: annual flow of COP 3.7 billones, financial cost of 2% monthly, and a theoretical reduction of the administrative digital cycle from 90 days to about 30 hours.
+- Financial scenario shown in the figure: corrected mean annual flow of COP 2.82 billones and corrected 2025 flow of COP 5.50 billones, financial cost of 2% monthly, and a theoretical reduction of the administrative digital cycle from 90 days to about 30 hours. The corresponding illustrative outputs are COP 167-325 billion/year.
 
 Primary manuscript anchors:
 

@@ -1,7 +1,9 @@
 cff-version: 1.2.0
 title: "Computational surveillance of Colombian public pharmaceutical procurement using public administrative data: a reproducible analysis of a closed 2020-2025 cohort"
-message: "If you use this article-specific package, please cite the manuscript and repository release."
+message: "If you use this article-specific package, please cite the manuscript (when published) and this repository release."
 type: software
+version: "0.2.0"
+date-released: "2026-07-22"
 authors:
   - family-names: Soto
     given-names: Andres
@@ -10,5 +12,10 @@ repository-code: "https://github.com/zswamtech/BigLoI-PLOS-ONE-paper"
 identifiers:
   - type: doi
     value: 10.5281/zenodo.19074137
+    description: Zenodo concept DOI (all versions)
 license: "CC-BY-4.0"
-abstract: "Article-specific reproducibility package for the BigLoI PLOS ONE manuscript, including submission files, figures, derived data, statements, and minimal reproduction scripts."
+abstract: >-
+  Article-specific reproducibility package for the BigLoI PLOS ONE manuscript
+  (PONE-D-26-13579R2), including submission files, figures, derived data,
+  veterinary-exclusion audit artifacts, statements, and minimal reproduction scripts.
+  Corrected closed cohort: 161,830 pharmaceutical contracts (2020-2025).
