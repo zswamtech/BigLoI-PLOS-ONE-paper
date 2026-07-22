@@ -1,0 +1,143 @@
+source_row_id,manual_review_status,manual_review_reason,review_confidence
+451289,EXCLUDE_VETERINARY,Alimentos y medicamentos destinados explícitamente a caninos,HIGH
+456830,EXCLUDE_VETERINARY,Vacuna antirrábica destinada explícitamente a perros y gatos,HIGH
+454668,KEEP_HUMAN,Desarrollo explícito de vacuna antirrábica humana,HIGH
+428501,KEEP_HUMAN,Proyecto de reforestación sin objeto farmacéutico ni veterinario,HIGH
+441992,EXCLUDE_VETERINARY,Vacuna antirrábica destinada explícitamente a perros y gatos,HIGH
+452442,KEEP_HUMAN,Producción y distribución explícita de vacunas para uso humano,HIGH
+424393,EXCLUDE_VETERINARY,Insumos medicamentos y alimento para salud y nutrición animal,HIGH
+456262,EXCLUDE_VETERINARY,Bienes e insumos destinados explícitamente al bienestar y nutrición animal,HIGH
+422553,EXCLUDE_VETERINARY,Salud pública zoonótica mediante vacunación antirrábica de caninos y felinos,HIGH
+454971,EXCLUDE_VETERINARY,Herramientas para sostenimiento de equinos y caninos,HIGH
+419000,KEEP_HUMAN,Compra de maquinaria para unidades agropecuarias sin objeto veterinario farmacéutico,HIGH
+421108,EXCLUDE_VETERINARY,Salud pública zoonótica mediante vacunación antirrábica canina y felina,HIGH
+457612,EXCLUDE_VETERINARY,Vacuna contra encefalitis equina destinada a animales,HIGH
+440430,EXCLUDE_VETERINARY,Vacuna contra encefalitis equina destinada a animales,HIGH
+419625,EXCLUDE_VETERINARY,Medicamentos veterinarios para centro de bienestar animal,HIGH
+459423,EXCLUDE_VETERINARY,Gestión zoonótica con vacunación esterilización y censo de perros y gatos,HIGH
+420900,KEEP_HUMAN,Insumos agrícolas para recuperación de cosechas sin objeto veterinario farmacéutico,HIGH
+428500,EXCLUDE_VETERINARY,Caninos medicamentos veterinarios y material de entrenamiento,HIGH
+454992,EXCLUDE_VETERINARY,Reactivos para laboratorio nacional de diagnóstico veterinario,HIGH
+454015,EXCLUDE_VETERINARY,Urgencias esterilizaciones e insumos para brigadas médico veterinarias,HIGH
+451898,EXCLUDE_VETERINARY,Prueba de vacunas para enfermedad de truchas en granjas acuícolas,HIGH
+452149,KEEP_HUMAN,Maquinaria y equipos para unidades productivas sin objeto veterinario farmacéutico,HIGH
+459082,EXCLUDE_VETERINARY,Medicamentos veterinarios para esterilización canina y felina,HIGH
+420819,EXCLUDE_VETERINARY,Salud pública zoonótica con vacunación y manejo de perros y gatos,HIGH
+423893,EXCLUDE_VETERINARY,Adquisición de semovientes caninos para vigilancia,HIGH
+457260,EXCLUDE_VETERINARY,Elementos para montar y sostener semovientes equinos,HIGH
+432260,EXCLUDE_VETERINARY,Asistencia veterinaria y medicamentos para caninos y felinos,HIGH
+442686,EXCLUDE_VETERINARY,Reactivos para laboratorio nacional de diagnóstico veterinario,HIGH
+452150,EXCLUDE_VETERINARY,Medicamentos para animales atendidos en centro de bienestar animal,HIGH
+451744,EXCLUDE_VETERINARY,Alimento destinado explícitamente a semovientes caninos,HIGH
+419034,KEEP_HUMAN,Documentos para aprovechamiento de asfalto sin objeto farmacéutico ni veterinario,HIGH
+419059,EXCLUDE_VETERINARY,Medicamentos destinados explícitamente a semovientes caninos,HIGH
+458537,EXCLUDE_VETERINARY,Hospitalización veterinaria y medicamentos para caninos de bomberos,HIGH
+454078,EXCLUDE_VETERINARY,Biológico para vacunación antirrábica canina y felina,HIGH
+454231,EXCLUDE_VETERINARY,Pruebas diagnósticas y vacunas de especies animales,HIGH
+453037,EXCLUDE_VETERINARY,Alimento para animales registrados en el sistema distrital de parques,HIGH
+454821,EXCLUDE_VETERINARY,Alimentos y medicamentos destinados explícitamente a caninos,HIGH
+431191,EXCLUDE_VETERINARY,Medicamentos veterinarios para centro de atención y protección animal,HIGH
+424430,EXCLUDE_VETERINARY,Alimentos y medicamentos destinados explícitamente a caninos,HIGH
+451500,KEEP_HUMAN,Reactivos para potabilización de agua sin objeto farmacéutico ni veterinario,HIGH
+451336,EXCLUDE_VETERINARY,Salud pública zoonótica mediante vacunación antirrábica canina y felina,HIGH
+457714,EXCLUDE_VETERINARY,Servicios médicos veterinarios y medicamentos para caninos,HIGH
+457647,EXCLUDE_VETERINARY,Servicios médicos veterinarios y medicamentos para caninos,HIGH
+454898,EXCLUDE_VETERINARY,Productos veterinarios e insumos agropecuarios para productores,HIGH
+454059,EXCLUDE_VETERINARY,Insumos agroveterinarios para granja agrícola y extensión rural,HIGH
+459111,EXCLUDE_VETERINARY,Concentrado para animales de laboratorios de análisis y diagnóstico,HIGH
+424285,EXCLUDE_VETERINARY,Insumos para programas y actividades pecuarias,HIGH
+423102,EXCLUDE_VETERINARY,Salud pública zoonótica y albergue canino y felino,HIGH
+424421,EXCLUDE_VETERINARY,Insumos y medicamentos para atención médico veterinaria,HIGH
+427085,EXCLUDE_VETERINARY,Alimento medicamentos y servicios veterinarios para caninos,HIGH
+419185,EXCLUDE_VETERINARY,Medicamentos veterinarios para fauna y programas agropecuarios,HIGH
+459663,EXCLUDE_VETERINARY,Urgencias y tratamientos veterinarios para animales abandonados,HIGH
+419471,EXCLUDE_VETERINARY,Medicamentos veterinarios para extensión agropecuaria,HIGH
+420724,EXCLUDE_VETERINARY,Medicamentos y control natal de caninos y felinos,HIGH
+454232,EXCLUDE_VETERINARY,Medicamentos veterinarios para atención pecuaria,HIGH
+456653,EXCLUDE_VETERINARY,Alimento y productos veterinarios para animales alojados en el INS,HIGH
+460567,EXCLUDE_VETERINARY,Atención veterinaria integral para unidad canina,HIGH
+451193,EXCLUDE_VETERINARY,Sostenimiento y material veterinario canino,HIGH
+427096,EXCLUDE_VETERINARY,Alimento medicamentos y servicios veterinarios para caninos,HIGH
+458136,EXCLUDE_VETERINARY,Medicamentos veterinarios para brigadas de sanidad animal,HIGH
+455184,EXCLUDE_VETERINARY,Medicamentos veterinarios para mejoramiento bovino y porcino,HIGH
+452033,EXCLUDE_VETERINARY,Material veterinario para semovientes caninos,HIGH
+452516,EXCLUDE_VETERINARY,Insumos para bienestar animal y programas pecuarios,HIGH
+458583,EXCLUDE_VETERINARY,Medicamentos para sanidad y bienestar animal,HIGH
+455332,EXCLUDE_VETERINARY,Insumos para actividades agropecuarias,HIGH
+460824,EXCLUDE_VETERINARY,Animales concentrados y medicamentos para granja integral,HIGH
+442356,EXCLUDE_VETERINARY,Atención alimentación y medicamentos para hogar de paso animal,HIGH
+452317,EXCLUDE_VETERINARY,Urgencias y tratamientos veterinarios para animales abandonados,HIGH
+419304,EXCLUDE_VETERINARY,Medicamentos para implementación genética ganadera,HIGH
+455842,EXCLUDE_VETERINARY,Medicamentos veterinarios para desarrollo rural y protección animal,HIGH
+421656,EXCLUDE_VETERINARY,Insumos agroveterinarios para granja y extensión rural,HIGH
+458602,EXCLUDE_VETERINARY,Medicamentos para animales residentes en coso municipal,HIGH
+459497,EXCLUDE_VETERINARY,Medicamentos para esterilización canina y felina,HIGH
+431061,EXCLUDE_VETERINARY,Atención medicamentos y alimentos para animales del coso municipal,HIGH
+421369,EXCLUDE_VETERINARY,Insumos para programas de bienestar animal,HIGH
+421020,EXCLUDE_VETERINARY,Medicamentos de uso veterinario para animales alojados en el INS,HIGH
+419948,EXCLUDE_VETERINARY,Medicamentos veterinarios para sanidad y bienestar animal,HIGH
+435294,NEEDS_REVIEW,El objeto menciona medicamentos para programas generales sin especie ni uso suficiente,LOW
+422158,EXCLUDE_VETERINARY,Medicamentos veterinarios para pequeños productores pecuarios,HIGH
+443514,EXCLUDE_VETERINARY,Vacunación animal contra enfermedades clostridiales,HIGH
+425585,EXCLUDE_VETERINARY,Medicamentos para animales residentes en coso municipal,HIGH
+433294,EXCLUDE_VETERINARY,Medicamentos veterinarios para programa de protección animal,HIGH
+440727,EXCLUDE_VETERINARY,Medicamentos e insumos para animales de coso municipal,HIGH
+427090,EXCLUDE_VETERINARY,Alimento medicamentos y servicios veterinarios para caninos,HIGH
+437316,EXCLUDE_VETERINARY,Medicamentos para asistencia técnica de especies menores,HIGH
+433372,NEEDS_REVIEW,Alimento para animales usados en investigación de salud pública sin aclarar finalidad humana,MEDIUM
+437845,EXCLUDE_VETERINARY,Sostenimiento y elementos para equinos y caninos,HIGH
+453453,EXCLUDE_VETERINARY,Atención veterinaria y vacunación de perros y gatos,HIGH
+436460,EXCLUDE_VETERINARY,Insumos veterinarios para equinos usados en hipoterapia,HIGH
+456641,EXCLUDE_VETERINARY,Medicamentos veterinarios para unidad de bienestar animal,HIGH
+429515,EXCLUDE_VETERINARY,Medicamentos para proyectos porcinos avícolas piscícolas y bovinos,HIGH
+427105,EXCLUDE_VETERINARY,Alimento medicamentos y servicios veterinarios para caninos,HIGH
+455994,EXCLUDE_VETERINARY,Medicamentos veterinarios para caninos militares,HIGH
+419806,KEEP_HUMAN,Maquinaria y equipos para programas municipales sin objeto farmacéutico ni veterinario,HIGH
+428043,EXCLUDE_VETERINARY,Insumos médico veterinarios y agrícolas para unidades agropecuarias,HIGH
+453282,NEEDS_REVIEW,Medicamentos para gestión ambiental sin especie población o uso clínico especificado,LOW
+422727,EXCLUDE_VETERINARY,Medicamentos veterinarios para fomento agropecuario,HIGH
+456559,EXCLUDE_VETERINARY,Salud pública mediante vacunación animal sin población humana,HIGH
+430544,NEEDS_REVIEW,Reactivos de inmunodiagnóstico sin especie ni finalidad diagnóstica especificada,LOW
+419194,EXCLUDE_VETERINARY,Alimentos medicamentos y servicios explícitamente veterinarios,HIGH
+421452,EXCLUDE_VETERINARY,Salud pública zoonótica mediante vacunación antirrábica de caninos y felinos,HIGH
+458953,EXCLUDE_VETERINARY,Sostenimiento canino y material veterinario,HIGH
+453973,EXCLUDE_VETERINARY,Medicamentos veterinarios para animales vulnerables,HIGH
+428099,KEEP_HUMAN,Insecticidas herbicidas y reactivos agrícolas sin objeto veterinario farmacéutico,HIGH
+422555,EXCLUDE_VETERINARY,Concentrado para mascotas de hogar de paso,HIGH
+432493,EXCLUDE_VETERINARY,Servicios médicos veterinarios para caninos de la Fuerza Aérea,HIGH
+421360,EXCLUDE_VETERINARY,Salud pública mediante vacunación animal sin población humana,HIGH
+422618,EXCLUDE_VETERINARY,Medicamentos veterinarios para brigadas de salud animal,HIGH
+460086,EXCLUDE_VETERINARY,Productos y servicios veterinarios para equinos,HIGH
+457293,EXCLUDE_VETERINARY,Medicamentos veterinarios para centro de bienestar animal,HIGH
+444288,EXCLUDE_VETERINARY,Medicamentos y vacunas para proyectos académicos pecuarios,HIGH
+427540,EXCLUDE_VETERINARY,Medicamentos veterinarios para extensión agropecuaria,HIGH
+459159,EXCLUDE_VETERINARY,Alimentos medicamentos y servicios veterinarios para caninos,HIGH
+453416,EXCLUDE_VETERINARY,Medicamentos veterinarios para esterilización canina y felina,HIGH
+431982,EXCLUDE_VETERINARY,Alimento vacunas e insumos para animales de granja,HIGH
+435187,EXCLUDE_VETERINARY,Material médico veterinario para equinos y caninos,HIGH
+419184,NEEDS_REVIEW,Medicamentos para programas generales sin especie ni uso veterinario explícito,LOW
+423341,EXCLUDE_VETERINARY,Hospitalización y medicamentos veterinarios para caninos de bomberos,HIGH
+425132,EXCLUDE_VETERINARY,Medicamentos de uso veterinario para hospital veterinario,HIGH
+459529,EXCLUDE_VETERINARY,Servicios médicos veterinarios para caninos de la Fuerza Aérea,HIGH
+458771,EXCLUDE_VETERINARY,Alimento medicamentos y servicios veterinarios para unidad canina,HIGH
+458764,EXCLUDE_VETERINARY,Alimento medicamentos y servicios veterinarios para unidad canina,HIGH
+418929,KEEP_HUMAN,Insumos para control biológico de mosca sin uso farmacéutico ni atención animal,HIGH
+426383,NEEDS_REVIEW,Reactivos para una hacienda sin especie prueba ni finalidad especificada,LOW
+437092,NEEDS_REVIEW,Reactivos de inmunodiagnóstico sin especie ni finalidad diagnóstica especificada,LOW
+455280,EXCLUDE_VETERINARY,Medicamentos veterinarios para equinos de parque nacional,HIGH
+422755,EXCLUDE_VETERINARY,Insumos veterinarios para centro de bienestar animal,HIGH
+419716,EXCLUDE_VETERINARY,Insumos para asistencia técnica agropecuaria y piscícola,HIGH
+435793,KEEP_HUMAN,Permetrina para instalaciones del Ejército sin objeto veterinario farmacéutico,HIGH
+457726,KEEP_HUMAN,Permetrina para instalaciones del Ejército sin objeto veterinario farmacéutico,HIGH
+441197,EXCLUDE_VETERINARY,Vacunación animal contra enfermedades clostridiales,HIGH
+432012,EXCLUDE_VETERINARY,Medicamentos para esterilización de caninos y felinos,HIGH
+455281,EXCLUDE_VETERINARY,Medicamentos e insumos para asistencia técnica agropecuaria,HIGH
+429794,EXCLUDE_VETERINARY,Medicamentos veterinarios para sanidad y bienestar animal,HIGH
+421473,EXCLUDE_VETERINARY,Insumos y medicamentos para semovientes de parque nacional,HIGH
+453112,EXCLUDE_VETERINARY,Vacunas y desparasitantes para bovinos y ovinos,HIGH
+453173,EXCLUDE_VETERINARY,Medicamentos y pruebas para fauna silvestre,HIGH
+423251,EXCLUDE_VETERINARY,Medicamentos veterinarios para esterilización canina y felina,HIGH
+427424,NEEDS_REVIEW,Medicamentos para haciendas universitarias sin especie ni uso especificado,LOW
+435776,EXCLUDE_VETERINARY,Medicamentos y vacunas destinados explícitamente a perros,HIGH
+424794,EXCLUDE_VETERINARY,Medicamentos destinados a hospital veterinario,HIGH
+429467,EXCLUDE_VETERINARY,Medicamentos veterinarios destinados a hospital veterinario,HIGH

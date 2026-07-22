@@ -1,0 +1,26 @@
+{
+  "generated_at": "2026-07-11T17:47:00.947Z",
+  "analysis_status": "PRELIMINARY_CANDIDATE_FILTER_NOT_APPROVED_FOR_MANUSCRIPT",
+  "source_view": "plos_one.original_closed_2020_2025_contracts",
+  "source_snapshot_label": "local_postgres_observatorio_nacional_recovered_2026_06_05",
+  "cohort_period": "2020-01-01 to 2025-12-31",
+  "year_field": "vigencia",
+  "provider_exclusion_pattern": "(veterinar|pecuari|agropecuari|vecol|pets|zoo|animal)",
+  "exclusion_scope": "provider_name_only",
+  "object_text_exclusion_applied": false,
+  "object_text_exclusion_note": "Object-text matching was not applied because it is broader and requires contract-level review.",
+  "review_requirement": "Every candidate contract must be classified before final corrected metrics are generated.",
+  "known_high_impact_false_positive": "A VECOL supplier-name match includes a MinSalud/INS human-immunobiologics contract and demonstrates that supplier-level exclusion alone is not sufficiently specific.",
+  "zscore_method": {
+    "value_field": "valor_contrato",
+    "grouping_field": "categoria",
+    "excluded_category": "NO_ESPECIFICADO",
+    "minimum_category_size": 10,
+    "standard_deviation": "sample",
+    "thresholds": [
+      1.5,
+      2,
+      3
+    ]
+  }
+}

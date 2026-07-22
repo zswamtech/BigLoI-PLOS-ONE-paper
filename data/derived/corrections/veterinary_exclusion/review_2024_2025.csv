@@ -1,0 +1,159 @@
+source_row_id,manual_review_status,manual_review_reason,review_confidence
+478028,KEEP_HUMAN,"Convenio del Ministerio de Salud y el INS para investigación, desarrollo y producción nacional de inmunobiológicos; corresponde al ámbito de salud humana, no a uso animal.",MEDIUM
+132687,KEEP_HUMAN,El objeto indica expresamente generación de capacidad productiva de vacunas humanas (COLOMBIAVAC).,HIGH
+471358,EXCLUDE_VETERINARY,"Vacunación antirrábica destinada expresamente a perros, gatos, caninos o felinos; es salud pública zoonótica de intervención animal y queda fuera del alcance humano.",HIGH
+486330,EXCLUDE_VETERINARY,"Vacunación antirrábica destinada expresamente a perros, gatos, caninos o felinos; es salud pública zoonótica de intervención animal y queda fuera del alcance humano.",HIGH
+95268,EXCLUDE_VETERINARY,"El objeto se refiere a una enfermedad, vacuna o diagnóstico propio de sanidad animal, fuera de la contratación farmacéutica humana.",HIGH
+478190,EXCLUDE_VETERINARY,"El objeto corresponde a control zoonótico mediante intervención, vacunación o esterilización de animales; aunque sea salud pública, queda fuera del alcance farmacéutico humano del paper.",HIGH
+478455,EXCLUDE_VETERINARY,"El objeto especifica medicamentos, insumos, material o servicios médicos de uso veterinario/animal, no humano.",HIGH
+481199,EXCLUDE_VETERINARY,"El objeto es claramente agropecuario, agrícola o productivo y no corresponde a contratación farmacéutica humana.",HIGH
+466576,EXCLUDE_VETERINARY,"El objeto especifica medicamentos, insumos, material o servicios médicos de uso veterinario/animal, no humano.",HIGH
+484733,EXCLUDE_VETERINARY,Reactivos o pruebas destinados expresamente al diagnóstico veterinario o análisis de especies animales.,HIGH
+95292,NEEDS_REVIEW,"El objeto solo dice vacunas contra la encefalitis y no identifica especie, población destinataria ni tipo de vacuna; no permite distinguir uso humano de veterinario.",LOW
+464989,EXCLUDE_VETERINARY,"Bienes o servicios destinados expresamente a protección, bienestar, alimentación o atención sanitaria de animales.",HIGH
+468449,EXCLUDE_VETERINARY,"Bienes o servicios destinados expresamente a protección, bienestar, alimentación o atención sanitaria de animales.",HIGH
+471580,EXCLUDE_VETERINARY,Reactivos o pruebas destinados expresamente al diagnóstico veterinario o análisis de especies animales.,HIGH
+478633,EXCLUDE_VETERINARY,"Bienes o servicios destinados expresamente a protección, bienestar, alimentación o atención sanitaria de animales.",HIGH
+483351,EXCLUDE_VETERINARY,"El objeto especifica medicamentos, insumos, material o servicios médicos de uso veterinario/animal, no humano.",HIGH
+480604,EXCLUDE_VETERINARY,"El objeto es claramente agropecuario, agrícola o productivo y no corresponde a contratación farmacéutica humana.",HIGH
+465892,EXCLUDE_VETERINARY,"El objeto corresponde a control zoonótico mediante intervención, vacunación o esterilización de animales; aunque sea salud pública, queda fuera del alcance farmacéutico humano del paper.",HIGH
+479057,EXCLUDE_VETERINARY,"Bienes o servicios destinados expresamente a protección, bienestar, alimentación o atención sanitaria de animales.",HIGH
+484680,EXCLUDE_VETERINARY,"El objeto se refiere a una enfermedad, vacuna o diagnóstico propio de sanidad animal, fuera de la contratación farmacéutica humana.",HIGH
+471520,EXCLUDE_VETERINARY,"El objeto se refiere a una enfermedad, vacuna o diagnóstico propio de sanidad animal, fuera de la contratación farmacéutica humana.",HIGH
+484693,EXCLUDE_VETERINARY,"El objeto es claramente agropecuario, agrícola o productivo y no corresponde a contratación farmacéutica humana.",HIGH
+72627,EXCLUDE_VETERINARY,"El objeto especifica medicamentos, insumos, material o servicios médicos de uso veterinario/animal, no humano.",HIGH
+471162,EXCLUDE_VETERINARY,"Bienes o servicios destinados expresamente a protección, bienestar, alimentación o atención sanitaria de animales.",HIGH
+480526,EXCLUDE_VETERINARY,"El objeto identifica expresamente animales como destinatarios de bienes, alimentos, vacunas, medicamentos, equipos o servicios.",HIGH
+482204,EXCLUDE_VETERINARY,"El objeto identifica expresamente animales como destinatarios de bienes, alimentos, vacunas, medicamentos, equipos o servicios.",HIGH
+72630,EXCLUDE_VETERINARY,"El objeto especifica medicamentos, insumos, material o servicios médicos de uso veterinario/animal, no humano.",HIGH
+485343,EXCLUDE_VETERINARY,"El objeto corresponde a control zoonótico mediante intervención, vacunación o esterilización de animales; aunque sea salud pública, queda fuera del alcance farmacéutico humano del paper.",HIGH
+469711,EXCLUDE_VETERINARY,"El objeto es explícitamente veterinario, animal o agropecuario y está fuera del alcance farmacéutico humano del paper.",HIGH
+487007,EXCLUDE_VETERINARY,"Bienes o servicios destinados expresamente a protección, bienestar, alimentación o atención sanitaria de animales.",HIGH
+471425,EXCLUDE_VETERINARY,"El objeto corresponde a control zoonótico mediante intervención, vacunación o esterilización de animales; aunque sea salud pública, queda fuera del alcance farmacéutico humano del paper.",HIGH
+464948,KEEP_HUMAN,Adquisición de EPP para servidores públicos del INVIMA; protección ocupacional humana y coincidencia accidental con proveedor agropecuario.,HIGH
+484015,EXCLUDE_VETERINARY,"El objeto identifica expresamente animales como destinatarios de bienes, alimentos, vacunas, medicamentos, equipos o servicios.",HIGH
+472255,EXCLUDE_VETERINARY,"Bienes o servicios destinados expresamente a protección, bienestar, alimentación o atención sanitaria de animales.",HIGH
+479540,EXCLUDE_VETERINARY,"Bienes o servicios destinados expresamente a protección, bienestar, alimentación o atención sanitaria de animales.",HIGH
+482655,EXCLUDE_VETERINARY,"El objeto identifica expresamente animales como destinatarios de bienes, alimentos, vacunas, medicamentos, equipos o servicios.",HIGH
+483243,EXCLUDE_VETERINARY,"Bienes o servicios destinados expresamente a protección, bienestar, alimentación o atención sanitaria de animales.",HIGH
+473038,EXCLUDE_VETERINARY,"Bienes o servicios destinados expresamente a protección, bienestar, alimentación o atención sanitaria de animales.",HIGH
+73680,EXCLUDE_VETERINARY,"El objeto especifica medicamentos, insumos, material o servicios médicos de uso veterinario/animal, no humano.",HIGH
+483091,EXCLUDE_VETERINARY,"El objeto es explícitamente veterinario, animal o agropecuario y está fuera del alcance farmacéutico humano del paper.",HIGH
+481919,EXCLUDE_VETERINARY,"El objeto especifica medicamentos, insumos, material o servicios médicos de uso veterinario/animal, no humano.",HIGH
+469637,EXCLUDE_VETERINARY,"El objeto identifica expresamente animales como destinatarios de bienes, alimentos, vacunas, medicamentos, equipos o servicios.",HIGH
+473346,EXCLUDE_VETERINARY,"Suministro para manejo, sostenimiento o alimentación de animales; está fuera de la contratación farmacéutica humana.",HIGH
+463217,EXCLUDE_VETERINARY,"El objeto especifica medicamentos, insumos, material o servicios médicos de uso veterinario/animal, no humano.",HIGH
+483249,EXCLUDE_VETERINARY,"El objeto identifica expresamente animales como destinatarios de bienes, alimentos, vacunas, medicamentos, equipos o servicios.",HIGH
+478173,EXCLUDE_VETERINARY,"El objeto identifica expresamente animales como destinatarios de bienes, alimentos, vacunas, medicamentos, equipos o servicios.",HIGH
+482174,EXCLUDE_VETERINARY,"El objeto especifica medicamentos, insumos, material o servicios médicos de uso veterinario/animal, no humano.",HIGH
+483055,EXCLUDE_VETERINARY,"El objeto especifica medicamentos, insumos, material o servicios médicos de uso veterinario/animal, no humano.",HIGH
+131062,EXCLUDE_VETERINARY,"El objeto identifica expresamente animales como destinatarios de bienes, alimentos, vacunas, medicamentos, equipos o servicios.",HIGH
+463504,EXCLUDE_VETERINARY,"El objeto especifica medicamentos, insumos, material o servicios médicos de uso veterinario/animal, no humano.",HIGH
+485482,EXCLUDE_VETERINARY,"El objeto es explícitamente veterinario, animal o agropecuario y está fuera del alcance farmacéutico humano del paper.",HIGH
+471685,EXCLUDE_VETERINARY,"El objeto identifica expresamente animales como destinatarios de bienes, alimentos, vacunas, medicamentos, equipos o servicios.",HIGH
+484562,EXCLUDE_VETERINARY,"El objeto especifica medicamentos, insumos, material o servicios médicos de uso veterinario/animal, no humano.",HIGH
+479073,EXCLUDE_VETERINARY,"El objeto especifica medicamentos, insumos, material o servicios médicos de uso veterinario/animal, no humano.",HIGH
+484352,EXCLUDE_VETERINARY,"El objeto especifica medicamentos, insumos, material o servicios médicos de uso veterinario/animal, no humano.",HIGH
+485233,EXCLUDE_VETERINARY,"El objeto especifica medicamentos, insumos, material o servicios médicos de uso veterinario/animal, no humano.",HIGH
+469859,EXCLUDE_VETERINARY,"El objeto es claramente agropecuario, agrícola o productivo y no corresponde a contratación farmacéutica humana.",HIGH
+468408,EXCLUDE_VETERINARY,"El objeto especifica medicamentos, insumos, material o servicios médicos de uso veterinario/animal, no humano.",HIGH
+487568,EXCLUDE_VETERINARY,"El objeto identifica expresamente animales como destinatarios de bienes, alimentos, vacunas, medicamentos, equipos o servicios.",HIGH
+483206,EXCLUDE_VETERINARY,"El objeto identifica expresamente animales como destinatarios de bienes, alimentos, vacunas, medicamentos, equipos o servicios.",HIGH
+486246,EXCLUDE_VETERINARY,"El objeto especifica medicamentos, insumos, material o servicios médicos de uso veterinario/animal, no humano.",HIGH
+470534,EXCLUDE_VETERINARY,"El objeto es claramente agropecuario, agrícola o productivo y no corresponde a contratación farmacéutica humana.",HIGH
+478613,EXCLUDE_VETERINARY,"El objeto especifica medicamentos, insumos, material o servicios médicos de uso veterinario/animal, no humano.",HIGH
+304305,EXCLUDE_VETERINARY,"El objeto es claramente agropecuario, agrícola o productivo y no corresponde a contratación farmacéutica humana.",HIGH
+472620,EXCLUDE_VETERINARY,"El objeto especifica medicamentos, insumos, material o servicios médicos de uso veterinario/animal, no humano.",HIGH
+75491,EXCLUDE_VETERINARY,"El objeto especifica medicamentos, insumos, material o servicios médicos de uso veterinario/animal, no humano.",HIGH
+298356,NEEDS_REVIEW,"El objeto solo refiere elementos para el Día del Campesino y no describe bienes veterinarios, agropecuarios ni de salud humana.",LOW
+480812,EXCLUDE_VETERINARY,"El objeto especifica medicamentos, insumos, material o servicios médicos de uso veterinario/animal, no humano.",HIGH
+479733,EXCLUDE_VETERINARY,"Bienes o servicios destinados expresamente a protección, bienestar, alimentación o atención sanitaria de animales.",HIGH
+478971,EXCLUDE_VETERINARY,"El objeto especifica medicamentos, insumos, material o servicios médicos de uso veterinario/animal, no humano.",HIGH
+468159,EXCLUDE_VETERINARY,"El objeto especifica medicamentos, insumos, material o servicios médicos de uso veterinario/animal, no humano.",HIGH
+484759,NEEDS_REVIEW,"El objeto menciona reactivos y laboratorios de análisis y diagnóstico, pero no identifica especie, prueba o finalidad; el proveedor no basta para excluir.",LOW
+465039,EXCLUDE_VETERINARY,Reactivos o pruebas destinados expresamente al diagnóstico veterinario o análisis de especies animales.,HIGH
+472650,EXCLUDE_VETERINARY,"El objeto es explícitamente veterinario, animal o agropecuario y está fuera del alcance farmacéutico humano del paper.",HIGH
+479897,EXCLUDE_VETERINARY,"Bienes o servicios destinados expresamente a protección, bienestar, alimentación o atención sanitaria de animales.",HIGH
+485921,EXCLUDE_VETERINARY,"Bienes o servicios destinados expresamente a protección, bienestar, alimentación o atención sanitaria de animales.",HIGH
+482289,EXCLUDE_VETERINARY,"El objeto identifica expresamente animales como destinatarios de bienes, alimentos, vacunas, medicamentos, equipos o servicios.",HIGH
+485900,EXCLUDE_VETERINARY,"El objeto especifica medicamentos, insumos, material o servicios médicos de uso veterinario/animal, no humano.",HIGH
+485143,EXCLUDE_VETERINARY,"Bienes o servicios destinados expresamente a protección, bienestar, alimentación o atención sanitaria de animales.",HIGH
+486434,EXCLUDE_VETERINARY,"El objeto identifica expresamente animales como destinatarios de bienes, alimentos, vacunas, medicamentos, equipos o servicios.",HIGH
+487668,EXCLUDE_VETERINARY,"El objeto especifica medicamentos, insumos, material o servicios médicos de uso veterinario/animal, no humano.",HIGH
+488357,EXCLUDE_VETERINARY,"El objeto identifica expresamente animales como destinatarios de bienes, alimentos, vacunas, medicamentos, equipos o servicios.",HIGH
+467716,EXCLUDE_VETERINARY,"El objeto especifica medicamentos, insumos, material o servicios médicos de uso veterinario/animal, no humano.",HIGH
+478056,EXCLUDE_VETERINARY,"Bienes o servicios destinados expresamente a protección, bienestar, alimentación o atención sanitaria de animales.",HIGH
+474198,EXCLUDE_VETERINARY,"Bienes o servicios destinados expresamente a protección, bienestar, alimentación o atención sanitaria de animales.",HIGH
+487943,EXCLUDE_VETERINARY,"Bienes o servicios destinados expresamente a protección, bienestar, alimentación o atención sanitaria de animales.",HIGH
+475326,EXCLUDE_VETERINARY,"El objeto identifica expresamente animales como destinatarios de bienes, alimentos, vacunas, medicamentos, equipos o servicios.",HIGH
+467481,EXCLUDE_VETERINARY,"El objeto especifica medicamentos, insumos, material o servicios médicos de uso veterinario/animal, no humano.",HIGH
+473793,EXCLUDE_VETERINARY,"El objeto especifica medicamentos, insumos, material o servicios médicos de uso veterinario/animal, no humano.",HIGH
+487226,EXCLUDE_VETERINARY,"Bienes o servicios destinados expresamente a protección, bienestar, alimentación o atención sanitaria de animales.",HIGH
+463237,EXCLUDE_VETERINARY,"El objeto especifica medicamentos, insumos, material o servicios médicos de uso veterinario/animal, no humano.",HIGH
+478358,EXCLUDE_VETERINARY,"Bienes o servicios destinados expresamente a protección, bienestar, alimentación o atención sanitaria de animales.",HIGH
+480474,EXCLUDE_VETERINARY,"El objeto especifica medicamentos, insumos, material o servicios médicos de uso veterinario/animal, no humano.",HIGH
+486958,EXCLUDE_VETERINARY,"El objeto especifica medicamentos, insumos, material o servicios médicos de uso veterinario/animal, no humano.",HIGH
+478247,EXCLUDE_VETERINARY,"El objeto especifica medicamentos, insumos, material o servicios médicos de uso veterinario/animal, no humano.",HIGH
+485696,EXCLUDE_VETERINARY,"El objeto especifica medicamentos, insumos, material o servicios médicos de uso veterinario/animal, no humano.",HIGH
+484272,EXCLUDE_VETERINARY,"El objeto especifica medicamentos, insumos, material o servicios médicos de uso veterinario/animal, no humano.",HIGH
+468360,EXCLUDE_VETERINARY,"El objeto especifica medicamentos, insumos, material o servicios médicos de uso veterinario/animal, no humano.",HIGH
+163689,EXCLUDE_VETERINARY,"El objeto especifica medicamentos, insumos, material o servicios médicos de uso veterinario/animal, no humano.",HIGH
+469215,EXCLUDE_VETERINARY,"El objeto especifica medicamentos, insumos, material o servicios médicos de uso veterinario/animal, no humano.",HIGH
+482854,EXCLUDE_VETERINARY,"Bienes o servicios destinados expresamente a protección, bienestar, alimentación o atención sanitaria de animales.",HIGH
+471374,EXCLUDE_VETERINARY,"El objeto identifica expresamente animales como destinatarios de bienes, alimentos, vacunas, medicamentos, equipos o servicios.",HIGH
+468068,EXCLUDE_VETERINARY,"El objeto especifica medicamentos, insumos, material o servicios médicos de uso veterinario/animal, no humano.",HIGH
+464861,EXCLUDE_VETERINARY,"Bienes o servicios destinados expresamente a protección, bienestar, alimentación o atención sanitaria de animales.",HIGH
+480650,EXCLUDE_VETERINARY,"El objeto especifica medicamentos, insumos, material o servicios médicos de uso veterinario/animal, no humano.",HIGH
+463453,EXCLUDE_VETERINARY,"Bienes o servicios destinados expresamente a protección, bienestar, alimentación o atención sanitaria de animales.",HIGH
+479202,EXCLUDE_VETERINARY,"El objeto corresponde a control zoonótico mediante intervención, vacunación o esterilización de animales; aunque sea salud pública, queda fuera del alcance farmacéutico humano del paper.",HIGH
+277049,EXCLUDE_VETERINARY,"El objeto es claramente agropecuario, agrícola o productivo y no corresponde a contratación farmacéutica humana.",HIGH
+298642,EXCLUDE_VETERINARY,"El objeto es claramente agropecuario, agrícola o productivo y no corresponde a contratación farmacéutica humana.",HIGH
+474423,EXCLUDE_VETERINARY,"El objeto especifica medicamentos, insumos, material o servicios médicos de uso veterinario/animal, no humano.",HIGH
+474425,EXCLUDE_VETERINARY,"El objeto especifica medicamentos, insumos, material o servicios médicos de uso veterinario/animal, no humano.",HIGH
+469392,EXCLUDE_VETERINARY,"El objeto identifica expresamente animales como destinatarios de bienes, alimentos, vacunas, medicamentos, equipos o servicios.",HIGH
+471798,EXCLUDE_VETERINARY,"Bienes o servicios destinados expresamente a protección, bienestar, alimentación o atención sanitaria de animales.",HIGH
+466790,EXCLUDE_VETERINARY,"El objeto corresponde a control zoonótico mediante intervención, vacunación o esterilización de animales; aunque sea salud pública, queda fuera del alcance farmacéutico humano del paper.",HIGH
+483209,EXCLUDE_VETERINARY,"El objeto identifica expresamente animales como destinatarios de bienes, alimentos, vacunas, medicamentos, equipos o servicios.",HIGH
+472929,EXCLUDE_VETERINARY,"El objeto identifica expresamente animales como destinatarios de bienes, alimentos, vacunas, medicamentos, equipos o servicios.",HIGH
+232268,EXCLUDE_VETERINARY,"El objeto se refiere a una enfermedad, vacuna o diagnóstico propio de sanidad animal, fuera de la contratación farmacéutica humana.",HIGH
+478150,EXCLUDE_VETERINARY,"El objeto especifica medicamentos, insumos, material o servicios médicos de uso veterinario/animal, no humano.",HIGH
+484046,EXCLUDE_VETERINARY,"El objeto especifica medicamentos, insumos, material o servicios médicos de uso veterinario/animal, no humano.",HIGH
+483454,EXCLUDE_VETERINARY,"El objeto especifica medicamentos, insumos, material o servicios médicos de uso veterinario/animal, no humano.",HIGH
+473708,EXCLUDE_VETERINARY,"El objeto es explícitamente veterinario, animal o agropecuario y está fuera del alcance farmacéutico humano del paper.",HIGH
+467792,EXCLUDE_VETERINARY,"El objeto corresponde a control zoonótico mediante intervención, vacunación o esterilización de animales; aunque sea salud pública, queda fuera del alcance farmacéutico humano del paper.",HIGH
+293996,NEEDS_REVIEW,"El objeto solo menciona insumos para una unidad productiva familiar, sin especificar su naturaleza o uso.",LOW
+466284,EXCLUDE_VETERINARY,"El objeto especifica medicamentos, insumos, material o servicios médicos de uso veterinario/animal, no humano.",HIGH
+298677,EXCLUDE_VETERINARY,"El objeto identifica expresamente animales como destinatarios de bienes, alimentos, vacunas, medicamentos, equipos o servicios.",HIGH
+296728,KEEP_HUMAN,"Instrumentos y accesorios para una banda musical; coincidencia léxica accidental, sin relación veterinaria ni farmacéutica.",HIGH
+277046,EXCLUDE_VETERINARY,"El objeto es claramente agropecuario, agrícola o productivo y no corresponde a contratación farmacéutica humana.",HIGH
+482243,EXCLUDE_VETERINARY,"El objeto identifica expresamente animales como destinatarios de bienes, alimentos, vacunas, medicamentos, equipos o servicios.",HIGH
+132630,EXCLUDE_VETERINARY,"El objeto especifica medicamentos, insumos, material o servicios médicos de uso veterinario/animal, no humano.",HIGH
+481497,EXCLUDE_VETERINARY,"El objeto especifica medicamentos, insumos, material o servicios médicos de uso veterinario/animal, no humano.",HIGH
+225874,NEEDS_REVIEW,"El objeto solo dice medicamentos para una hacienda y no identifica especie, producto o destinatario; el contexto o proveedor agropecuario no basta para excluir automáticamente.",LOW
+225829,NEEDS_REVIEW,"El objeto solo dice medicamentos para una hacienda y no identifica especie, producto o destinatario; el contexto o proveedor agropecuario no basta para excluir automáticamente.",LOW
+225896,EXCLUDE_VETERINARY,"Compra de Virukill para una hacienda, correspondiente a bioseguridad del entorno agropecuario y no a contratación farmacéutica humana.",MEDIUM
+225875,NEEDS_REVIEW,"El objeto solo dice medicamentos para una hacienda y no identifica especie, producto o destinatario; el contexto o proveedor agropecuario no basta para excluir automáticamente.",LOW
+225836,NEEDS_REVIEW,"El objeto solo dice medicamentos para una hacienda y no identifica especie, producto o destinatario; el contexto o proveedor agropecuario no basta para excluir automáticamente.",LOW
+225868,NEEDS_REVIEW,"El objeto solo dice medicamentos para una hacienda y no identifica especie, producto o destinatario; el contexto o proveedor agropecuario no basta para excluir automáticamente.",LOW
+225880,NEEDS_REVIEW,"El objeto solo dice medicamentos para una hacienda y no identifica especie, producto o destinatario; el contexto o proveedor agropecuario no basta para excluir automáticamente.",LOW
+225898,NEEDS_REVIEW,"El objeto solo dice medicamentos para una hacienda y no identifica especie, producto o destinatario; el contexto o proveedor agropecuario no basta para excluir automáticamente.",LOW
+225920,NEEDS_REVIEW,"El objeto menciona medicamentos para unas jornadas municipales, pero no identifica pacientes, especie, productos ni finalidad clínica.",LOW
+225887,NEEDS_REVIEW,"El objeto solo dice medicamentos para una hacienda y no identifica especie, producto o destinatario; el contexto o proveedor agropecuario no basta para excluir automáticamente.",LOW
+225884,NEEDS_REVIEW,"El objeto solo dice medicamentos para una hacienda y no identifica especie, producto o destinatario; el contexto o proveedor agropecuario no basta para excluir automáticamente.",LOW
+225832,NEEDS_REVIEW,"El objeto solo dice medicamentos para una hacienda y no identifica especie, producto o destinatario; el contexto o proveedor agropecuario no basta para excluir automáticamente.",LOW
+225928,NEEDS_REVIEW,El objeto menciona un programa de esterilización sin identificar especie o población; no permite confirmar si el uso es veterinario.,LOW
+225865,NEEDS_REVIEW,"El objeto solo dice medicamentos para una hacienda y no identifica especie, producto o destinatario; el contexto o proveedor agropecuario no basta para excluir automáticamente.",LOW
+225878,NEEDS_REVIEW,"El objeto solo dice medicamentos para una hacienda y no identifica especie, producto o destinatario; el contexto o proveedor agropecuario no basta para excluir automáticamente.",LOW
+225867,NEEDS_REVIEW,"El objeto solo dice medicamentos para una hacienda y no identifica especie, producto o destinatario; el contexto o proveedor agropecuario no basta para excluir automáticamente.",LOW
+225843,NEEDS_REVIEW,"El objeto solo dice medicamentos para una hacienda y no identifica especie, producto o destinatario; el contexto o proveedor agropecuario no basta para excluir automáticamente.",LOW
+233631,NEEDS_REVIEW,"El proyecto de portación nasofaríngea de Streptococcus sugiere investigación biomédica, pero el objeto no identifica población humana ni especie estudiada.",LOW
+225814,NEEDS_REVIEW,"El objeto solo dice medicamentos para una hacienda y no identifica especie, producto o destinatario; el contexto o proveedor agropecuario no basta para excluir automáticamente.",LOW
+225827,NEEDS_REVIEW,"El objeto solo dice medicamentos para una hacienda y no identifica especie, producto o destinatario; el contexto o proveedor agropecuario no basta para excluir automáticamente.",LOW
+225890,NEEDS_REVIEW,"El objeto solo dice medicamentos para una hacienda y no identifica especie, producto o destinatario; el contexto o proveedor agropecuario no basta para excluir automáticamente.",LOW
+225893,NEEDS_REVIEW,"El objeto solo dice medicamentos para una hacienda y no identifica especie, producto o destinatario; el contexto o proveedor agropecuario no basta para excluir automáticamente.",LOW
+225861,NEEDS_REVIEW,"El objeto solo dice medicamentos para una hacienda y no identifica especie, producto o destinatario; el contexto o proveedor agropecuario no basta para excluir automáticamente.",LOW
+225840,NEEDS_REVIEW,"El objeto solo dice medicamentos para una hacienda y no identifica especie, producto o destinatario; el contexto o proveedor agropecuario no basta para excluir automáticamente.",LOW
+225888,NEEDS_REVIEW,"El objeto solo dice medicamentos para una hacienda y no identifica especie, producto o destinatario; el contexto o proveedor agropecuario no basta para excluir automáticamente.",LOW
+225855,NEEDS_REVIEW,"El objeto solo dice medicamentos para una hacienda y no identifica especie, producto o destinatario; el contexto o proveedor agropecuario no basta para excluir automáticamente.",LOW
+225911,NEEDS_REVIEW,"El objeto solo dice medicamentos para una hacienda y no identifica especie, producto o destinatario; el contexto o proveedor agropecuario no basta para excluir automáticamente.",LOW
+225901,NEEDS_REVIEW,"El objeto solo dice medicamentos para una hacienda y no identifica especie, producto o destinatario; el contexto o proveedor agropecuario no basta para excluir automáticamente.",LOW

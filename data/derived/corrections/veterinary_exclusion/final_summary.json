@@ -1,0 +1,45 @@
+{
+  "generated_at": "2026-07-11T18:42:45.787Z",
+  "analysis_status": "AUTHOR_APPROVED_CONSERVATIVE_CONTRACT_LEVEL_REVIEW",
+  "author_approval_date": "2026-07-11",
+  "source_view": "plos_one.original_closed_2020_2025_contracts",
+  "source_snapshot_label": "local_postgres_observatorio_nacional_recovered_2026_06_05",
+  "review_coverage": {
+    "candidate_contracts": 519,
+    "EXCLUDE_VETERINARY": 441,
+    "KEEP_HUMAN": 27,
+    "NEEDS_REVIEW": 51
+  },
+  "final_rule": "Exclude EXCLUDE_VETERINARY only; retain KEEP_HUMAN and NEEDS_REVIEW conservatively.",
+  "zscore_method": {
+    "value_field": "valor_contrato",
+    "grouping_field": "categoria",
+    "excluded_category": "NO_ESPECIFICADO",
+    "minimum_category_size": 10,
+    "standard_deviation": "sample",
+    "thresholds": [
+      1.5,
+      2,
+      3
+    ]
+  },
+  "cohort_and_concentration": {
+    "original_contracts": "162271",
+    "excluded_contracts": "441",
+    "corrected_contracts": "161830",
+    "corrected_positive_contracts": "161710",
+    "corrected_suppliers": "50225",
+    "corrected_value_cop": "16928844149843",
+    "hhi_0_10000": "120.988536185597975100633224696523405250730000",
+    "top_supplier_share": "0.05651680552862040132",
+    "top_10_share": "0.29007855397514202604",
+    "top_3pct_supplier_count": "1507",
+    "top_3pct_share": "0.858305187936103358382652"
+  },
+  "zscore": {
+    "analyzed_contracts": "146594",
+    "alerts_abs_z_ge_1_5": "664",
+    "alerts_abs_z_ge_2_0": "508",
+    "alerts_abs_z_ge_3_0": "295"
+  }
+}

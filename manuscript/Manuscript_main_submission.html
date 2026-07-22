@@ -1,0 +1,1295 @@
+<h1
+id="computational-surveillance-of-colombian-public-pharmaceutical-procurement-using-public-administrative-data-a-reproducible-analysis-of-a-closed-2020-2025-cohort">Computational
+surveillance of Colombian public pharmaceutical procurement using public
+administrative data: a reproducible analysis of a closed 2020-2025
+cohort</h1>
+<p>Andres Soto<br />
+Independent researcher<br />
+Bogota, Colombia<br />
+ORCID: 0009-0004-8001-5372<br />
+Correspondence: <a href="mailto:ansoto1604@icloud.com"
+class="email">ansoto1604@icloud.com</a></p>
+<hr />
+<h2 id="abstract">Abstract</h2>
+<p><strong>Introduction.</strong> BigLoI monitors Colombian public
+pharmaceutical procurement from 2015 onward. For this manuscript, the
+source cohort comprised 162,271 candidate pharmaceutical contracts from
+2020 to 2025. After contract-level review excluded 441 records
+explicitly concerning veterinary, animal-health, or agricultural use,
+the corrected closed analytical cohort comprised 161,830 contracts.</p>
+<p><strong>Objective.</strong> To describe the design, implementation,
+and findings of a reproducible computational infrastructure for
+surveillance of Colombian public pharmaceutical procurement.</p>
+<p><strong>Methods.</strong> Public APIs from SECOP-II, INVIMA, and
+SISMED were integrated into a reproducible architecture combining
+PostgreSQL, statistical analysis, and a public-facing observatory.
+Candidate records whose supplier names indicated possible veterinary or
+agricultural activity underwent contract-object review; 441 records with
+explicit animal, veterinary, or agricultural scope were excluded, while
+human-health and ambiguous records were retained conservatively. A
+Z-score engine was implemented to flag contracts with atypical total
+values within therapeutic categories. As a clearly secondary
+technical-feasibility module, smart-contract automation of a payment
+workflow was tested on the Sepolia testnet only to verify predefined
+digital state transitions under simulated conditions. The corrected
+closed analytical cohort included 161,830 pharmaceutical contracts from
+2020 to 2025, while post-2025 records remained available only for live
+platform monitoring. Monetary results were reported primarily in COP;
+secondary USD equivalents were included only as approximate interpretive
+references, with detailed conversions relegated to S1 Table.</p>
+<p><strong>Results.</strong> Among 146,594 contracts analyzed in
+categories with at least 10 observations, 664 contracts (0.45%)
+triggered a statistical alert with absolute Z-score greater than or
+equal to 1.5 sigma. The alert rate among Z-score-eligible contracts
+increased from 0.30% in 2021 to 1.31% in 2025. Antibiotics showed a
+category-level maximum Z-score of 8.89. The top 3% of suppliers
+concentrated 85.8% of total contracted value. As a clearly secondary
+module, the Sepolia smart-contract prototype confirmed only that
+predefined digital state transitions could be executed under simulated
+testnet conditions; it provides no evidence of real-world payment-cycle
+reduction, realized savings, or institutional deployability.</p>
+<p><strong>Conclusions.</strong> A reproducible national-scale
+computational infrastructure identified atypical procurement patterns
+and documented marked market concentration in Colombian public
+pharmaceutical procurement. These descriptive findings may inform
+auditing, public health policy discussions, and health data governance,
+but they do not by themselves establish wrongdoing or prescribe specific
+reforms. Statistical alerts remain exploratory prioritization signals
+rather than evidence of corruption or fraud. The blockchain module
+should be interpreted strictly as a complementary technical proof of
+concept tested under simulated conditions and not as operational
+evidence on real-world payment performance, savings, or implementation
+readiness.</p>
+<p><strong>Keywords:</strong> public pharmaceutical procurement;
+SECOP-II; procurement surveillance; market concentration; anomaly
+detection; retrieval-augmented generation; blockchain; SISMED; INVIMA;
+Colombia.</p>
+<hr />
+<h2 id="introduction">1. Introduction</h2>
+<p>Public procurement of medicines in Colombia is monitored in BigLoI
+through a broad SECOP-II universe that now exceeds 272,000 contracts
+from 2015 onward. For the purposes of this manuscript, the corrected
+closed analytical cohort corresponds to 161,830 pharmaceutical contracts
+from 2020 to 2025 after contract-level veterinary exclusions. Despite
+this scale, the system lacks reproducible real-time surveillance tools
+to detect atypical procurement patterns, market concentration, or
+potential supply risks.</p>
+<p>The World Health Organization has estimated that 10% to 25% of global
+health expenditure is lost to corruption, inefficiency, and
+administrative errors (2). In Colombia, official audits have documented
+high-cost medicine overpricing, prolonged payment delays, and recurring
+episodes of shortages (3,4).</p>
+<p>Integration of public APIs makes it possible to build
+procurement-surveillance platforms without access to confidential
+information. Z-score analysis is a practical approach for detecting
+atypical patterns in large procurement datasets (6), while smart
+contracts and semantic retrieval expand the range of possible automation
+and evidence-access tools (7,8). Initiatives such as ProZorro, OCDS, and
+OLAF illustrate the feasibility of these approaches in
+public-procurement transparency (9-11).</p>
+<p>BigLoI (Business Intelligence for Government Logistics and Operations
+Intelligence) was developed to address this gap. This article documents
+its methodology and findings as a contribution to the debate on
+computational tools for governance of the Colombian health system.</p>
+<hr />
+<h2 id="methods">2. Methods</h2>
+<h3 id="study-design">2.1 Study design</h3>
+<p>This was a technological-development study with longitudinal
+observational analysis of public procurement data. Only openly
+accessible Colombian public data sources were used. No clinical data or
+patient-level personal data were included.</p>
+<p><strong>Ethics statement.</strong> This study used only publicly
+accessible administrative procurement records published by Colombian
+open-data sources (SECOP-II via datos.gov.co, INVIMA, and SISMED). It
+did not involve human participants, patient-level or clinical data,
+identifiable private information, biological samples, recruitment,
+intervention, or any contact with individuals. Accordingly, the study
+does not constitute human-subjects research and did not require review
+or approval by an institutional review board or research ethics
+committee. Under Colombian Resolution 8430 of 1993, analysis of public,
+non-identifiable administrative records corresponds to research without
+risk and falls outside the scope of human-subjects ethics review.
+Informed consent was not applicable because the study did not involve
+human participants or identifiable personal data. All analyzed data are
+publicly available and were used in aggregate for the surveillance of
+public procurement.</p>
+<h3 id="data-sources">2.2 Data sources</h3>
+<p><strong>SECOP-II (Electronic Public Procurement System).</strong> The
+public Socrata API from datos.gov.co was used for automated download of
+pharmaceutical procurement contracts. Initial inclusion required the
+presence of at least one of 19 pharmaceutical terms in the
+contract-object description (Appendix 1). This keyword strategy is a
+high-recall screen rather than a gold-standard classifier: it can
+generate false positives (non-pharmaceutical or animal-health contracts
+that share lexical terms) and false negatives (human pharmaceutical
+contracts whose objects omit the inclusion vocabulary). Because terms
+such as vaccine and antibiotic can also describe animal-health
+procurement, supplier names were screened for veterinary or agricultural
+indicators and 519 candidate records underwent contract-object review.
+Records were excluded only when the object explicitly indicated
+veterinary, animal-health, zoonotic intervention on animals, or
+agricultural use outside the human-pharmaceutical scope. This review
+excluded 441 records, retained 27 records with explicit human-health or
+lexically incidental scope, and conservatively retained 51 ambiguous
+records. The review decisions and source-row identifiers are included in
+the reproducibility package. No independently adjudicated external
+reference set was available to estimate sensitivity or specificity of
+the full keyword taxonomy; the contract-level review therefore serves as
+targeted quality control for a known contamination pathway rather than
+as complete taxonomy validation. The platform monitoring window extends
+from January 2015 onward, but the closed analytical cohort used in this
+manuscript was restricted to complete calendar years 2020-2025.</p>
+<p><strong>SECOP-II monitored universe available to the
+platform:</strong> 272,814 unique contracts; COP 42 trillion; 163,135
+suppliers; 37 regional codes<br />
+<strong>Recovered local PostgreSQL source used to reproduce the
+manuscript cohort:</strong> 956,157 total SECOP-II records; 165,549
+candidate pharmaceutical records including live 2026 monitoring rows;
+162,271 candidate contracts in the source 2020-2025 cohort; 161,830
+contracts after contract-level veterinary exclusions</p>
+<p>To avoid comparing incomplete calendar periods, all year-by-year
+descriptive analyses in the manuscript were closed at 31 December 2025.
+The platform continues to ingest newer records for operational
+monitoring, but post-2025 records were excluded from the formal
+analytical cohort reported here.</p>
+<p>All primary monetary values are reported in COP. When approximate USD
+equivalents are provided in parentheses, they are secondary interpretive
+aids calculated using a round reference exchange rate of COP 4,000 per
+USD, close to late-2025 market levels. No analyses were performed in
+USD. Because a single round reference rate is applied across the entire
+2020-2025 study period, the USD equivalents do not account for
+exchange-rate volatility and should be read as order-of-magnitude
+approximations only; the COP values are the analytical quantities.
+Detailed COP/USD reference conversions for the principal manuscript
+figures are provided in S1 Table.</p>
+<p><strong>INVIMA (National Food and Drug Surveillance
+Institute).</strong> A total of 9,838 records from the national sanitary
+registry were downloaded through the Socrata API. Variables included
+brand name, active ingredient, marketing authorization holder, sanitary
+registration number, ATC code, dosage form, route of administration,
+relevant dates, and registry status. All loaded records were
+current.</p>
+<p><strong>SISMED (Medicine Price Information System, Ministry of
+Health).</strong> We processed 44,038 reference-price records covering
+1,759 unique ATC codes, aggregated by dosage form, distribution channel,
+and reference year (2017-2019). These data were used as contextual
+market references and as complementary input for interpreting atypical
+contract-value findings.</p>
+<h3 id="bigloi-technical-architecture">2.3 BigLoI technical
+architecture</h3>
+<p>The platform was implemented as a monorepo with a seven-layer
+architecture (Table 2). Figure 6 summarizes the seven-layer technical
+architecture of the platform.</p>
+<h3
+id="table-2.-technical-architecture-of-the-bigloi-platform-for-surveillance-of-public-pharmaceutical-procurement">Table
+2. Technical architecture of the BigLoI platform for surveillance of
+public pharmaceutical procurement</h3>
+<table>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<thead>
+<tr>
+<th>Layer</th>
+<th>Main technology</th>
+<th>Function</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Collection</td>
+<td>Python; Socrata API</td>
+<td>Incremental ingestion of SECOP-II, INVIMA, and SISMED</td>
+</tr>
+<tr>
+<td>Storage</td>
+<td>PostgreSQL; Pinecone; MongoDB</td>
+<td>Relational, vector, and unstructured data storage</td>
+</tr>
+<tr>
+<td>Processing</td>
+<td>FastAPI; pandas</td>
+<td>Cleaning, normalization, ABC classification, Z-score engine</td>
+</tr>
+<tr>
+<td>Generative AI</td>
+<td>Claude 3.5 Sonnet; GPT-4o</td>
+<td>Hybrid semantic plus TF-IDF retrieval-augmented generation</td>
+</tr>
+<tr>
+<td>Machine learning</td>
+<td>scikit-learn</td>
+<td>Demand prediction (<span
+class="math inline"><em>R</em><sup>2</sup> &gt; 0.85</span>), k-means (6
+groups), PCA</td>
+</tr>
+<tr>
+<td>Smart contracts (proof of concept)</td>
+<td>Solidity; Chainlink CRE; Sepolia testnet</td>
+<td>Simulated payment-state transitions across five digital states;
+invoice NFTs (secondary module)</td>
+</tr>
+<tr>
+<td>Visualization</td>
+<td>React/TypeScript</td>
+<td>Public observatory with time series, maps, and alerts</td>
+</tr>
+</tbody>
+</table>
+<h3 id="anomaly-detection-engine-based-on-z-scores">2.4
+Anomaly-detection engine based on Z-scores</h3>
+<p>For each pharmaceutical contract classified into a named therapeutic
+category, we calculated the standardized deviation of its total contract
+value relative to the distribution of observed values within the same
+category. Contracts labeled <code>NO_ESPECIFICADO</code> (unspecified
+therapeutic category) were excluded from the Z-score engine because they
+lack a stable within-category comparator. The analysis was further
+restricted to named categories with at least 10 contracts to avoid
+unstable estimates:</p>
+<p><span class="math display">$$
+Z_i = \frac{V_i - \bar{V}_{cat}}{\sigma_{cat}}
+$$</span></p>
+<p>where <span
+class="math inline"><em>Z</em><sub><em>i</em></sub></span> is the
+anomaly score for contract <span class="math inline"><em>i</em></span>,
+<span class="math inline"><em>V</em><sub><em>i</em></sub></span> is the
+contract’s total value, <span
+class="math inline"><em>V̄</em><sub><em>c</em><em>a</em><em>t</em></sub></span>
+is the mean contract value within the same therapeutic category, and
+<span
+class="math inline"><em>σ</em><sub><em>c</em><em>a</em><em>t</em></sub></span>
+is the standard deviation of that category-specific distribution. This
+approach detects contracts with atypical total values relative to their
+category; by itself, it does not establish unit-price overpricing
+against a regulatory benchmark.</p>
+<p>Alert levels were classified as follows:</p>
+<table>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<thead>
+<tr>
+<th>Level</th>
+<th>Criterion</th>
+<th>Interpretation</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Critical</td>
+<td>Absolute Z-score greater than or equal to 3.0 sigma</td>
+<td>Extremely atypical contract value within category</td>
+</tr>
+<tr>
+<td>High</td>
+<td>Absolute Z-score from 2.0 to less than 3.0 sigma</td>
+<td>Clearly atypical contract value</td>
+</tr>
+<tr>
+<td>Moderate</td>
+<td>Absolute Z-score from 1.5 to less than 2.0 sigma</td>
+<td>Moderately atypical contract value</td>
+</tr>
+<tr>
+<td>Normal</td>
+<td>Absolute Z-score below 1.5 sigma</td>
+<td>Within the expected range for category</td>
+</tr>
+</tbody>
+</table>
+<h3 id="market-concentration-analysis">2.5 Market-concentration
+analysis</h3>
+<p>To characterize the competitive structure of the pharmaceutical
+procurement market, we calculated descriptive concentration indicators
+and estimated the proportion of total contracted value accumulated by
+leading suppliers. Supplier concentration was calculated over
+positive-value contracts in the closed 2020-2025 pharmaceutical cohort.
+The Herfindahl-Hirschman Index (HHI) was calculated as the sum of
+squared supplier shares of total contracted value and is reported on the
+conventional 0-10,000 scale. Bipartite graphs of buyers and suppliers
+were constructed to identify recurrent contracting patterns.</p>
+<h3
+id="complementary-technical-feasibility-analysis-of-a-payment-workflow-using-smart-contracts">2.6
+Complementary technical-feasibility analysis of a payment workflow using
+smart contracts</h3>
+<p>As a clearly secondary module, we implemented a five-state simulator
+on the Sepolia testnet solely to verify that predefined digital states
+of a hypothetical payment workflow could be executed in sequence under
+controlled test conditions. It was not designed as an empirical
+time-and-motion study; comparison with current practice was made only at
+the level of temporal order of magnitude, using aggregated institutional
+references (90-day median; 60-180 day range) rather than a step-by-step
+operational equivalence between the full hospital workflow and the
+digital prototype states. The prototype reference scenario of
+approximately 30 hours should be read only as a test-condition benchmark
+for the simulator.</p>
+<p>The illustrative projected savings were estimated as a scenario
+exercise, not as an empirical economic evaluation, by applying a
+conservative upper-bound monthly financing-cost assumption of 2%
+(approximately 26.8% effective annual) to annual contracted value under
+a hypothetical reduction in administrative delays. That rate was chosen
+as an order-of-magnitude working-capital parameter aligned with the
+upper range of legal interest ceilings derived from the Colombian
+<em>interés bancario corriente</em> certified by the Superintendencia
+Financiera de Colombia for ordinary/consumer credit, where maximum
+remuneratory or default interest equals 1.5 times the certified rate
+(usury ceiling) (17,18). It is not an empirically measured average
+supplier financing rate in SECOP-II, nor a claim that pharmaceutical
+suppliers uniformly borrow at this cost; commercial or rediscount credit
+lines can be lower. Prolonged payment cycles in the Colombian
+pharmaceutical supply chain motivate treating delayed settlement as
+financially costly (19), but the 2% figure remains a scenario assumption
+only:</p>
+<p><span class="math display">$$
+Annual\ savings = V_{annual} \times r_{monthly} \times \frac{\Delta
+t_{days}}{30}
+$$</span></p>
+<p>where <span
+class="math inline"><em>V</em><sub><em>a</em><em>n</em><em>n</em><em>u</em><em>a</em><em>l</em></sub></span>
+is either the corrected six-year mean annual flow (approximately COP
+2.82 trillion) or the corrected 2025 flow (approximately COP 5.50
+trillion), <span
+class="math inline"><em>r</em><sub><em>m</em><em>o</em><em>n</em><em>t</em><em>h</em><em>l</em><em>y</em></sub> = 2%</span>,
+and <span class="math inline"><em>Δ</em><em>t</em></span> is the
+theoretical reduction from 90 days to approximately 30 hours (88.75
+days).</p>
+<h3 id="statistical-analysis">2.7 Statistical analysis</h3>
+<p>Descriptive statistics were used throughout. Log-normality of
+contract values was assessed with the Kolmogorov-Smirnov test. Market
+concentration was described using participation and accumulation
+indicators. The significance threshold was set at <span
+class="math inline"><em>α</em> = 0.05</span>.</p>
+<hr />
+<h2 id="results">3. Results</h2>
+<h3 id="characteristics-of-the-data-corpus">3.1 Characteristics of the
+data corpus</h3>
+<p>The characteristics of the corpus and the closed 2020-2025 analytical
+cohort are summarized in Table 1.</p>
+<h3
+id="table-1.-summary-of-the-public-pharmaceutical-procurement-corpus-and-the-closed-analytical-cohort-used-in-this-manuscript">Table
+1. Summary of the public pharmaceutical procurement corpus and the
+closed analytical cohort used in this manuscript</h3>
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr>
+<th>Variable</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Total SECOP-II contracts (API universe)</td>
+<td>272,814</td>
+</tr>
+<tr>
+<td>Pharmaceutical contracts in source closed cohort before
+contract-level review</td>
+<td>162,271</td>
+</tr>
+<tr>
+<td>Pharmaceutical contracts in corrected closed cohort</td>
+<td>161,830</td>
+</tr>
+<tr>
+<td>Total contracts in recovered local PostgreSQL source</td>
+<td>956,157</td>
+</tr>
+<tr>
+<td>Total contracted value (corrected pharmaceutical cohort)</td>
+<td>COP 16.93 trillion (approx. USD 4.23 billion)</td>
+</tr>
+<tr>
+<td>Total contracted value (all sectors recovered local source)</td>
+<td>COP 294.7 trillion</td>
+</tr>
+<tr>
+<td>Total contracted value (API universe)</td>
+<td>COP 42.00 trillion</td>
+</tr>
+<tr>
+<td>Mean value per positive-value pharmaceutical contract</td>
+<td>COP 104.69 million</td>
+</tr>
+<tr>
+<td>Unique normalized suppliers in corrected positive-value cohort</td>
+<td>50,225</td>
+</tr>
+<tr>
+<td>Regions covered</td>
+<td>36-37</td>
+</tr>
+<tr>
+<td>Period (closed pharmaceutical cohort)</td>
+<td>2020 to 2025</td>
+</tr>
+<tr>
+<td>Platform monitoring window</td>
+<td>January 2015 onward</td>
+</tr>
+<tr>
+<td>Processed INVIMA records</td>
+<td>9,838 (all current)</td>
+</tr>
+<tr>
+<td>SISMED reference prices</td>
+<td>44,038 records; 1,759 unique ATC codes (2017-2019)</td>
+</tr>
+<tr>
+<td>Indexed RAG documents</td>
+<td>9,336</td>
+</tr>
+</tbody>
+</table>
+<p>Pharmaceutical contract value followed a log-normal distribution
+(Kolmogorov-Smirnov <span class="math inline"><em>D</em> = 0.04</span>;
+<span class="math inline"><em>p</em> &lt; 0.001</span>). The top 10% of
+contracts by value accounted for 78% of total contracted value.</p>
+<p><strong>Annual evolution of indexed pharmaceutical contracts (closed
+cohort, 2020-2025):</strong></p>
+<table>
+<thead>
+<tr>
+<th>Year</th>
+<th>Contracts</th>
+<th>Value (COP billions)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2020</td>
+<td>35,242</td>
+<td>3,294.5</td>
+</tr>
+<tr>
+<td>2021</td>
+<td>53,723</td>
+<td>2,846.1</td>
+</tr>
+<tr>
+<td>2022</td>
+<td>30,927</td>
+<td>2,639.6</td>
+</tr>
+<tr>
+<td>2023</td>
+<td>10,648</td>
+<td>1,527.9</td>
+</tr>
+<tr>
+<td>2024</td>
+<td>9,335</td>
+<td>1,124.0</td>
+</tr>
+<tr>
+<td>2025</td>
+<td>21,955</td>
+<td>5,496.8</td>
+</tr>
+</tbody>
+</table>
+<p>Figure 1 shows the annual evolution of the number of contracts and
+total contracted value across the closed 2020-2025 cohort. The peak in
+contract counts in 2021 is consistent with the COVID-19 response period,
+whereas the value peak in 2025 coincided with increased participation of
+high-cost oncology procurement. Post-2025 records remain available in
+the live platform but were excluded from the closed annual comparisons
+reported here.</p>
+<p>The pronounced decline in indexed contracts in 2023-2024 (from 30,927
+in 2022 to 10,648 and 9,335, respectively) is also present in an
+independent reconstruction of the public SECOP-II API, which recovered
+10,006 and 8,818 candidate pharmaceutical contracts for those years
+before the contract-level correction. The decline is therefore present
+in the SECOP-II source under the inclusion taxonomy and is not an
+artifact of the local PostgreSQL snapshot. The available administrative
+data do not allow us to adjudicate whether it reflects procurement
+consolidation into fewer, higher-value contracts, changes in
+contract-object coding, or an actual reduction in pharmaceutical
+contracting volume; we therefore treat this pattern as a source-data and
+classification limitation requiring dedicated validation rather than
+assigning it a single causal explanation.</p>
+<p><strong>Distribution by therapeutic category:</strong></p>
+<table>
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+</colgroup>
+<thead>
+<tr>
+<th>Category</th>
+<th>Contracts</th>
+<th>Value (COP billions)</th>
+<th>Mean value (COP millions)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>General pharmaceutical</td>
+<td>81,589</td>
+<td>9,855.7</td>
+<td>120.8</td>
+</tr>
+<tr>
+<td>Medical device</td>
+<td>15,863</td>
+<td>2,922.2</td>
+<td>184.2</td>
+</tr>
+<tr>
+<td>Unspecified (<code>NO_ESPECIFICADO</code>)</td>
+<td>15,226</td>
+<td>2,625.8</td>
+<td>173.8</td>
+</tr>
+<tr>
+<td>Vaccine</td>
+<td>45,935</td>
+<td>864.6</td>
+<td>18.8</td>
+</tr>
+<tr>
+<td>Oncology</td>
+<td>400</td>
+<td>421.2</td>
+<td>1,052.9</td>
+</tr>
+<tr>
+<td>Medical supply</td>
+<td>2,232</td>
+<td>190.0</td>
+<td>85.1</td>
+</tr>
+<tr>
+<td>Antibiotic</td>
+<td>217</td>
+<td>19.6</td>
+<td>90.2</td>
+</tr>
+<tr>
+<td>Diabetes</td>
+<td>279</td>
+<td>20.4</td>
+<td>73.1</td>
+</tr>
+<tr>
+<td>Analgesic</td>
+<td>42</td>
+<td>8.5</td>
+<td>203.0</td>
+</tr>
+<tr>
+<td>Antiviral</td>
+<td>37</td>
+<td>0.9</td>
+<td>24.6</td>
+</tr>
+</tbody>
+</table>
+<p>Unspecified contracts accounted for 9.4% of corrected-cohort
+contracts and 15.5% of total contracted value (COP 2.63 trillion).
+Oncology contracts showed the highest mean contract value among named
+categories (COP 1,049.2 million per contract). Contracts labeled
+<code>NO_ESPECIFICADO</code> are retained in descriptive cohort totals
+but are excluded from the Z-score engine (Section 2.4).</p>
+<h3 id="geographic-distribution">3.2 Geographic distribution</h3>
+<p>The leading regions by pharmaceutical procurement value were as
+follows:</p>
+<table>
+<colgroup>
+<col style="width: 20%" />
+<col style="width: 20%" />
+<col style="width: 20%" />
+<col style="width: 20%" />
+<col style="width: 20%" />
+</colgroup>
+<thead>
+<tr>
+<th>Region</th>
+<th>Contracts</th>
+<th>Value (COP billions)</th>
+<th>Approx. value (USD millions)</th>
+<th>% of total</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Bogota D.C. (combined)</td>
+<td>18,020</td>
+<td>9,607.0</td>
+<td>2,401.8</td>
+<td>56.7%</td>
+</tr>
+<tr>
+<td>Antioquia</td>
+<td>47,964</td>
+<td>1,312.2</td>
+<td>328.1</td>
+<td>7.8%</td>
+</tr>
+<tr>
+<td>Valle del Cauca</td>
+<td>5,843</td>
+<td>696.5</td>
+<td>174.1</td>
+<td>4.1%</td>
+</tr>
+<tr>
+<td>Boyaca</td>
+<td>9,142</td>
+<td>623.6</td>
+<td>155.9</td>
+<td>3.7%</td>
+</tr>
+<tr>
+<td>Tolima</td>
+<td>3,773</td>
+<td>426.9</td>
+<td>106.7</td>
+<td>2.5%</td>
+</tr>
+<tr>
+<td>Santander</td>
+<td>4,278</td>
+<td>403.8</td>
+<td>101.0</td>
+<td>2.4%</td>
+</tr>
+<tr>
+<td>Huila</td>
+<td>4,177</td>
+<td>403.2</td>
+<td>100.8</td>
+<td>2.4%</td>
+</tr>
+<tr>
+<td>Cauca</td>
+<td>2,015</td>
+<td>389.6</td>
+<td>97.4</td>
+<td>2.3%</td>
+</tr>
+<tr>
+<td>Atlantico</td>
+<td>5,075</td>
+<td>348.8</td>
+<td>87.2</td>
+<td>2.1%</td>
+</tr>
+</tbody>
+</table>
+<p>Bogota D.C. accounted for 56.7% of national contracted value,
+equivalent to approximately USD 2.40 billion at the reference exchange
+rate, followed by Antioquia (7.8%) and Valle del Cauca (4.1%). Figure 2
+maps the geographic distribution of total contracted value by
+department.</p>
+<p><strong>Methodological note.</strong> Bogota D.C. appears under two
+regional codes in SECOP-II. Coverage of 36-37 regions exceeds the 32
+official departments because SECOP-II includes distinct codings for
+districts and other territorial entities.</p>
+<h3 id="contract-value-anomalies-detected-by-the-z-score-engine">3.3
+Contract-value anomalies detected by the Z-score engine</h3>
+<p><strong>Methodological note.</strong> The implemented Z-score engine
+measures deviation of total contract value relative to the distribution
+within each therapeutic category. Direct comparison against SISMED unit
+prices would require structured line-item detail, which is not
+consistently available in SECOP-II.</p>
+<p>Among 146,594 analyzed contracts in named therapeutic categories with
+at least 10 observations (after excluding 15,226 contracts labeled
+<code>NO_ESPECIFICADO</code> and 10 contracts in categories with fewer
+than 10 observations), the engine identified the following:</p>
+<table>
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+</colgroup>
+<thead>
+<tr>
+<th>Alert level</th>
+<th>Criterion</th>
+<th>Contracts</th>
+<th>% of total</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Critical</td>
+<td>Absolute Z-score greater than or equal to 3.0 sigma</td>
+<td>295</td>
+<td>0.20%</td>
+</tr>
+<tr>
+<td>High</td>
+<td>Absolute Z-score from 2.0 to less than 3.0 sigma</td>
+<td>213</td>
+<td>0.15%</td>
+</tr>
+<tr>
+<td>Moderate</td>
+<td>Absolute Z-score from 1.5 to less than 2.0 sigma</td>
+<td>156</td>
+<td>0.11%</td>
+</tr>
+<tr>
+<td>Total with alert</td>
+<td>Absolute Z-score greater than or equal to 1.5 sigma</td>
+<td>664</td>
+<td>0.45%</td>
+</tr>
+</tbody>
+</table>
+<p>These alerts flag contracts whose total value is atypical within
+their therapeutic category; they are intended for audit prioritization
+and do not, by themselves, constitute evidence of corruption, fraud, or
+unit-price overpricing.</p>
+<p><strong>Results by therapeutic category:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Category</th>
+<th>Contracts</th>
+<th>% with alert</th>
+<th>Zmax</th>
+<th>Max/mean ratio</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Analgesic</td>
+<td>42</td>
+<td>9.5%</td>
+<td>4.22</td>
+<td>9.3x</td>
+</tr>
+<tr>
+<td>Diabetes</td>
+<td>279</td>
+<td>7.9%</td>
+<td>6.61</td>
+<td>15.5x</td>
+</tr>
+<tr>
+<td>Antiviral</td>
+<td>37</td>
+<td>5.4%</td>
+<td>4.83</td>
+<td>14.2x</td>
+</tr>
+<tr>
+<td>Antibiotic</td>
+<td>217</td>
+<td>3.2%</td>
+<td>8.89</td>
+<td>26.4x</td>
+</tr>
+<tr>
+<td>Medical supply</td>
+<td>2,232</td>
+<td>2.5%</td>
+<td>22.34</td>
+<td>88.7x</td>
+</tr>
+<tr>
+<td>Oncology</td>
+<td>400</td>
+<td>0.8%</td>
+<td>19.27</td>
+<td>138.5x</td>
+</tr>
+</tbody>
+</table>
+<p>Among the six categories displayed in Figure 3, medical supplies
+showed the highest maximum Z-score, whereas analgesics showed the
+highest proportion of contracts with alerts.</p>
+<p><strong>Temporal evolution of anomaly rates (2020-2025):</strong></p>
+<table>
+<thead>
+<tr>
+<th>Year</th>
+<th>Contracts analyzed</th>
+<th>Contracts with alert</th>
+<th>Rate</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2020</td>
+<td>35,238</td>
+<td>120</td>
+<td>0.34%</td>
+</tr>
+<tr>
+<td>2021</td>
+<td>53,718</td>
+<td>163</td>
+<td>0.30%</td>
+</tr>
+<tr>
+<td>2022</td>
+<td>30,926</td>
+<td>126</td>
+<td>0.41%</td>
+</tr>
+<tr>
+<td>2023</td>
+<td>10,648</td>
+<td>84</td>
+<td>0.79%</td>
+</tr>
+<tr>
+<td>2024</td>
+<td>9,335</td>
+<td>83</td>
+<td>0.89%</td>
+</tr>
+<tr>
+<td>2025</td>
+<td>6,729</td>
+<td>88</td>
+<td>1.31%</td>
+</tr>
+</tbody>
+</table>
+<p>The statistical-alert rate among Z-score-eligible contracts increased
+from 0.30% in 2021 to 1.31% in 2025. Causal interpretation of this
+pattern requires additional analysis. The sharp reduction in the 2025
+Z-score denominator (6,729 of 21,955 indexed contracts; 30.7%) is
+explained by categorical filtering rather than by incomplete data
+upload: all 15,226 <code>NO_ESPECIFICADO</code> contracts in the
+corrected closed cohort fall in 2025 and were excluded from the engine
+(<code>21,955 − 6,729 = 15,226</code>), whereas 2020-2024 retained
+near-complete coverage under the same rules (gaps of at most 10
+contracts in those years, corresponding to named categories with fewer
+than 10 observations). Those unspecified 2025 contracts represent
+approximately COP 2.63 trillion—about 48% of 2025 contracted value and
+15.5% of corrected-cohort value—so the 1.31% alert rate describes only
+the named-category slice analyzed by the engine and should not be read
+as an anomaly rate for all 2025 pharmaceutical procurement.</p>
+<p><strong>Geographic distribution of anomalies.</strong></p>
+<p>Departments with the highest rates of statistically flagged contracts
+were Bogota D.C. (3.80%), Norte de Santander (1.92%), Valle del Cauca
+(1.21%), and Tolima (1.00%). This distribution indicates heterogeneity
+in contract values, not causal evidence of corruption.</p>
+<h3 id="market-concentration">3.4 Market concentration</h3>
+<p>For value-share concentration metrics, only positive-value contracts
+with non-empty normalized supplier labels were included: 161,710
+contracts and 50,225 suppliers (Table 1). Zero-value or blank-label rows
+were therefore outside the concentration denominator even when present
+in the corrected cohort. The top 10 suppliers concentrated 29.01% of
+total contracted value and the top 3% of suppliers (1,507 of 50,225)
+concentrated 85.83%. The leading normalized supplier label corresponded
+to one retained VECOL contract (5.65% of total value) whose object
+explicitly concerned a Ministry of Health–National Institute of Health
+agreement for research, development, and national production of
+human-health immunobiological products; veterinary VECOL contracts were
+excluded individually. The HHI was 120.99 on the 0-10,000 scale. The
+detailed distribution is shown in Figure 4.</p>
+<p>This pattern indicates strong cumulative concentration among leading
+suppliers, while the HHI remains low under conventional
+market-concentration thresholds because the contracted value is
+distributed across a large long-tail supplier base. The bipartite graph
+identified 847 recurrent entity-supplier pairs with at least five
+consecutive contracts.</p>
+<h3
+id="smart-contract-payment-workflow-complementary-technical-proof-of-concept">3.5
+Smart-contract payment workflow: complementary technical proof of
+concept</h3>
+<p>Tests in the Sepolia-based BigLoI plus Chainlink CRE simulator
+verified that the prototype could execute predefined transitions between
+digital states. Figure 5 contrasts the current institutional payment
+flow with the digital states of the smart-contract prototype. Reported
+times are investigator-defined reference times used for functional
+validation of the prototype and do not represent observed measurements
+of the full real-world logistics and administrative process. SECOP-II
+was used as a contractual reference point rather than as an operational
+stage of hospital workflow, and no hospital payment system was
+instrumented or experimentally compared.</p>
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr>
+<th>Functional stage</th>
+<th>Prototype time</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Validated contract or enabled order to medicines dispatched</td>
+<td>About 24 hours</td>
+</tr>
+<tr>
+<td>Medicines dispatched to delivery verified</td>
+<td>About 4 hours</td>
+</tr>
+<tr>
+<td>Delivery verified to CRE registered</td>
+<td>About 1 hour</td>
+</tr>
+<tr>
+<td>CRE registered to payment released</td>
+<td>About 1 hour</td>
+</tr>
+<tr>
+<td>Full digital cycle of the prototype</td>
+<td>About 30 hours</td>
+</tr>
+</tbody>
+</table>
+<p>The current institutional cycle reported in the literature is 60-180
+days (90-day median). This contrast is heuristic and order-of-magnitude
+only for the digital administrative component; it is not a direct
+equivalence to the full hospital process, nor evidence that the
+prototype would reproduce such reductions in practice.</p>
+<p><strong>Illustrative financial-savings scenario.</strong></p>
+<p>Average annual pharmaceutical procurement flow across the corrected
+closed 2020-2025 cohort was approximately COP 2.82 trillion (about USD
+705 million at the reference exchange rate). Under a theoretical
+reduction from 90 days to approximately 30 hours and the conservative
+upper-bound 2% monthly financing-cost parameter described in Methods
+§2.6, the corresponding scenario output is approximately COP 167,000
+million per year (USD 41.7 million). Using corrected 2025 flow, the
+illustrative output rises to approximately COP 325,000 million per year
+(USD 81.3 million). These values are scenario outputs only and should
+not be interpreted as observed savings, budget impact estimates, or
+implementation-ready business cases.</p>
+<h3
+id="complementary-modules-machine-learning-and-semantic-retrieval">3.6
+Complementary modules: machine learning and semantic retrieval</h3>
+<p>The complementary machine-learning and semantic-retrieval modules
+showed operational feasibility, but their outputs should be interpreted
+as exploratory within the scope of this paper.</p>
+<hr />
+<h2 id="discussion">4. Discussion</h2>
+<h3 id="scale-and-relevance-of-the-documented-problem">4.1 Scale and
+relevance of the documented problem</h3>
+<p>The corrected corpus of 161,830 pharmaceutical contracts from 2020 to
+2025 represents, to our knowledge, the largest validated closed
+longitudinal series of public pharmaceutical procurement described for
+Colombia. The log-normal distribution of contract values, the
+concentration of 78% of total value in the top decile, and the HHI of
+120.99 are consistent with procurement markets characterized by a small
+group of high-value suppliers and a large long-tail supplier base (14).
+Because the HHI was computed for the national closed cohort as a whole,
+it may understate concentration that could exist within specific
+therapeutic groups (for example oncology, antibiotics, or antivirals);
+category-specific HHI values were not estimated in this study. Under
+conventional market-concentration thresholds, an HHI of 120.99 would be
+interpreted as unconcentrated at the national aggregate level; however,
+that reading can coexist with high cumulative value shares among leading
+suppliers (top 3% = 85.83%) when a large long-tail supplier base dilutes
+the index. Estimating category-specific HHI for oncology, antibiotics,
+antivirals, and related groups is left for future work and would be
+required before drawing subgroup competition inferences.</p>
+<p>The increase in statistical-alert rates from 0.30% in 2021 to 1.31%
+in 2025 suggests increasing heterogeneity in contracted values during
+the study period. This pattern warrants dedicated investigation with
+adjustment for potential confounders such as pharmaceutical inflation
+and the introduction of new high-cost categories.</p>
+<h3 id="z-scores-as-a-surveillance-instrument">4.2 Z-scores as a
+surveillance instrument</h3>
+<p>The Z-score methodology offers advantages over manual auditing: it
+operates on large contract volumes, is reproducible, and does not
+require confidential information. At the same time, threshold-based
+Z-scores are imperfect screens. Without an adjudicated audit gold
+standard, sensitivity and specificity cannot be estimated. The
+exploratory |Z| ≥ 1.5 threshold favors prioritization recall and can
+increase false positives (statistically atypical but legitimate
+high-value contracts), while false negatives remain possible when
+categories are internally heterogeneous, when contracts fall in
+<code>NO_ESPECIFICADO</code>, or when category sample sizes are small.
+Future linkage with SISMED unit prices and item-level disaggregation
+would likely improve the interpretability of the detector (13,15). The
+sustained increase in alert rates from 2021 to 2025 supports evaluation
+of this approach for routine audit prioritization workflows, not as a
+standalone determination of wrongdoing.</p>
+<h3
+id="smart-contracts-applied-to-pharmaceutical-payment-workflows-interpretation-of-a-complementary-proof-of-concept">4.3
+Smart contracts applied to pharmaceutical payment workflows:
+interpretation of a complementary proof of concept</h3>
+<p>The proof of concept supports only a narrow technical claim:
+conditional digital state transitions can be encoded and executed in a
+prototype payment workflow under testnet conditions. It does not
+demonstrate real-world reduction of payment times, lower transaction
+costs, or institutional deployability. The reported times are not
+measurements of the full payment process, which also depends on
+transport, packaging, storage, institutional validation, treasury
+procedures, contracting rules, and other bottlenecks not modeled here. A
+defensible operational evaluation would require prospective integration
+with public hospital information systems, real transaction traces,
+explicit counterfactual design, and independent technical and regulatory
+review. Large-scale implementation would additionally require
+public-treasury integration, legal validation, cybersecurity controls,
+and external smart-contract auditing.</p>
+<h3 id="contribution-to-health-data-governance">4.4 Contribution to
+health data governance</h3>
+<p>Colombia has public data sources that can support pharmaceutical
+surveillance, but it lacks analytical infrastructure that reliably
+converts those data into actionable evidence. BigLoI illustrates that
+such infrastructure can be built using open technologies, reproducible
+workflows, and auditable queries over a contractual corpus.</p>
+<h3 id="limitations">4.5 Limitations</h3>
+<p><strong>SECOP-II data quality.</strong> Buyer and supplier variables
+include null, generic, or inconsistent values in a meaningful share of
+contracts in local sample files, which constrains some network analyses.
+This reflects source-data quality issues in SECOP-II. The source closed
+cohort included 162,271 candidate contracts; contract-level review
+excluded 441 records with explicit veterinary, animal-health, or
+agricultural scope, yielding a corrected cohort of 161,830. The
+recovered local PostgreSQL source currently indexes 165,549 candidate
+pharmaceutical records including live 2026 monitoring rows.</p>
+<p><strong>SISMED temporal mismatch and granularity.</strong> The openly
+available SISMED source covers 2017-2019, whereas the main PostgreSQL
+procurement cohort analyzed here covers 2020 to 2025. Accordingly,
+SISMED was not used as a contemporaneous contract-by-contract comparator
+but as contextual market reference. In addition, the SECOP-II source
+does not provide a fully structured breakdown of line items and unit
+prices for all contracts, limiting direct validation of unit-price
+overpricing.</p>
+<p><strong>Blockchain test-network scope.</strong> As detailed in
+Section 4.3, the payment-workflow validation on Sepolia was a functional
+test of digital state transitions only: prototype times are referential,
+the savings scenario is not an economic evaluation, and the prototype
+was not tested against live institutional payment data. Mainnet
+implementation would require independent smart-contract auditing,
+regulatory validation, public-treasury integration, and cybersecurity
+review.</p>
+<p><strong>Selection bias in pharmaceutical filtering.</strong> Use of
+19 inclusion keywords may generate false negatives and false positives.
+Contract-level review of 519 veterinary/agricultural candidates (441
+excluded; 27 explicit human-health retained; 51 ambiguous retained)
+reduced a known contamination pathway, but the full keyword taxonomy has
+not been validated against an independently adjudicated reference set. A
+dedicated taxonomy-validation study is needed to quantify classification
+performance.</p>
+<p><strong>Z-score false positives and false negatives.</strong> As
+discussed in Section 4.2, statistical alerts prioritize atypical
+total-contract-value patterns within named categories and can yield both
+false positives and false negatives; they do not constitute evidence of
+corruption, fraud, or unit-price overpricing.</p>
+<p><strong>Interpretive scope.</strong> The observational design
+identifies statistical patterns but does not establish causal
+relationships or measure clinical impact. Interpreting flagged contracts
+as evidence of corruption or fraud would require additional adjudication
+methods and involvement of competent institutions.</p>
+<h3 id="potential-implications-for-public-policy">4.6 Potential
+implications for public policy</h3>
+<p>These findings may inform three policy discussions—health-system
+reform, procurement transparency, and health-data governance—but they do
+not by themselves prescribe specific reforms. The principal contribution
+of the study is methodological and reproducible: an open infrastructure
+capable of transforming dispersed public data into auditable evidence.
+Concentration and recurrence indicators may support audit
+prioritization, and uneven SECOP-II data quality is a potential
+institutional concern for Colombia Compra Eficiente and related
+oversight bodies.</p>
+<hr />
+<h2 id="conclusions">5. Conclusions</h2>
+<p>This study describes BigLoI, a national-scale computational
+pharmaceutical-surveillance platform that monitors SECOP-II contracts
+from 2015 onward and empirically analyzes a corrected closed cohort of
+161,830 pharmaceutical contracts from 2020 to 2025. Three main findings
+emerge.</p>
+<ol type="1">
+<li><p><strong>Market concentration.</strong> The top 3% of suppliers
+concentrated 85.83% of total contracted value, the top 10 suppliers
+concentrated 29.01%, and the HHI was 120.99 on the 0-10,000
+scale.</p></li>
+<li><p><strong>Atypical statistical patterns.</strong> A total of 664
+contracts triggered Z-score alerts with absolute Z-score greater than or
+equal to 1.5 sigma, antibiotics showed Zmax of 8.89, and the alert rate
+among Z-score-eligible contracts increased from 0.30% in 2021 to 1.31%
+in 2025. These alerts flag atypical total-value patterns for
+prioritization and do not constitute evidence of corruption or fraud;
+the 2025 rate applies only to named therapeutic categories after
+exclusion of <code>NO_ESPECIFICADO</code>.</p></li>
+<li><p><strong>Reproducible infrastructure.</strong> Integration of
+relational data storage, reproducible analytics, and a public
+observatory makes it possible to convert dispersed public sources into
+an auditable surveillance instrument for pharmaceutical
+procurement.</p></li>
+</ol>
+<p>As a complementary result, the Sepolia prototype shows that
+conditional payment logic can be represented and executed in a
+controlled testnet environment under simulated conditions. Any inference
+about reduced payment delays or financial savings remains hypothetical
+and dependent on assumptions that were not empirically validated in this
+study. This line of work therefore remains exploratory and still
+requires operational, regulatory, technical, and logistical
+validation.</p>
+<p>Overall, BigLoI shows that an open and reproducible surveillance
+infrastructure can generate descriptive findings on market
+concentration, statistical anomalies, and auditable evidence access from
+public administrative data on Colombian pharmaceutical procurement.</p>
+<hr />
+<h2 id="author-contributions">Author contributions</h2>
+<p>Andres Soto: study conception and design; platform development; data
+acquisition, processing, and analysis; manuscript writing.</p>
+<hr />
+<h2 id="funding">Funding</h2>
+<p>This study was fully funded with the author’s own resources. No
+external funding was received.</p>
+<hr />
+<h2 id="competing-interests">Competing interests</h2>
+<p>The author declares no competing interests.</p>
+<hr />
+<h2 id="data-and-code-availability">Data and code availability</h2>
+<ul>
+<li><strong>Article reproducibility package:</strong> Archived in Zenodo
+with DOI <a href="https://doi.org/10.5281/zenodo.19074137"
+class="uri">https://doi.org/10.5281/zenodo.19074137</a> and available in
+GitHub at <a href="https://github.com/zswamtech/BigLoI-PLOS-ONE-paper"
+class="uri">https://github.com/zswamtech/BigLoI-PLOS-ONE-paper</a>.</li>
+<li><strong>Extended BigLoI platform source code:</strong> Available in
+GitHub at <a href="https://github.com/zswamtech/BigLoI-PMV"
+class="uri">https://github.com/zswamtech/BigLoI-PMV</a>.</li>
+<li><strong>SECOP-II, INVIMA, and SISMED data:</strong> Available
+through datos.gov.co.</li>
+<li><strong>Author ORCID:</strong> <a
+href="https://orcid.org/0009-0004-8001-5372"
+class="uri">https://orcid.org/0009-0004-8001-5372</a>.</li>
+<li><strong>BigLoI National Medicines Observatory:</strong> The public
+observatory is undergoing editorial finalization, and its URL will be
+provided once stable production deployment is restored.</li>
+</ul>
+<hr />
+<h2 id="references">References</h2>
+<ol type="1">
+<li><p>Departamento Nacional de Planeacion. Sistema Electronico de
+Contratacion Publica SECOP-II: estadisticas de uso 2015-2026. Bogota:
+Departamento Nacional de Planeacion; 2026.</p></li>
+<li><p>World Health Organization. Everybody’s business: strengthening
+health systems to improve health outcomes: WHO’s framework for action.
+Geneva: World Health Organization; 2007.</p></li>
+<li><p>Contraloria General de la Republica de Colombia. Informe de
+auditoria al sistema de contratacion farmaceutica publica 2023. Bogota:
+Contraloria General de la Republica de Colombia; 2024.</p></li>
+<li><p>Ministerio de Salud y Proteccion Social. SISMED: boletin de
+precios de medicamentos. Bogota: Ministerio de Salud y Proteccion
+Social; 2025.</p></li>
+<li><p>Defensoria del Pueblo de Colombia. Informe sobre
+desabastecimiento de medicamentos en el Eje Cafetero 2025. Bogota:
+Defensoria del Pueblo de Colombia; 2025.</p></li>
+<li><p>Transparency International. Monitoring the pharmaceutical sector:
+a practical guide. Berlin: Transparency International; 2016.</p></li>
+<li><p>Kuo TT, Kim HE, Ohno-Machado L. Blockchain distributed ledger
+technologies for biomedical and health care applications. J Am Med
+Inform Assoc. 2017;24(6):1211-20. doi:10.1093/jamia/ocx068.</p></li>
+<li><p>Lewis P, Perez E, Piktus A, Petroni F, Karpukhin V, Goyal N, et
+al. Retrieval-augmented generation for knowledge-intensive NLP tasks.
+Adv Neural Inf Process Syst. 2020;33:9459-74.</p></li>
+<li><p>Habershon S, Habershon C. ProZorro: how Ukraine’s e-procurement
+system is fighting corruption. OECD Observer. 2019;(318):23-4.</p></li>
+<li><p>Open Contracting Partnership. Open Contracting Data Standard
+[Internet]. Washington (DC): Open Contracting Partnership; 2023
+[accessed 2026 Mar 16]. Available from: <a
+href="https://standard.open-contracting.org/latest/en/"
+class="uri">https://standard.open-contracting.org/latest/en/</a>.</p></li>
+<li><p>European Anti-Fraud Office. The OLAF report 2023 [Internet].
+Brussels: European Commission; 2024 [accessed 2026 Mar 16]. Available
+from: <a href="https://ec.europa.eu/olaf-report/2023/index_en.html"
+class="uri">https://ec.europa.eu/olaf-report/2023/index_en.html</a>.</p></li>
+<li><p>Ferraz C, Finan F. Exposing corrupt politicians: the effects of
+Brazil’s publicly released audits on electoral outcomes. Q J Econ.
+2008;123(2):703-45.</p></li>
+<li><p>Kanavos P, Vogler S. Pharmaceutical market monitoring, policies
+and pharmaceutical pricing. Geneva: World Health Organization;
+2019.</p></li>
+<li><p>Fazekas M, Toth IJ, King LP. An objective corruption risk index
+using public procurement data. Eur J Crim Policy Res.
+2016;22(3):369-97.</p></li>
+<li><p>Management Sciences for Health. MDS-3: managing access to
+medicines and health technologies. Arlington (VA): Management Sciences
+for Health; 2012.</p></li>
+<li><p>Vasquez MA, Sanchez C. Analisis de concentracion en el mercado de
+medicamentos en Colombia. Rev Salud Publica.
+2020;22(1):e185177.</p></li>
+<li><p>Superintendencia Financiera de Colombia. Certificacion del
+interes bancario corriente para las modalidades de credito de consumo y
+ordinario y credito productivo [Internet]. Bogota: Superintendencia
+Financiera de Colombia; 2025 [accessed 2026 Jul 18]. Available from: <a
+href="https://www.superfinanciera.gov.co/"
+class="uri">https://www.superfinanciera.gov.co/</a>.</p></li>
+<li><p>Banco de la Republica. Tasa de usura [Internet]. Bogota: Banco de
+la Republica; 2026 [accessed 2026 Jul 18]. Available from: <a
+href="https://www.banrep.gov.co/es/glosario/tasa-usura"
+class="uri">https://www.banrep.gov.co/es/glosario/tasa-usura</a>.</p></li>
+<li><p>Asociacion de Laboratorios Farmaceuticos de Investigacion y
+Desarrollo (AFIDRO); Sectorial. Informe de situacion de cartera de
+laboratorios farmaceuticos, primer trimestre 2026 [Internet]. Bogota:
+AFIDRO; 2026 [accessed 2026 Jul 18]. Available from: <a
+href="https://afidro.org/2026/06/04/la-cartera-del-sector-farmaceutico-con-el-sistema-de-salud-alcanzo-442-billones-en-el-primer-trimestre-de-2026/"
+class="uri">https://afidro.org/2026/06/04/la-cartera-del-sector-farmaceutico-con-el-sistema-de-salud-alcanzo-442-billones-en-el-primer-trimestre-de-2026/</a>.</p></li>
+</ol>
+<hr />
+<h2 id="figure-legends">Figure legends</h2>
+<p><strong>Figure 1.</strong> Annual evolution of public pharmaceutical
+procurement monitored in SECOP-II (closed cohort, 2020-2025): number of
+contracts and total contracted value.</p>
+<p><strong>Figure 2.</strong> Geographic distribution of total value in
+public pharmaceutical procurement monitored in SECOP-II by department
+(closed cohort, 2020-2025).</p>
+<p><strong>Figure 3.</strong> Distribution of statistical contract-value
+anomalies detected by the Z-score engine, by therapeutic category and
+year (2020-2025).</p>
+<p><strong>Figure 4.</strong> Market concentration in public
+pharmaceutical procurement monitored in SECOP-II (corrected closed
+cohort, 2020-2025): cumulative value concentration by top-ranked
+suppliers and top 10 supplier shares.</p>
+<p><strong>Figure 5.</strong> Conceptual scheme of the pharmaceutical
+payment workflow: current institutional flow versus digital states of
+the smart-contract prototype.</p>
+<p><strong>Figure 6.</strong> Simplified technical architecture of the
+BigLoI platform: seven layers for processing public pharmaceutical
+data.</p>
+<p><strong>Table 1.</strong> Summary of the corpus of public
+pharmaceutical procurement monitored in SECOP-II.</p>
+<p><strong>Table 2.</strong> Technical architecture of the BigLoI
+platform for surveillance of public pharmaceutical procurement.</p>
+<hr />
+<h2 id="supporting-information">Supporting information</h2>
+<p><strong>S1 Table. Approximate COP/USD equivalents for the principal
+monetary values reported in the manuscript.</strong> Conversions use a
+single round reference exchange rate of COP 4,000 per USD and are
+provided only as approximate interpretive aids; no analyses were
+performed in USD.</p>
+<hr />
+<h2 id="appendices">Appendices</h2>
+<h3 id="appendix-1.-secop-ii-pharmaceutical-filtering-taxonomy">Appendix
+1. SECOP-II pharmaceutical filtering taxonomy</h3>
+<p><strong>Inclusion terms (19):</strong> medicamento, farmaceutico,
+farmacia, antibiotico, vacuna, insulina, quimioterapia, dispositivos
+medicos, insumo medico, suministro medico, biologico, antiviral,
+analgesico, anestesia, oncologico, hemodialisis, hormonal,
+anticoagulante, inmunosupresor.</p>
+<p><strong>Exclusion terms (5):</strong> obra civil, construccion,
+mantenimiento, tecnologia de informacion, mobiliario.</p>
+<h3 id="appendix-2.-simplified-database-schema">Appendix 2. Simplified
+database schema</h3>
+<p>Main tables: observatorio_nacional.contratos_secop (956,157 total
+records in the recovered local snapshot; 165,549 candidate
+pharmaceutical records currently indexed; 162,271 in the source closed
+2020-2025 cohort and 161,830 after contract-level veterinary
+exclusions); observatorio_nacional.sismed_precios_referencia (44,038
+records; 1,759 unique ATC codes; years 2017-2019);
+observatorio_nacional.invima_medicamentos (9,838 current records);
+puntos_autorizados (101 hospitals); medicamentos (approximately 10,000
+form records); sim_hospitales_100 (100 simulated hospitals).</p>
+<h3 id="appendix-3.-smart-contract-protocol">Appendix 3. Smart-contract
+protocol</h3>
+<p>Smart contracts: InvoiceRegistry.sol, InvoiceNFT.sol, and
+PaymentEscrow.sol; network: Ethereum Sepolia testnet; oracle layer:
+Chainlink CRE; invoice NFTs used for invoice traceability; escrow module
+used for conditional payment release.</p>

@@ -1,14 +1,7 @@
 # Manuscript files
 
-This folder contains the editorial files for submission.
+- `Manuscript_main_submission.md` / `.docx` — authoritative R2 text (PONE-D-26-13579R2).
+- `Manuscript_main_submission.html` — convenience render of the Markdown.
+- Cover letter files correspond to the R2 submission cover letter.
 
-Recommended public contents:
-
-- Manuscript_main_submission.md
-- Manuscript_main_submission.docx
-- Manuscript_main_submission.pdf
-- Cover_letter_submission.md
-- Cover_letter_submission.docx
-- Cover_letter_submission.pdf
-
-If this package is released publicly, the PDF cover letter may be omitted if you prefer to keep editorial correspondence outside the archive.
+Do not treat any older PDF snapshot as authoritative if it disagrees with the DOCX/Markdown.

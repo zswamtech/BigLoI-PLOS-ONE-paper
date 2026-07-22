@@ -1,7 +1,7 @@
 category_label,contracts_analyzed,pct_with_alert,z_max,ratio_max_to_category_mean
-Analgesico,42,9.5,4.22,9.3
-Diabetes,281,8.2,6.58,15.3
-Antiviral,37,5.4,4.83,14.2
-Antibiotico,219,3.7,8.32,24.1
-Insumo medico,2312,2.6,22.45,86.6
-Oncologico,403,0.7,19.34,139.0
+Analgesico,42,9.52,4.22,9.28
+Diabetes,279,7.89,6.61,15.52
+Antiviral,37,5.41,4.83,14.19
+Antibiotico,217,3.23,8.89,26.41
+Insumo medico,2232,2.46,22.34,88.69
+Oncologico,400,0.75,19.27,138.47

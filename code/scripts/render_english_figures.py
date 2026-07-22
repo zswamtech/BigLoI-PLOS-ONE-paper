@@ -94,7 +94,7 @@ def figure1() -> None:
     ax.set_xticklabels([str(y) for y in years])
     ax.set_title("B. Contracted Value per Year (COP Trillions)", loc="left", fontsize=12, color="#475569", pad=8)
     ax.legend(["Value (COP trillions)"], frameon=False, loc="upper center", bbox_to_anchor=(0.50, 0.93), fontsize=11, labelcolor="#333333", handlelength=1.2)
-    ax.text(0.5, -0.20, "2025 value peak: COP 5.52 trillion", transform=ax.transAxes, ha="center", va="top", color="#5b6b7a", fontsize=9.5)
+    ax.text(0.5, -0.20, "2025 value peak: COP 5.50 trillion", transform=ax.transAxes, ha="center", va="top", color="#5b6b7a", fontsize=9.5)
     for spine in ax.spines.values():
         spine.set_visible(False)
     ax.tick_params(axis="both", length=0, colors="#4b5563")
@@ -109,10 +109,10 @@ def figure2() -> None:
     shares = [float(row["pct_total_national_value"]) for row in rows]
 
     fig = plt.figure()
-    gs = fig.add_gridspec(1, 2, width_ratios=[1.05, 0.75], left=0.08, right=0.98, top=0.83, bottom=0.07, wspace=0.14)
+    gs = fig.add_gridspec(1, 2, width_ratios=[1.05, 0.75], left=0.14, right=0.98, top=0.83, bottom=0.07, wspace=0.14)
 
     ax_left = fig.add_subplot(gs[0, 0])
-    display_names = ["Bogota D.C.", "Antioquia", "Valle del Cauca", "Boyaca", "Huila", "Tolima", "Santander", "Cauca", "Atlantico"]
+    display_names = ["Bogota D.C.", "Antioquia", "Valle del Cauca", "Boyaca", "Tolima", "Santander", "Huila", "Cauca", "Atlantico"]
     ax_left.barh(list(reversed(display_names)), list(reversed(values)), color="#1f6acb")
     ax_left.set_xlim(0, 10000)
     ax_left.set_xticks([0, 1000, 3000, 5000, 7000, 9000])
@@ -144,7 +144,7 @@ def figure2() -> None:
         y -= step
 
     ax_right.add_line(plt.Line2D([0.06, 0.94], [0.11, 0.11], transform=ax_right.transAxes, color="#cbd5e1", linewidth=1))
-    ax_right.text(0.06, 0.07, "Bogota D.C. = 56.3% of value. Top 9 regions = 90.8% of total.", transform=ax_right.transAxes, ha="left", va="top", fontsize=9.5, color="#5b6b7a", wrap=True)
+    ax_right.text(0.06, 0.07, "Bogota D.C. = 56.7% of value. Top 9 regions = 83.9% of total.", transform=ax_right.transAxes, ha="left", va="top", fontsize=9.5, color="#5b6b7a", wrap=True)
 
     save(fig, "bigloi_fig2_master.png", 9.1, 4.04)
 
@@ -153,7 +153,7 @@ def figure3() -> None:
     cat_rows = read_csv(DATA_DIR / "figures" / "Fig3_category_source_data.csv")
     yearly_rows = read_csv(DATA_DIR / "figures" / "Fig3_yearly_source_data.csv")
 
-    cats = ["Analgesics", "Diabetes", "Antivirals", "Antibiotics", "Medical devices", "Oncology"]
+    cats = ["Analgesics", "Diabetes", "Antivirals", "Antibiotics", "Medical supplies", "Oncology"]
     pct = [float(r["pct_with_alert"]) for r in cat_rows]
     zmax = {row["category_label"]: float(row["z_max"]) for row in cat_rows}
     ratio = {row["category_label"]: float(row["ratio_max_to_category_mean"]) for row in cat_rows}
@@ -165,7 +165,7 @@ def figure3() -> None:
     rates = [float(r["alert_rate_pct"]) for r in yearly_rows]
 
     fig = plt.figure()
-    gs = fig.add_gridspec(2, 2, height_ratios=[1, 0.34], width_ratios=[1, 1], left=0.08, right=0.98, top=0.92, bottom=0.05, wspace=0.22, hspace=0.18)
+    gs = fig.add_gridspec(2, 2, height_ratios=[1, 0.38], width_ratios=[1, 1], left=0.14, right=0.98, top=0.92, bottom=0.05, wspace=0.22, hspace=0.18)
 
     ax_l = fig.add_subplot(gs[0, 0])
     ax_l.barh(list(reversed(cats)), list(reversed(pct)), color="#ef6100")
@@ -190,7 +190,7 @@ def figure3() -> None:
     ax_r.set_yticklabels(["0%", "0.5%", "1%", "1.5%"])
     ax_r.set_title("B. Annual Alert Rate", loc="left", fontsize=12, color="#475569", pad=8)
     ax_r.legend(["Alert rate (%)"], frameon=False, loc="upper center", bbox_to_anchor=(0.57, 0.93), fontsize=11, labelcolor="#333333", handlelength=1.2)
-    ax_r.text(0.50, -0.16, "Increase +345% (2021 to 2025): 0.31% -> 1.38%", transform=ax_r.transAxes, ha="center", va="top", color="#d82d2d", fontsize=9.5)
+    ax_r.text(0.50, -0.16, "Increase +331% (2021 to 2025): 0.30% -> 1.31%", transform=ax_r.transAxes, ha="center", va="top", color="#d82d2d", fontsize=9.5)
     ax_r.tick_params(axis="both", length=0, colors="#4b5563")
     for spine in ax_r.spines.values():
         spine.set_visible(False)
@@ -200,12 +200,12 @@ def figure3() -> None:
     box = patches.FancyBboxPatch((0.01, 0.10), 0.98, 0.80, boxstyle="round,pad=0.02,rounding_size=0.04", linewidth=1.2, edgecolor="#f7c948", facecolor="#fff8e1", transform=callout.transAxes)
     callout.add_patch(box)
     text = (
-        "Key findings: Antibiotics: Z_max = 8.32 sigma (maximum value 24x the category mean) "
-        "· Diabetes: highest proportion with alert (8.2%) · Oncology: Z_max = 19.34 sigma "
-        "(ratio 139x the mean) - high intrinsic variance in high-cost biologics · "
-        "303 contracts at CRITICAL level (|Z| >= 3.0 sigma)"
+        "Key findings: Medical supplies: Z_max = 22.34 sigma (maximum value 88.7x the category mean) "
+        "· Analgesics: 9.5% with alert · Oncology: Z_max = 19.27 sigma "
+        "(ratio 138.5x the mean) - high intrinsic variance in high-cost biologics · "
+        "295 contracts at CRITICAL level (|Z| >= 3.0 sigma)"
     )
-    callout.text(0.03, 0.54, fill(text, width=120), transform=callout.transAxes, ha="left", va="center", fontsize=10.0, color="#4b5563")
+    callout.text(0.03, 0.54, fill(text, width=92), transform=callout.transAxes, ha="left", va="center", fontsize=9.4, color="#4b5563")
 
     save(fig, "bigloi_fig3_master.png", 9.1, 4.5)
 
@@ -221,24 +221,24 @@ def figure4() -> None:
     y = [float(r["cumulative_value_pct"]) for r in lorenz]
 
     fig = plt.figure()
-    gs = fig.add_gridspec(1, 2, width_ratios=[0.85, 1.1], left=0.05, right=0.98, top=0.92, bottom=0.22, wspace=0.15)
+    gs = fig.add_gridspec(1, 2, width_ratios=[0.85, 1.1], left=0.07, right=0.98, top=0.92, bottom=0.25, wspace=0.28)
 
     ax_l = fig.add_subplot(gs[0, 0])
     ax_l.set_xscale("log")
     ax_l.plot(x, y, color="#1f6acb", linewidth=3.0)
     ax_l.fill_between(x, y, color="#4c86d0", alpha=0.08)
     ax_l.plot([0.01, 1], [0, 100], linestyle="--", color="#94a3b8", linewidth=1.5)
-    ax_l.scatter([3.0], [85.8695], color="#d82d2d", s=70, zorder=3)
-    ax_l.text(2.6, 76, "Top 3% = 85.9%", color="#d82d2d", fontsize=11, ha="right", va="top")
+    ax_l.scatter([3.0], [85.8305], color="#d82d2d", s=70, zorder=3)
+    ax_l.text(2.6, 76, "Top 3% = 85.8%", color="#d82d2d", fontsize=11, ha="right", va="top")
     ax_l.set_xlim(0.01, 100)
     ax_l.set_ylim(0, 100)
     ax_l.set_xticks([0.01, 0.1, 1, 10, 100])
     ax_l.set_xticklabels(["0.01%", "0.1%", "1%", "10%", "100%"])
     ax_l.set_yticks([0, 25, 50, 75, 100])
     ax_l.set_yticklabels(["0%", "25%", "50%", "75%", "100%"])
-    ax_l.set_title("Lorenz Curve", loc="left", fontsize=12, color="#475569", pad=8)
-    ax_l.text(0.5, -0.18, "% accumulated of suppliers (log scale)", transform=ax_l.transAxes, ha="center", va="top", fontsize=10.5, color="#5b6b7a")
-    ax_l.set_ylabel("% accumulated of value", fontsize=10.5, color="#5b6b7a")
+    ax_l.set_title("Cumulative Concentration Curve", loc="left", fontsize=12, color="#475569", pad=8)
+    ax_l.text(0.5, -0.18, "% of top-ranked suppliers (log scale)", transform=ax_l.transAxes, ha="center", va="top", fontsize=10.5, color="#5b6b7a")
+    ax_l.set_ylabel("% cumulative contracted value", fontsize=10.5, color="#5b6b7a")
     ax_l.tick_params(axis="both", length=0, colors="#4b5563")
     for spine in ax_l.spines.values():
         spine.set_color("#334155")
@@ -257,7 +257,7 @@ def figure4() -> None:
     ax_r.tick_params(axis="x", length=0, colors="#4b5563")
     for spine in ax_r.spines.values():
         spine.set_visible(False)
-    ax_r.text(0.5, -0.16, "50,355 active suppliers - top 3% (1,511 suppliers)\n= 85.9% of total value - HHI 119.26", transform=ax_r.transAxes, ha="center", va="top", fontsize=9.5, color="#5b6b7a", linespacing=1.4)
+    ax_r.text(0.5, -0.14, "50,225 active suppliers - top 3% (1,507 suppliers) = 85.8%\nHHI 120.99 · *retained human-health immunobiologics contract", transform=ax_r.transAxes, ha="center", va="top", fontsize=8.9, color="#5b6b7a", linespacing=1.35)
 
     save(fig, "bigloi_fig4_master.png", 9.1, 3.97)
 
@@ -328,7 +328,7 @@ def figure5() -> None:
             bbox=dict(boxstyle="round,pad=0.5,rounding_size=0.15", fc="#fff3e3", ec="#ef6100", lw=2))
     ax.text(0.79, 0.18, "Prototype reference digital total: ~30 hours", ha="center", va="center", fontsize=10.5, color="#3b8d3d", weight="bold",
             bbox=dict(boxstyle="round,pad=0.5,rounding_size=0.15", fc="#eef7ea", ec="#3b8d3d", lw=2))
-    ax.text(0.50, 0.09, "Projected financial savings: COP 224-330 billion/year\nTheoretical scenario: 2% monthly financing cost x annual flow of COP 3.7 trillion\nx reference reduction of the digital administrative cycle from 90 days to ~30 hours", ha="center", va="center", fontsize=9.5, color="#5b6b7a",
+    ax.text(0.50, 0.09, "Illustrative financial scenario: COP 167-325 billion/year\n2% monthly financing cost x corrected flow of COP 2.82 trillion (mean) or COP 5.50 trillion (2025)\nx reference reduction of the digital administrative cycle from 90 days to ~30 hours", ha="center", va="center", fontsize=9.5, color="#5b6b7a",
             bbox=dict(boxstyle="round,pad=0.8,rounding_size=0.15", fc="#eaf3ff", ec="#2d71c8", lw=2))
 
     save(fig, "bigloi_fig5_master.png", 9.1, 5.94)

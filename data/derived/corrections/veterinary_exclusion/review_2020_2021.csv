@@ -1,0 +1,220 @@
+source_row_id,manual_review_status,manual_review_reason,review_confidence
+340957,EXCLUDE_VETERINARY,"El objeto realiza acciones zoonóticas o vacunación antirrábica sobre animales; aunque tenga finalidad de salud pública, queda fuera del alcance farmacéutico humano.",HIGH
+394410,EXCLUDE_VETERINARY,"El objeto realiza acciones zoonóticas o vacunación antirrábica sobre animales; aunque tenga finalidad de salud pública, queda fuera del alcance farmacéutico humano.",HIGH
+363595,KEEP_HUMAN,El objeto es reforestación y conservación de recursos naturales; la coincidencia con el universo veterinario es accidental.,HIGH
+387302,EXCLUDE_VETERINARY,"El objeto identifica explícitamente uso veterinario, especies animales o atención clínica/sanitaria animal, fuera de la contratación farmacéutica humana.",HIGH
+385014,EXCLUDE_VETERINARY,"El objeto realiza acciones zoonóticas o vacunación antirrábica sobre animales; aunque tenga finalidad de salud pública, queda fuera del alcance farmacéutico humano.",HIGH
+334261,EXCLUDE_VETERINARY,"El objeto realiza acciones zoonóticas o vacunación antirrábica sobre animales; aunque tenga finalidad de salud pública, queda fuera del alcance farmacéutico humano.",HIGH
+385366,EXCLUDE_VETERINARY,"El objeto identifica explícitamente uso veterinario, especies animales o atención clínica/sanitaria animal, fuera de la contratación farmacéutica humana.",HIGH
+338101,EXCLUDE_VETERINARY,"El objeto se destina de forma explícita al cuidado, alimentación, manejo o protección de animales, fuera del alcance farmacéutico humano.",HIGH
+379834,EXCLUDE_VETERINARY,"El objeto identifica explícitamente uso veterinario, especies animales o atención clínica/sanitaria animal, fuera de la contratación farmacéutica humana.",HIGH
+401269,EXCLUDE_VETERINARY,"El objeto corresponde a actividad agropecuaria o agrícola y no a medicamentos, inmunobiológicos o atención de salud humana.",HIGH
+412587,EXCLUDE_VETERINARY,"El objeto identifica explícitamente uso veterinario, especies animales o atención clínica/sanitaria animal, fuera de la contratación farmacéutica humana.",HIGH
+346792,EXCLUDE_VETERINARY,"El objeto identifica explícitamente uso veterinario, especies animales o atención clínica/sanitaria animal, fuera de la contratación farmacéutica humana.",HIGH
+368523,EXCLUDE_VETERINARY,"El objeto se destina de forma explícita al cuidado, alimentación, manejo o protección de animales, fuera del alcance farmacéutico humano.",HIGH
+365053,EXCLUDE_VETERINARY,"El objeto corresponde a actividad agropecuaria o agrícola y no a medicamentos, inmunobiológicos o atención de salud humana.",HIGH
+331646,EXCLUDE_VETERINARY,"El objeto se destina de forma explícita al cuidado, alimentación, manejo o protección de animales, fuera del alcance farmacéutico humano.",HIGH
+377723,KEEP_HUMAN,"El objeto es interventoría de un proyecto de ciencia, turismo y naturaleza; no corresponde a contratación veterinaria ni agropecuaria.",HIGH
+396483,EXCLUDE_VETERINARY,"El objeto identifica explícitamente uso veterinario, especies animales o atención clínica/sanitaria animal, fuera de la contratación farmacéutica humana.",HIGH
+342231,EXCLUDE_VETERINARY,"El objeto identifica explícitamente uso veterinario, especies animales o atención clínica/sanitaria animal, fuera de la contratación farmacéutica humana.",HIGH
+368487,EXCLUDE_VETERINARY,"El objeto identifica explícitamente uso veterinario, especies animales o atención clínica/sanitaria animal, fuera de la contratación farmacéutica humana.",HIGH
+370294,EXCLUDE_VETERINARY,"El objeto realiza acciones zoonóticas o vacunación antirrábica sobre animales; aunque tenga finalidad de salud pública, queda fuera del alcance farmacéutico humano.",HIGH
+399013,EXCLUDE_VETERINARY,"El objeto se destina de forma explícita al cuidado, alimentación, manejo o protección de animales, fuera del alcance farmacéutico humano.",HIGH
+397169,EXCLUDE_VETERINARY,"El objeto identifica explícitamente uso veterinario, especies animales o atención clínica/sanitaria animal, fuera de la contratación farmacéutica humana.",HIGH
+366682,EXCLUDE_VETERINARY,"El objeto identifica explícitamente uso veterinario, especies animales o atención clínica/sanitaria animal, fuera de la contratación farmacéutica humana.",HIGH
+388565,EXCLUDE_VETERINARY,"El objeto identifica explícitamente uso veterinario, especies animales o atención clínica/sanitaria animal, fuera de la contratación farmacéutica humana.",HIGH
+363818,EXCLUDE_VETERINARY,"El objeto corresponde a actividad agropecuaria o agrícola y no a medicamentos, inmunobiológicos o atención de salud humana.",HIGH
+346977,EXCLUDE_VETERINARY,"El objeto se destina de forma explícita al cuidado, alimentación, manejo o protección de animales, fuera del alcance farmacéutico humano.",HIGH
+340174,EXCLUDE_VETERINARY,"El objeto corresponde a actividad agropecuaria o agrícola y no a medicamentos, inmunobiológicos o atención de salud humana.",HIGH
+391780,EXCLUDE_VETERINARY,"El objeto identifica explícitamente uso veterinario, especies animales o atención clínica/sanitaria animal, fuera de la contratación farmacéutica humana.",HIGH
+370935,EXCLUDE_VETERINARY,"El objeto realiza acciones zoonóticas o vacunación antirrábica sobre animales; aunque tenga finalidad de salud pública, queda fuera del alcance farmacéutico humano.",HIGH
+395045,EXCLUDE_VETERINARY,"El objeto identifica explícitamente uso veterinario, especies animales o atención clínica/sanitaria animal, fuera de la contratación farmacéutica humana.",HIGH
+341254,EXCLUDE_VETERINARY,"El objeto se destina de forma explícita al cuidado, alimentación, manejo o protección de animales, fuera del alcance farmacéutico humano.",HIGH
+329165,EXCLUDE_VETERINARY,"El objeto realiza acciones zoonóticas o vacunación antirrábica sobre animales; aunque tenga finalidad de salud pública, queda fuera del alcance farmacéutico humano.",HIGH
+381634,EXCLUDE_VETERINARY,"El objeto corresponde a actividad agropecuaria o agrícola y no a medicamentos, inmunobiológicos o atención de salud humana.",HIGH
+372941,EXCLUDE_VETERINARY,"El objeto identifica explícitamente uso veterinario, especies animales o atención clínica/sanitaria animal, fuera de la contratación farmacéutica humana.",HIGH
+328051,EXCLUDE_VETERINARY,"El objeto identifica explícitamente uso veterinario, especies animales o atención clínica/sanitaria animal, fuera de la contratación farmacéutica humana.",HIGH
+403174,EXCLUDE_VETERINARY,"El objeto identifica explícitamente uso veterinario, especies animales o atención clínica/sanitaria animal, fuera de la contratación farmacéutica humana.",HIGH
+398487,EXCLUDE_VETERINARY,"El objeto se destina de forma explícita al cuidado, alimentación, manejo o protección de animales, fuera del alcance farmacéutico humano.",HIGH
+389287,EXCLUDE_VETERINARY,"El objeto corresponde a actividad agropecuaria o agrícola y no a medicamentos, inmunobiológicos o atención de salud humana.",HIGH
+328949,EXCLUDE_VETERINARY,"El objeto identifica explícitamente uso veterinario, especies animales o atención clínica/sanitaria animal, fuera de la contratación farmacéutica humana.",HIGH
+330329,EXCLUDE_VETERINARY,"El objeto realiza acciones zoonóticas o vacunación antirrábica sobre animales; aunque tenga finalidad de salud pública, queda fuera del alcance farmacéutico humano.",HIGH
+351305,EXCLUDE_VETERINARY,"El objeto identifica explícitamente uso veterinario, especies animales o atención clínica/sanitaria animal, fuera de la contratación farmacéutica humana.",HIGH
+400452,EXCLUDE_VETERINARY,"El objeto identifica explícitamente uso veterinario, especies animales o atención clínica/sanitaria animal, fuera de la contratación farmacéutica humana.",HIGH
+349118,EXCLUDE_VETERINARY,"El objeto identifica explícitamente uso veterinario, especies animales o atención clínica/sanitaria animal, fuera de la contratación farmacéutica humana.",HIGH
+327201,EXCLUDE_VETERINARY,"El objeto se destina de forma explícita al cuidado, alimentación, manejo o protección de animales, fuera del alcance farmacéutico humano.",HIGH
+338774,EXCLUDE_VETERINARY,"El objeto identifica explícitamente uso veterinario, especies animales o atención clínica/sanitaria animal, fuera de la contratación farmacéutica humana.",HIGH
+348650,EXCLUDE_VETERINARY,"El objeto identifica explícitamente uso veterinario, especies animales o atención clínica/sanitaria animal, fuera de la contratación farmacéutica humana.",HIGH
+349117,EXCLUDE_VETERINARY,"El objeto identifica explícitamente uso veterinario, especies animales o atención clínica/sanitaria animal, fuera de la contratación farmacéutica humana.",HIGH
+400753,EXCLUDE_VETERINARY,"El objeto identifica explícitamente uso veterinario, especies animales o atención clínica/sanitaria animal, fuera de la contratación farmacéutica humana.",HIGH
+397816,EXCLUDE_VETERINARY,"El objeto identifica explícitamente uso veterinario, especies animales o atención clínica/sanitaria animal, fuera de la contratación farmacéutica humana.",HIGH
+389681,EXCLUDE_VETERINARY,"El objeto identifica explícitamente uso veterinario, especies animales o atención clínica/sanitaria animal, fuera de la contratación farmacéutica humana.",HIGH
+377402,EXCLUDE_VETERINARY,"El objeto corresponde a actividad agropecuaria o agrícola y no a medicamentos, inmunobiológicos o atención de salud humana.",HIGH
+366791,EXCLUDE_VETERINARY,"El objeto identifica explícitamente uso veterinario, especies animales o atención clínica/sanitaria animal, fuera de la contratación farmacéutica humana.",HIGH
+342999,EXCLUDE_VETERINARY,"El objeto identifica explícitamente uso veterinario, especies animales o atención clínica/sanitaria animal, fuera de la contratación farmacéutica humana.",HIGH
+332532,EXCLUDE_VETERINARY,"El objeto corresponde a actividad agropecuaria o agrícola y no a medicamentos, inmunobiológicos o atención de salud humana.",HIGH
+344111,EXCLUDE_VETERINARY,"El objeto identifica explícitamente uso veterinario, especies animales o atención clínica/sanitaria animal, fuera de la contratación farmacéutica humana.",HIGH
+338984,EXCLUDE_VETERINARY,"El objeto identifica explícitamente uso veterinario, especies animales o atención clínica/sanitaria animal, fuera de la contratación farmacéutica humana.",HIGH
+352048,EXCLUDE_VETERINARY,"El objeto identifica explícitamente uso veterinario, especies animales o atención clínica/sanitaria animal, fuera de la contratación farmacéutica humana.",HIGH
+353079,EXCLUDE_VETERINARY,"El objeto identifica explícitamente uso veterinario, especies animales o atención clínica/sanitaria animal, fuera de la contratación farmacéutica humana.",HIGH
+377701,EXCLUDE_VETERINARY,"El objeto identifica explícitamente uso veterinario, especies animales o atención clínica/sanitaria animal, fuera de la contratación farmacéutica humana.",HIGH
+344058,EXCLUDE_VETERINARY,"El objeto realiza acciones zoonóticas o vacunación antirrábica sobre animales; aunque tenga finalidad de salud pública, queda fuera del alcance farmacéutico humano.",HIGH
+329298,EXCLUDE_VETERINARY,"El objeto se refiere a insumos, alimentación, producción o bienestar de animales o del sector agropecuario, no a contratación farmacéutica humana.",MEDIUM
+328813,EXCLUDE_VETERINARY,"El objeto identifica explícitamente uso veterinario, especies animales o atención clínica/sanitaria animal, fuera de la contratación farmacéutica humana.",HIGH
+389278,EXCLUDE_VETERINARY,"El objeto identifica explícitamente uso veterinario, especies animales o atención clínica/sanitaria animal, fuera de la contratación farmacéutica humana.",HIGH
+389291,EXCLUDE_VETERINARY,"El objeto identifica explícitamente uso veterinario, especies animales o atención clínica/sanitaria animal, fuera de la contratación farmacéutica humana.",HIGH
+389273,EXCLUDE_VETERINARY,"El objeto identifica explícitamente uso veterinario, especies animales o atención clínica/sanitaria animal, fuera de la contratación farmacéutica humana.",HIGH
+349580,EXCLUDE_VETERINARY,"El objeto identifica explícitamente uso veterinario, especies animales o atención clínica/sanitaria animal, fuera de la contratación farmacéutica humana.",HIGH
+402070,EXCLUDE_VETERINARY,"El objeto identifica explícitamente uso veterinario, especies animales o atención clínica/sanitaria animal, fuera de la contratación farmacéutica humana.",HIGH
+335263,EXCLUDE_VETERINARY,"El objeto identifica explícitamente uso veterinario, especies animales o atención clínica/sanitaria animal, fuera de la contratación farmacéutica humana.",HIGH
+401110,EXCLUDE_VETERINARY,"El objeto se refiere a insumos, alimentación, producción o bienestar de animales o del sector agropecuario, no a contratación farmacéutica humana.",MEDIUM
+402081,EXCLUDE_VETERINARY,"El objeto identifica explícitamente uso veterinario, especies animales o atención clínica/sanitaria animal, fuera de la contratación farmacéutica humana.",HIGH
+331162,EXCLUDE_VETERINARY,"El objeto se destina de forma explícita al cuidado, alimentación, manejo o protección de animales, fuera del alcance farmacéutico humano.",HIGH
+339151,EXCLUDE_VETERINARY,"El objeto identifica explícitamente uso veterinario, especies animales o atención clínica/sanitaria animal, fuera de la contratación farmacéutica humana.",HIGH
+378008,EXCLUDE_VETERINARY,"El objeto identifica explícitamente uso veterinario, especies animales o atención clínica/sanitaria animal, fuera de la contratación farmacéutica humana.",HIGH
+346570,EXCLUDE_VETERINARY,"El objeto identifica explícitamente uso veterinario, especies animales o atención clínica/sanitaria animal, fuera de la contratación farmacéutica humana.",HIGH
+389270,EXCLUDE_VETERINARY,"El objeto identifica explícitamente uso veterinario, especies animales o atención clínica/sanitaria animal, fuera de la contratación farmacéutica humana.",HIGH
+350983,EXCLUDE_VETERINARY,"El objeto identifica explícitamente uso veterinario, especies animales o atención clínica/sanitaria animal, fuera de la contratación farmacéutica humana.",HIGH
+331689,EXCLUDE_VETERINARY,"El objeto corresponde a actividad agropecuaria o agrícola y no a medicamentos, inmunobiológicos o atención de salud humana.",HIGH
+385098,NEEDS_REVIEW,"El objeto solo remite a un contrato de la Gobernación de Antioquia y no identifica población, especie ni uso de los medicamentos.",LOW
+381744,EXCLUDE_VETERINARY,"El objeto se destina de forma explícita al cuidado, alimentación, manejo o protección de animales, fuera del alcance farmacéutico humano.",HIGH
+373088,EXCLUDE_VETERINARY,"El objeto se destina de forma explícita al cuidado, alimentación, manejo o protección de animales, fuera del alcance farmacéutico humano.",HIGH
+366195,EXCLUDE_VETERINARY,"El objeto corresponde a actividad agropecuaria o agrícola y no a medicamentos, inmunobiológicos o atención de salud humana.",HIGH
+394405,EXCLUDE_VETERINARY,"El objeto se destina de forma explícita al cuidado, alimentación, manejo o protección de animales, fuera del alcance farmacéutico humano.",HIGH
+382996,EXCLUDE_VETERINARY,"El objeto identifica explícitamente uso veterinario, especies animales o atención clínica/sanitaria animal, fuera de la contratación farmacéutica humana.",HIGH
+364819,EXCLUDE_VETERINARY,"El objeto identifica explícitamente uso veterinario, especies animales o atención clínica/sanitaria animal, fuera de la contratación farmacéutica humana.",HIGH
+407361,EXCLUDE_VETERINARY,"El objeto se destina de forma explícita al cuidado, alimentación, manejo o protección de animales, fuera del alcance farmacéutico humano.",HIGH
+344112,EXCLUDE_VETERINARY,"El objeto identifica explícitamente uso veterinario, especies animales o atención clínica/sanitaria animal, fuera de la contratación farmacéutica humana.",HIGH
+379458,EXCLUDE_VETERINARY,"El objeto identifica explícitamente uso veterinario, especies animales o atención clínica/sanitaria animal, fuera de la contratación farmacéutica humana.",HIGH
+369780,EXCLUDE_VETERINARY,"El objeto se destina de forma explícita al cuidado, alimentación, manejo o protección de animales, fuera del alcance farmacéutico humano.",HIGH
+386780,EXCLUDE_VETERINARY,"El objeto identifica explícitamente uso veterinario, especies animales o atención clínica/sanitaria animal, fuera de la contratación farmacéutica humana.",HIGH
+377794,EXCLUDE_VETERINARY,"El objeto identifica explícitamente uso veterinario, especies animales o atención clínica/sanitaria animal, fuera de la contratación farmacéutica humana.",HIGH
+343439,EXCLUDE_VETERINARY,"El objeto se refiere a insumos, alimentación, producción o bienestar de animales o del sector agropecuario, no a contratación farmacéutica humana.",MEDIUM
+335470,EXCLUDE_VETERINARY,"El objeto identifica explícitamente uso veterinario, especies animales o atención clínica/sanitaria animal, fuera de la contratación farmacéutica humana.",HIGH
+342426,EXCLUDE_VETERINARY,"El objeto identifica explícitamente uso veterinario, especies animales o atención clínica/sanitaria animal, fuera de la contratación farmacéutica humana.",HIGH
+348909,EXCLUDE_VETERINARY,"El objeto identifica explícitamente uso veterinario, especies animales o atención clínica/sanitaria animal, fuera de la contratación farmacéutica humana.",HIGH
+333744,EXCLUDE_VETERINARY,"El objeto identifica explícitamente uso veterinario, especies animales o atención clínica/sanitaria animal, fuera de la contratación farmacéutica humana.",HIGH
+402445,EXCLUDE_VETERINARY,"El objeto identifica explícitamente uso veterinario, especies animales o atención clínica/sanitaria animal, fuera de la contratación farmacéutica humana.",HIGH
+354454,EXCLUDE_VETERINARY,"El objeto identifica explícitamente uso veterinario, especies animales o atención clínica/sanitaria animal, fuera de la contratación farmacéutica humana.",HIGH
+407419,EXCLUDE_VETERINARY,"El objeto corresponde a vacunación o control sanitario de enfermedades animales, fuera del alcance farmacéutico humano.",HIGH
+335294,EXCLUDE_VETERINARY,"El objeto identifica explícitamente uso veterinario, especies animales o atención clínica/sanitaria animal, fuera de la contratación farmacéutica humana.",HIGH
+355963,EXCLUDE_VETERINARY,"El objeto se destina de forma explícita al cuidado, alimentación, manejo o protección de animales, fuera del alcance farmacéutico humano.",HIGH
+340993,EXCLUDE_VETERINARY,"El objeto corresponde a actividad agropecuaria o agrícola y no a medicamentos, inmunobiológicos o atención de salud humana.",HIGH
+329633,KEEP_HUMAN,El objeto es muestreo y análisis de agua potable y cruda; la coincidencia es accidental y no involucra animales.,HIGH
+370746,EXCLUDE_VETERINARY,"El objeto identifica explícitamente uso veterinario, especies animales o atención clínica/sanitaria animal, fuera de la contratación farmacéutica humana.",HIGH
+329836,EXCLUDE_VETERINARY,"El objeto corresponde a actividad agropecuaria o agrícola y no a medicamentos, inmunobiológicos o atención de salud humana.",HIGH
+338993,EXCLUDE_VETERINARY,"El objeto identifica explícitamente uso veterinario, especies animales o atención clínica/sanitaria animal, fuera de la contratación farmacéutica humana.",HIGH
+408039,EXCLUDE_VETERINARY,"El objeto se destina de forma explícita al cuidado, alimentación, manejo o protección de animales, fuera del alcance farmacéutico humano.",HIGH
+357208,EXCLUDE_VETERINARY,"El objeto se destina de forma explícita al cuidado, alimentación, manejo o protección de animales, fuera del alcance farmacéutico humano.",HIGH
+372114,EXCLUDE_VETERINARY,"El objeto identifica explícitamente uso veterinario, especies animales o atención clínica/sanitaria animal, fuera de la contratación farmacéutica humana.",HIGH
+402939,EXCLUDE_VETERINARY,"El objeto identifica explícitamente uso veterinario, especies animales o atención clínica/sanitaria animal, fuera de la contratación farmacéutica humana.",HIGH
+370071,EXCLUDE_VETERINARY,"El objeto identifica explícitamente uso veterinario, especies animales o atención clínica/sanitaria animal, fuera de la contratación farmacéutica humana.",HIGH
+371155,EXCLUDE_VETERINARY,"El objeto corresponde a actividad agropecuaria o agrícola y no a medicamentos, inmunobiológicos o atención de salud humana.",HIGH
+370591,EXCLUDE_VETERINARY,"El objeto identifica explícitamente uso veterinario, especies animales o atención clínica/sanitaria animal, fuera de la contratación farmacéutica humana.",HIGH
+408785,EXCLUDE_VETERINARY,"El objeto se destina de forma explícita al cuidado, alimentación, manejo o protección de animales, fuera del alcance farmacéutico humano.",HIGH
+392888,EXCLUDE_VETERINARY,"El objeto identifica explícitamente uso veterinario, especies animales o atención clínica/sanitaria animal, fuera de la contratación farmacéutica humana.",HIGH
+330658,EXCLUDE_VETERINARY,"El objeto se destina de forma explícita al cuidado, alimentación, manejo o protección de animales, fuera del alcance farmacéutico humano.",HIGH
+389281,EXCLUDE_VETERINARY,"El objeto identifica explícitamente uso veterinario, especies animales o atención clínica/sanitaria animal, fuera de la contratación farmacéutica humana.",HIGH
+371480,EXCLUDE_VETERINARY,"El objeto corresponde a actividad agropecuaria o agrícola y no a medicamentos, inmunobiológicos o atención de salud humana.",HIGH
+377953,EXCLUDE_VETERINARY,"El objeto identifica explícitamente uso veterinario, especies animales o atención clínica/sanitaria animal, fuera de la contratación farmacéutica humana.",HIGH
+328210,EXCLUDE_VETERINARY,"El objeto identifica explícitamente uso veterinario, especies animales o atención clínica/sanitaria animal, fuera de la contratación farmacéutica humana.",HIGH
+369839,EXCLUDE_VETERINARY,"El objeto se destina de forma explícita al cuidado, alimentación, manejo o protección de animales, fuera del alcance farmacéutico humano.",HIGH
+394732,EXCLUDE_VETERINARY,"El objeto se refiere a insumos, alimentación, producción o bienestar de animales o del sector agropecuario, no a contratación farmacéutica humana.",MEDIUM
+407865,EXCLUDE_VETERINARY,"El objeto identifica explícitamente uso veterinario, especies animales o atención clínica/sanitaria animal, fuera de la contratación farmacéutica humana.",HIGH
+392672,EXCLUDE_VETERINARY,"El objeto identifica explícitamente uso veterinario, especies animales o atención clínica/sanitaria animal, fuera de la contratación farmacéutica humana.",HIGH
+329288,EXCLUDE_VETERINARY,"El objeto identifica explícitamente uso veterinario, especies animales o atención clínica/sanitaria animal, fuera de la contratación farmacéutica humana.",HIGH
+398104,EXCLUDE_VETERINARY,"El objeto se refiere a insumos, alimentación, producción o bienestar de animales o del sector agropecuario, no a contratación farmacéutica humana.",MEDIUM
+340099,EXCLUDE_VETERINARY,"El objeto identifica explícitamente uso veterinario, especies animales o atención clínica/sanitaria animal, fuera de la contratación farmacéutica humana.",HIGH
+327521,EXCLUDE_VETERINARY,"El objeto identifica explícitamente uso veterinario, especies animales o atención clínica/sanitaria animal, fuera de la contratación farmacéutica humana.",HIGH
+387075,EXCLUDE_VETERINARY,El objeto estudia SARS-CoV-2 específicamente en animales domésticos y silvestres; su vínculo con salud humana no cambia el uso animal.,HIGH
+352147,EXCLUDE_VETERINARY,"El objeto se destina de forma explícita al cuidado, alimentación, manejo o protección de animales, fuera del alcance farmacéutico humano.",HIGH
+343359,EXCLUDE_VETERINARY,"El objeto se destina de forma explícita al cuidado, alimentación, manejo o protección de animales, fuera del alcance farmacéutico humano.",HIGH
+368401,EXCLUDE_VETERINARY,"El objeto identifica explícitamente uso veterinario, especies animales o atención clínica/sanitaria animal, fuera de la contratación farmacéutica humana.",HIGH
+402005,EXCLUDE_VETERINARY,"El objeto se destina de forma explícita al cuidado, alimentación, manejo o protección de animales, fuera del alcance farmacéutico humano.",HIGH
+336152,EXCLUDE_VETERINARY,"El objeto identifica explícitamente uso veterinario, especies animales o atención clínica/sanitaria animal, fuera de la contratación farmacéutica humana.",HIGH
+328971,EXCLUDE_VETERINARY,"El objeto corresponde a actividad agropecuaria o agrícola y no a medicamentos, inmunobiológicos o atención de salud humana.",HIGH
+344721,EXCLUDE_VETERINARY,"El objeto se destina de forma explícita al cuidado, alimentación, manejo o protección de animales, fuera del alcance farmacéutico humano.",HIGH
+389274,EXCLUDE_VETERINARY,"El objeto identifica explícitamente uso veterinario, especies animales o atención clínica/sanitaria animal, fuera de la contratación farmacéutica humana.",HIGH
+408824,EXCLUDE_VETERINARY,"El objeto identifica explícitamente uso veterinario, especies animales o atención clínica/sanitaria animal, fuera de la contratación farmacéutica humana.",HIGH
+347597,EXCLUDE_VETERINARY,"El objeto identifica explícitamente uso veterinario, especies animales o atención clínica/sanitaria animal, fuera de la contratación farmacéutica humana.",HIGH
+366199,EXCLUDE_VETERINARY,"El objeto identifica explícitamente uso veterinario, especies animales o atención clínica/sanitaria animal, fuera de la contratación farmacéutica humana.",HIGH
+376935,EXCLUDE_VETERINARY,"El objeto identifica explícitamente uso veterinario, especies animales o atención clínica/sanitaria animal, fuera de la contratación farmacéutica humana.",HIGH
+378800,EXCLUDE_VETERINARY,"El objeto corresponde a actividad agropecuaria o agrícola y no a medicamentos, inmunobiológicos o atención de salud humana.",HIGH
+353732,EXCLUDE_VETERINARY,"El objeto identifica explícitamente uso veterinario, especies animales o atención clínica/sanitaria animal, fuera de la contratación farmacéutica humana.",HIGH
+369564,EXCLUDE_VETERINARY,"El objeto identifica explícitamente uso veterinario, especies animales o atención clínica/sanitaria animal, fuera de la contratación farmacéutica humana.",HIGH
+392507,EXCLUDE_VETERINARY,"El objeto se destina de forma explícita al cuidado, alimentación, manejo o protección de animales, fuera del alcance farmacéutico humano.",HIGH
+365613,EXCLUDE_VETERINARY,"El objeto se destina de forma explícita al cuidado, alimentación, manejo o protección de animales, fuera del alcance farmacéutico humano.",HIGH
+331519,EXCLUDE_VETERINARY,"El objeto realiza acciones zoonóticas o vacunación antirrábica sobre animales; aunque tenga finalidad de salud pública, queda fuera del alcance farmacéutico humano.",HIGH
+358014,EXCLUDE_VETERINARY,"El objeto se destina de forma explícita al cuidado, alimentación, manejo o protección de animales, fuera del alcance farmacéutico humano.",HIGH
+370046,NEEDS_REVIEW,"El objeto menciona materiales de formación y un lote de medicamentos, pero no identifica población humana, animal ni finalidad clínica.",LOW
+334945,EXCLUDE_VETERINARY,"El objeto identifica explícitamente uso veterinario, especies animales o atención clínica/sanitaria animal, fuera de la contratación farmacéutica humana.",HIGH
+329118,EXCLUDE_VETERINARY,"El objeto identifica explícitamente uso veterinario, especies animales o atención clínica/sanitaria animal, fuera de la contratación farmacéutica humana.",HIGH
+342930,EXCLUDE_VETERINARY,"El objeto corresponde a actividad agropecuaria o agrícola y no a medicamentos, inmunobiológicos o atención de salud humana.",HIGH
+392050,EXCLUDE_VETERINARY,"El objeto se destina de forma explícita al cuidado, alimentación, manejo o protección de animales, fuera del alcance farmacéutico humano.",HIGH
+370172,KEEP_HUMAN,El objeto desarrolla medicamentos a base de plantas medicinales en una comunidad indígena y no menciona animales ni uso veterinario.,MEDIUM
+349025,KEEP_HUMAN,"El objeto adquiere bioseguridad, desinfección y EPP para proteger personal humano frente a COVID-19.",HIGH
+370144,EXCLUDE_VETERINARY,"El objeto realiza acciones zoonóticas o vacunación antirrábica sobre animales; aunque tenga finalidad de salud pública, queda fuera del alcance farmacéutico humano.",HIGH
+397828,EXCLUDE_VETERINARY,"El objeto se refiere a insumos, alimentación, producción o bienestar de animales o del sector agropecuario, no a contratación farmacéutica humana.",MEDIUM
+357665,EXCLUDE_VETERINARY,"El objeto identifica explícitamente uso veterinario, especies animales o atención clínica/sanitaria animal, fuera de la contratación farmacéutica humana.",HIGH
+339882,EXCLUDE_VETERINARY,"El objeto corresponde a vacunación o control sanitario de enfermedades animales, fuera del alcance farmacéutico humano.",HIGH
+335584,EXCLUDE_VETERINARY,"El objeto se destina de forma explícita al cuidado, alimentación, manejo o protección de animales, fuera del alcance farmacéutico humano.",HIGH
+364301,EXCLUDE_VETERINARY,"El objeto se destina de forma explícita al cuidado, alimentación, manejo o protección de animales, fuera del alcance farmacéutico humano.",HIGH
+338947,EXCLUDE_VETERINARY,"El objeto identifica explícitamente uso veterinario, especies animales o atención clínica/sanitaria animal, fuera de la contratación farmacéutica humana.",HIGH
+331754,EXCLUDE_VETERINARY,"El objeto identifica explícitamente uso veterinario, especies animales o atención clínica/sanitaria animal, fuera de la contratación farmacéutica humana.",HIGH
+381708,EXCLUDE_VETERINARY,"El objeto identifica explícitamente uso veterinario, especies animales o atención clínica/sanitaria animal, fuera de la contratación farmacéutica humana.",HIGH
+385348,EXCLUDE_VETERINARY,"El objeto corresponde a actividad agropecuaria o agrícola y no a medicamentos, inmunobiológicos o atención de salud humana.",HIGH
+364496,EXCLUDE_VETERINARY,"El objeto identifica explícitamente uso veterinario, especies animales o atención clínica/sanitaria animal, fuera de la contratación farmacéutica humana.",HIGH
+350710,EXCLUDE_VETERINARY,"El objeto se destina de forma explícita al cuidado, alimentación, manejo o protección de animales, fuera del alcance farmacéutico humano.",HIGH
+368720,EXCLUDE_VETERINARY,"El objeto identifica explícitamente uso veterinario, especies animales o atención clínica/sanitaria animal, fuera de la contratación farmacéutica humana.",HIGH
+407555,KEEP_HUMAN,El objeto adquiere permetrina para instalaciones del Ejército y no menciona animales ni uso veterinario; coincidencia accidental.,MEDIUM
+373661,NEEDS_REVIEW,El objeto solo indica reactivos para un laboratorio de inmunodiagnóstico y no especifica si las muestras son humanas o animales.,LOW
+353355,EXCLUDE_VETERINARY,"El objeto identifica explícitamente uso veterinario, especies animales o atención clínica/sanitaria animal, fuera de la contratación farmacéutica humana.",HIGH
+344760,EXCLUDE_VETERINARY,"El objeto identifica explícitamente uso veterinario, especies animales o atención clínica/sanitaria animal, fuera de la contratación farmacéutica humana.",HIGH
+353354,EXCLUDE_VETERINARY,"El objeto se destina de forma explícita al cuidado, alimentación, manejo o protección de animales, fuera del alcance farmacéutico humano.",HIGH
+373565,EXCLUDE_VETERINARY,"El objeto identifica explícitamente uso veterinario, especies animales o atención clínica/sanitaria animal, fuera de la contratación farmacéutica humana.",HIGH
+357927,EXCLUDE_VETERINARY,"El objeto identifica explícitamente uso veterinario, especies animales o atención clínica/sanitaria animal, fuera de la contratación farmacéutica humana.",HIGH
+330098,EXCLUDE_VETERINARY,"El objeto identifica explícitamente uso veterinario, especies animales o atención clínica/sanitaria animal, fuera de la contratación farmacéutica humana.",HIGH
+347078,EXCLUDE_VETERINARY,"El objeto identifica explícitamente uso veterinario, especies animales o atención clínica/sanitaria animal, fuera de la contratación farmacéutica humana.",HIGH
+392139,EXCLUDE_VETERINARY,"El objeto identifica explícitamente uso veterinario, especies animales o atención clínica/sanitaria animal, fuera de la contratación farmacéutica humana.",HIGH
+369622,EXCLUDE_VETERINARY,"El objeto corresponde a actividad agropecuaria o agrícola y no a medicamentos, inmunobiológicos o atención de salud humana.",HIGH
+406800,EXCLUDE_VETERINARY,"El objeto identifica explícitamente uso veterinario, especies animales o atención clínica/sanitaria animal, fuera de la contratación farmacéutica humana.",HIGH
+329947,EXCLUDE_VETERINARY,"El objeto realiza acciones zoonóticas o vacunación antirrábica sobre animales; aunque tenga finalidad de salud pública, queda fuera del alcance farmacéutico humano.",HIGH
+350735,EXCLUDE_VETERINARY,"El objeto identifica explícitamente uso veterinario, especies animales o atención clínica/sanitaria animal, fuera de la contratación farmacéutica humana.",HIGH
+331150,EXCLUDE_VETERINARY,"El objeto identifica explícitamente uso veterinario, especies animales o atención clínica/sanitaria animal, fuera de la contratación farmacéutica humana.",HIGH
+389290,EXCLUDE_VETERINARY,"El objeto identifica explícitamente uso veterinario, especies animales o atención clínica/sanitaria animal, fuera de la contratación farmacéutica humana.",HIGH
+347264,EXCLUDE_VETERINARY,"El objeto identifica explícitamente uso veterinario, especies animales o atención clínica/sanitaria animal, fuera de la contratación farmacéutica humana.",HIGH
+336980,NEEDS_REVIEW,"El objeto menciona un programa de esterilización municipal, pero no identifica expresamente especie ni población atendida.",LOW
+333700,NEEDS_REVIEW,El objeto solo indica reactivos para un laboratorio de inmunodiagnóstico y no especifica si las muestras son humanas o animales.,LOW
+369871,EXCLUDE_VETERINARY,"El objeto identifica explícitamente uso veterinario, especies animales o atención clínica/sanitaria animal, fuera de la contratación farmacéutica humana.",HIGH
+341511,KEEP_HUMAN,El objeto adquiere fumigadoras para desinfección y mitigación de COVID-19 en unidades con personal humano.,HIGH
+328975,EXCLUDE_VETERINARY,"El objeto se destina de forma explícita al cuidado, alimentación, manejo o protección de animales, fuera del alcance farmacéutico humano.",HIGH
+366372,EXCLUDE_VETERINARY,"El objeto se destina de forma explícita al cuidado, alimentación, manejo o protección de animales, fuera del alcance farmacéutico humano.",HIGH
+411782,EXCLUDE_VETERINARY,"El objeto corresponde a vacunación o control sanitario de enfermedades animales, fuera del alcance farmacéutico humano.",HIGH
+412286,EXCLUDE_VETERINARY,"El objeto identifica explícitamente uso veterinario, especies animales o atención clínica/sanitaria animal, fuera de la contratación farmacéutica humana.",HIGH
+367388,EXCLUDE_VETERINARY,"El objeto se destina de forma explícita al cuidado, alimentación, manejo o protección de animales, fuera del alcance farmacéutico humano.",HIGH
+348734,EXCLUDE_VETERINARY,"El objeto identifica explícitamente uso veterinario, especies animales o atención clínica/sanitaria animal, fuera de la contratación farmacéutica humana.",HIGH
+349414,EXCLUDE_VETERINARY,"El objeto realiza acciones zoonóticas o vacunación antirrábica sobre animales; aunque tenga finalidad de salud pública, queda fuera del alcance farmacéutico humano.",MEDIUM
+354628,EXCLUDE_VETERINARY,"El objeto identifica explícitamente uso veterinario, especies animales o atención clínica/sanitaria animal, fuera de la contratación farmacéutica humana.",HIGH
+385006,EXCLUDE_VETERINARY,"El objeto identifica explícitamente uso veterinario, especies animales o atención clínica/sanitaria animal, fuera de la contratación farmacéutica humana.",HIGH
+393248,KEEP_HUMAN,El objeto financia transporte de personas para apoyar el Plan Nacional de Vacunación humana contra COVID-19.,HIGH
+391320,KEEP_HUMAN,El objeto suministra medicamentos para pacientes humanos en UCI e intermedios durante la emergencia por COVID-19.,HIGH
+396788,EXCLUDE_VETERINARY,"El objeto identifica explícitamente uso veterinario, especies animales o atención clínica/sanitaria animal, fuera de la contratación farmacéutica humana.",HIGH
+368949,EXCLUDE_VETERINARY,"El objeto identifica explícitamente uso veterinario, especies animales o atención clínica/sanitaria animal, fuera de la contratación farmacéutica humana.",HIGH
+369700,EXCLUDE_VETERINARY,"El objeto identifica explícitamente uso veterinario, especies animales o atención clínica/sanitaria animal, fuera de la contratación farmacéutica humana.",HIGH
+339565,EXCLUDE_VETERINARY,"El objeto identifica explícitamente uso veterinario, especies animales o atención clínica/sanitaria animal, fuera de la contratación farmacéutica humana.",HIGH
+382919,EXCLUDE_VETERINARY,"El objeto identifica explícitamente uso veterinario, especies animales o atención clínica/sanitaria animal, fuera de la contratación farmacéutica humana.",HIGH
+386763,EXCLUDE_VETERINARY,"El objeto identifica explícitamente uso veterinario, especies animales o atención clínica/sanitaria animal, fuera de la contratación farmacéutica humana.",HIGH
+368271,NEEDS_REVIEW,"El objeto menciona medicamentos para proyectos pedagógicos productivos sin identificar especies, población ni uso específico.",LOW
+340269,EXCLUDE_VETERINARY,"El objeto identifica explícitamente uso veterinario, especies animales o atención clínica/sanitaria animal, fuera de la contratación farmacéutica humana.",HIGH
+347712,EXCLUDE_VETERINARY,"El objeto identifica explícitamente uso veterinario, especies animales o atención clínica/sanitaria animal, fuera de la contratación farmacéutica humana.",HIGH
+356742,NEEDS_REVIEW,"El objeto menciona un programa de esterilización y un número de contrato, pero no identifica expresamente la especie atendida.",LOW
+405138,EXCLUDE_VETERINARY,"El objeto identifica explícitamente uso veterinario, especies animales o atención clínica/sanitaria animal, fuera de la contratación farmacéutica humana.",HIGH
+347690,NEEDS_REVIEW,"El objeto remite a un contrato del Área Metropolitana para compra de medicamentos sin indicar especie, población ni uso.",LOW
+340258,NEEDS_REVIEW,"El objeto menciona un programa de esterilización del Área Metropolitana, pero no identifica expresamente la especie atendida.",LOW
+357901,NEEDS_REVIEW,El objeto solo indica reactivos para un laboratorio de microbiología y no permite distinguir investigación o diagnóstico humano de animal.,LOW
+396761,EXCLUDE_VETERINARY,"El objeto identifica explícitamente uso veterinario, especies animales o atención clínica/sanitaria animal, fuera de la contratación farmacéutica humana.",HIGH
+354735,KEEP_HUMAN,"El objeto compra insumos y reactivos para investigación de doctorado en ciencias biomédicas humanas, sin referencia animal.",HIGH
+382623,NEEDS_REVIEW,"El objeto solo remite a un contrato de la Gobernación de Antioquia y no identifica población, especie ni uso de los medicamentos.",LOW
+382152,EXCLUDE_VETERINARY,"El objeto identifica explícitamente uso veterinario, especies animales o atención clínica/sanitaria animal, fuera de la contratación farmacéutica humana.",HIGH
+378716,NEEDS_REVIEW,"El objeto solo remite a un contrato de la Gobernación de Antioquia y no identifica población, especie ni uso del medicamento.",LOW
+369675,EXCLUDE_VETERINARY,"El objeto identifica explícitamente uso veterinario, especies animales o atención clínica/sanitaria animal, fuera de la contratación farmacéutica humana.",HIGH
