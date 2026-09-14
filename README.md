@@ -2,12 +2,13 @@
 
 ## Reproducibility package for a closed cohort of Colombian public pharmaceutical procurement, 2020-2025
 
-[![Package version](https://img.shields.io/badge/package-v0.2.0-0b5cab)](VERSION.md)
+[![Package version](https://img.shields.io/badge/package-v0.2.1-0b5cab)](VERSION.md)
 [![License](https://img.shields.io/badge/license-CC--BY--4.0-2e7d32)](https://creativecommons.org/licenses/by/4.0/)
-[![Zenodo](https://img.shields.io/badge/Zenodo-10.5281%2Fzenodo.19074137-1682d4)](https://doi.org/10.5281/zenodo.19074137)
+[![PLOS ONE](https://img.shields.io/badge/PLOS%20ONE-10.1371%2Fjournal.pone.0350967-d32f2f)](https://doi.org/10.1371/journal.pone.0350967)
+[![Zenodo](https://img.shields.io/badge/Zenodo-10.5281%2Fzenodo.21495935-1682d4)](https://doi.org/10.5281/zenodo.21495935)
 [![ORCID](https://img.shields.io/badge/ORCID-0009--0004--8001--5372-a6ce39)](https://orcid.org/0009-0004-8001-5372)
 
-Article-specific package for the manuscript:
+Article-specific package for the published PLOS ONE article:
 
 Computational surveillance of Colombian public pharmaceutical procurement using public administrative data: a reproducible analysis of a closed 2020-2025 cohort.
 
@@ -15,7 +16,7 @@ Computational surveillance of Colombian public pharmaceutical procurement using 
 
 > **Research status**
 >
-> Manuscript `PONE-D-26-13579R2` is under peer review at [PLOS ONE](https://journals.plos.org/plosone/). This repository preserves the reproducibility package for the corrected R2 cohort. It is not a live monitoring system or an audit tool.
+> Published in [PLOS ONE](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0350967) (11 September 2026). Article DOI: [10.1371/journal.pone.0350967](https://doi.org/10.1371/journal.pone.0350967). Historical manuscript ID: `PONE-D-26-13579R2`. This repository preserves the reproducibility package for the corrected R2 cohort. It is not a live monitoring system or an audit tool.
 
 | 161,830 | 85.83% | 120.99 | 664 |
 | ---: | ---: | ---: | ---: |
@@ -76,9 +77,20 @@ See [`code/README.md`](code/README.md) for environment notes and [`PUBLISHING_EX
 
 ## Citation
 
-Please cite the manuscript once it is published. Until then, cite this versioned reproducibility package through its [Zenodo concept DOI](https://doi.org/10.5281/zenodo.19074137) and use the metadata in [`CITATION.cff`](CITATION.cff).
+Please cite the [PLOS ONE article](https://doi.org/10.1371/journal.pone.0350967) first, then this versioned reproducibility package.
+
+Soto A (2026) Computational surveillance of Colombian public pharmaceutical procurement using public administrative data: a reproducible analysis of a closed 2020-2025 cohort. PLOS ONE 21(9): e0350967. https://doi.org/10.1371/journal.pone.0350967
+
+Reproducibility package (this version): [10.5281/zenodo.21495935](https://doi.org/10.5281/zenodo.21495935) ([record](https://zenodo.org/records/21495935)). Concept DOI (all versions): [10.5281/zenodo.19074137](https://doi.org/10.5281/zenodo.19074137). Machine-readable metadata: [`CITATION.cff`](CITATION.cff).
 
 **Author:** Andrés Soto · [ORCID 0009-0004-8001-5372](https://orcid.org/0009-0004-8001-5372)
+
+## Public hubs
+
+These sites are independent of the frozen article cohort. The observatory is a curated demo, not a live monitoring system. Statistical alerts remain exploratory: **signal is not proof**.
+
+- [bigloi.com](https://bigloi.com) · [bigloi-holding.vercel.app](https://bigloi-holding.vercel.app)
+- Observatorio (curated demo): [bigloi-observatorio.vercel.app](https://bigloi-observatorio.vercel.app)
 
 ## Scope and boundaries
 

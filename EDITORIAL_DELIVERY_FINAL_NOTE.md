@@ -1,5 +1,7 @@
 # Editorial Delivery Final Note
 
+**Historical note (2026-03-17).** The article was later published in PLOS ONE (11 September 2026; DOI [10.1371/journal.pone.0350967](https://doi.org/10.1371/journal.pone.0350967)). Current package metadata is in `README.md`, `CITATION.cff`, and `VERSION.md` (v0.2.1; Zenodo version DOI [10.5281/zenodo.21495935](https://doi.org/10.5281/zenodo.21495935)). The observatory, if linked from the public README, is a curated demo and is not a live monitoring system; signal is not proof.
+
 Date: 2026-03-17
 
 ## Definitive scholarly record

@@ -1,5 +1,7 @@
 # External publishing guide
 
+**Status (2026-09-14):** the article is published in [PLOS ONE](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0350967) (DOI [10.1371/journal.pone.0350967](https://doi.org/10.1371/journal.pone.0350967)). The article-specific package is archived at Zenodo version DOI [10.5281/zenodo.21495935](https://doi.org/10.5281/zenodo.21495935) (concept DOI [10.5281/zenodo.19074137](https://doi.org/10.5281/zenodo.19074137)). The workflow below is retained as historical release procedure.
+
 This package is prepared for external publication in one of two ways:
 
 1. Preferred: dedicated public repository for the paper package.
@@ -22,13 +24,15 @@ Suggested repository name:
 - environment notes are packaged;
 - citation metadata is packaged.
 
-## What still must be completed before public release
+## Public-release items (completed)
 
-- confirm the final public release URL and, once available, the Zenodo DOI in manuscript and release metadata files;
-- confirm which manuscript version will be public if the English version supersedes the current one;
-- verify that all links are public and stable;
-- decide whether the cover letter remains internal or is omitted from the public archive;
-- archive the public release in Zenodo and record the DOI.
+The following items were outstanding during preparation and are now complete:
+
+- public repository URL and Zenodo version DOI recorded (`10.5281/zenodo.21495935`; concept DOI `10.5281/zenodo.19074137`);
+- English R2 manuscript freeze is the public scholarly text; PLOS ONE article DOI `10.1371/journal.pone.0350967`;
+- public links verified (GitHub + Zenodo + PLOS ONE article);
+- revision cover letter retained in the public archive (no confidential reviewer identities);
+- public release archived in Zenodo.
 
 ## Dedicated repository workflow
 
