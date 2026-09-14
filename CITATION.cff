@@ -1,21 +1,44 @@
 cff-version: 1.2.0
 title: "Computational surveillance of Colombian public pharmaceutical procurement using public administrative data: a reproducible analysis of a closed 2020-2025 cohort"
-message: "If you use this article-specific package, please cite the manuscript (when published) and this repository release."
+message: "Please cite the PLOS ONE article (DOI 10.1371/journal.pone.0350967) and this reproducibility package (Zenodo 10.5281/zenodo.21495935)."
 type: software
-version: "0.2.0"
-date-released: "2026-07-22"
+version: "0.2.1"
+date-released: "2026-09-14"
 authors:
   - family-names: Soto
-    given-names: Andres
+    given-names: Andrés
     orcid: "https://orcid.org/0009-0004-8001-5372"
 repository-code: "https://github.com/zswamtech/BigLoI-PLOS-ONE-paper"
+url: "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0350967"
 identifiers:
+  - type: doi
+    value: 10.1371/journal.pone.0350967
+    description: PLOS ONE article DOI
+  - type: doi
+    value: 10.5281/zenodo.21495935
+    description: Zenodo version DOI (this package)
   - type: doi
     value: 10.5281/zenodo.19074137
     description: Zenodo concept DOI (all versions)
 license: "CC-BY-4.0"
 abstract: >-
-  Article-specific reproducibility package for the BigLoI PLOS ONE manuscript
-  (PONE-D-26-13579R2), including submission files, figures, derived data,
-  veterinary-exclusion audit artifacts, statements, and minimal reproduction scripts.
-  Corrected closed cohort: 161,830 pharmaceutical contracts (2020-2025).
+  Article-specific reproducibility package for the published PLOS ONE article
+  (DOI 10.1371/journal.pone.0350967; historical manuscript ID PONE-D-26-13579R2),
+  including submission files, figures, derived data, veterinary-exclusion audit
+  artifacts, statements, and minimal reproduction scripts. Corrected closed
+  cohort: 161,830 pharmaceutical contracts (2020-2025).
+preferred-citation:
+  type: article
+  authors:
+    - family-names: Soto
+      given-names: Andrés
+      orcid: "https://orcid.org/0009-0004-8001-5372"
+  title: "Computational surveillance of Colombian public pharmaceutical procurement using public administrative data: a reproducible analysis of a closed 2020-2025 cohort"
+  journal: "PLOS ONE"
+  year: 2026
+  month: 9
+  volume: "21"
+  issue: "9"
+  number: "e0350967"
+  doi: 10.1371/journal.pone.0350967
+  url: "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0350967"

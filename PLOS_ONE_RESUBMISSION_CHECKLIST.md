@@ -1,5 +1,7 @@
 # PLOS ONE Resubmission Checklist
 
+**Historical checklist.** The article is published in PLOS ONE (11 September 2026; DOI [10.1371/journal.pone.0350967](https://doi.org/10.1371/journal.pone.0350967)). This file records the R2 resubmission package; it is not a current research-status statement.
+
 Short operational checklist for the editorial resubmission package.
 
 ## Package status
