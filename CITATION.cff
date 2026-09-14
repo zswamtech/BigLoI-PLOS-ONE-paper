@@ -1,6 +1,6 @@
 cff-version: 1.2.0
 title: "Computational surveillance of Colombian public pharmaceutical procurement using public administrative data: a reproducible analysis of a closed 2020-2025 cohort"
-message: "Please cite the PLOS ONE article (DOI 10.1371/journal.pone.0350967) and this reproducibility package (Zenodo 10.5281/zenodo.21495935)."
+message: "Please cite the PLOS ONE article (DOI 10.1371/journal.pone.0350967) and this reproducibility package (Zenodo 10.5281/zenodo.22754602)."
 type: software
 version: "0.2.1"
 date-released: "2026-09-14"
@@ -15,7 +15,7 @@ identifiers:
     value: 10.1371/journal.pone.0350967
     description: PLOS ONE article DOI
   - type: doi
-    value: 10.5281/zenodo.21495935
+    value: 10.5281/zenodo.22754602
     description: Zenodo version DOI (this package)
   - type: doi
     value: 10.5281/zenodo.19074137
