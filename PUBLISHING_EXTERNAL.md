@@ -1,6 +1,6 @@
 # External publishing guide
 
-**Status (2026-09-14):** the article is published in [PLOS ONE](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0350967) (DOI [10.1371/journal.pone.0350967](https://doi.org/10.1371/journal.pone.0350967)). The article-specific package is archived at Zenodo version DOI [10.5281/zenodo.21495935](https://doi.org/10.5281/zenodo.21495935) (concept DOI [10.5281/zenodo.19074137](https://doi.org/10.5281/zenodo.19074137)). The workflow below is retained as historical release procedure.
+**Status (2026-09-14):** the article is published in [PLOS ONE](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0350967) (DOI [10.1371/journal.pone.0350967](https://doi.org/10.1371/journal.pone.0350967)). The article-specific package is archived at Zenodo version DOI [10.5281/zenodo.22754602](https://doi.org/10.5281/zenodo.22754602) (concept DOI [10.5281/zenodo.19074137](https://doi.org/10.5281/zenodo.19074137)). The workflow below is retained as historical release procedure.
 
 This package is prepared for external publication in one of two ways:
 
@@ -28,7 +28,7 @@ Suggested repository name:
 
 The following items were outstanding during preparation and are now complete:
 
-- public repository URL and Zenodo version DOI recorded (`10.5281/zenodo.21495935`; concept DOI `10.5281/zenodo.19074137`);
+- public repository URL and Zenodo version DOI recorded (`10.5281/zenodo.22754602`; concept DOI `10.5281/zenodo.19074137`);
 - English R2 manuscript freeze is the public scholarly text; PLOS ONE article DOI `10.1371/journal.pone.0350967`;
 - public links verified (GitHub + Zenodo + PLOS ONE article);
 - revision cover letter retained in the public archive (no confidential reviewer identities);

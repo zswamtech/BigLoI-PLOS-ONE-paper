@@ -6,7 +6,7 @@
 - Prior release tag: v0.1.1 (2026-03-17)
 - PLOS ONE article: <https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0350967>
 - Article DOI: <https://doi.org/10.1371/journal.pone.0350967>
-- Zenodo version DOI (this package): <https://doi.org/10.5281/zenodo.21495935>
+- Zenodo version DOI (this package): <https://doi.org/10.5281/zenodo.22754602>
 - Zenodo concept DOI (all versions): <https://doi.org/10.5281/zenodo.19074137>
 - Date of publication-alignment sync: 2026-09-14
 - Editorial status: **Published** in PLOS ONE (11 September 2026). Historical manuscript ID: PONE-D-26-13579R2.

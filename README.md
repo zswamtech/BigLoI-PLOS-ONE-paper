@@ -5,7 +5,7 @@
 [![Package version](https://img.shields.io/badge/package-v0.2.1-0b5cab)](VERSION.md)
 [![License](https://img.shields.io/badge/license-CC--BY--4.0-2e7d32)](https://creativecommons.org/licenses/by/4.0/)
 [![PLOS ONE](https://img.shields.io/badge/PLOS%20ONE-10.1371%2Fjournal.pone.0350967-d32f2f)](https://doi.org/10.1371/journal.pone.0350967)
-[![Zenodo](https://img.shields.io/badge/Zenodo-10.5281%2Fzenodo.21495935-1682d4)](https://doi.org/10.5281/zenodo.21495935)
+[![Zenodo](https://img.shields.io/badge/Zenodo-10.5281%2Fzenodo.22754602-1682d4)](https://doi.org/10.5281/zenodo.22754602)
 [![ORCID](https://img.shields.io/badge/ORCID-0009--0004--8001--5372-a6ce39)](https://orcid.org/0009-0004-8001-5372)
 
 Article-specific package for the published PLOS ONE article:
@@ -81,7 +81,7 @@ Please cite the [PLOS ONE article](https://doi.org/10.1371/journal.pone.0350967)
 
 Soto A (2026) Computational surveillance of Colombian public pharmaceutical procurement using public administrative data: a reproducible analysis of a closed 2020-2025 cohort. PLOS ONE 21(9): e0350967. https://doi.org/10.1371/journal.pone.0350967
 
-Reproducibility package (this version): [10.5281/zenodo.21495935](https://doi.org/10.5281/zenodo.21495935) ([record](https://zenodo.org/records/21495935)). Concept DOI (all versions): [10.5281/zenodo.19074137](https://doi.org/10.5281/zenodo.19074137). Machine-readable metadata: [`CITATION.cff`](CITATION.cff).
+Reproducibility package (this version): [10.5281/zenodo.22754602](https://doi.org/10.5281/zenodo.22754602) ([record](https://zenodo.org/records/22754602)). Concept DOI (all versions): [10.5281/zenodo.19074137](https://doi.org/10.5281/zenodo.19074137). Machine-readable metadata: [`CITATION.cff`](CITATION.cff).
 
 **Author:** Andrés Soto · [ORCID 0009-0004-8001-5372](https://orcid.org/0009-0004-8001-5372)
 
