@@ -87,10 +87,11 @@ Reproducibility package (this version): [10.5281/zenodo.22754602](https://doi.or
 
 ## Public hubs
 
-These sites are independent of the frozen article cohort. The observatory is a curated demo, not a live monitoring system. Statistical alerts remain exploratory: **signal is not proof**.
+These sites are independent of the frozen article cohort. The observatory uses a reconstruction from public SECOP data (2020–2026, purchase/supply contracts only); it is not the article cohort and figures may differ. Statistical alerts remain exploratory: signal is not proof; high concentration does not imply irregularity.
 
-- [bigloi.com](https://bigloi.com) · [bigloi-holding.vercel.app](https://bigloi-holding.vercel.app)
-- Observatorio (curated demo): [bigloi-observatorio.vercel.app](https://bigloi-observatorio.vercel.app)
+- [bigloi.com](https://bigloi.com) (project cover)
+- Observatory: https://bigloi-landing-six.vercel.app/observatorio
+- Entity lookup: https://bigloi-landing-six.vercel.app/observatorio/entidad
 
 ## Scope and boundaries
 
